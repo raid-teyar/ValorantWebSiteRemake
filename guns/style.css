@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+
+body{
+     
+    background-image:linear-gradient(0deg,rgba(24, 33, 42, 1) 48%, rgba(24,33,42,0.89) 93%), url('Guns image.png');
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ h2 {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    left: 200px;
+    top:  36px;
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    size: 144px;
+    color: rgba(236, 232, 225, 0.9);
+ }
+ .vertical-line1{
+     position: absolute;
+    width: 1259px;
+    height: 0px;
+    right: 601px;
+    top: 841px;
+    
+    border: 1px solid #ECE8E1;
+    transform: rotate(90deg);
+ }
+ .vertical-line2{
+     position: absolute;
+    width: 2079px;
+    height: 0px;
+    left: 251px;
+    top: 241px;
+    
+    border: 1px solid #ECE8E1;
+    transform: rotate(90deg);
+ }
+ .horizontal-line{
+    position: absolute;
+width: 320.01px;
+height: 0px;
+left: 118px;
+top: 209px;
+
+border: 1px solid #ECE8E1;
+ }
+ p {
+    position: absolute;
+    width: 556px;
+    height: 300px;
+    left: 204px;
+    top: 200px;
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ECE8E1;
+ }
+ h3{
+    position: absolute;
+width: 77px;
+height: 30px;
+left: 1253px;
+top: 1289px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0.25em;
+
+color: #FFFFFF;
+
+transform: rotate(-90deg);
+ }
+  /*span.text {
+    font-family: 'VALORANT', sans-serif;
+    font-size: 20px;
+}
+span.ar {
+    font-family: 'Lemonada', cursive;
+    font-size: 20px;
+}
+span {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    left: -150px;
+    top: -3490px;
+}
+ a {
+    
+    width: 100%;
+    max-width: 240px;
+    height: 50px;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #ff4655;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
+    position: relative;
+    margin: 10px 0;
+     
+}
+ a.white:hover > p {
+    color: #ece8e1;
+}
+ a.white > p {
+    background: #ece8e1;
+    color: #0f1923;
+}
+ a.white > p span.base {
+    border: 1px solid transparent;
+}
+ a.transparent:hover > p {
+    color: #ece8e1;
+}
+a.transparent:hover > p span.text {
+    box-shadow: 0 0 0 1px #ece8e1;
+}
+ a.transparent > p {
+    background: #0f1923;
+    color: #ece8e1;
+}
+ a.transparent > p span.base {
+    border: 1px solid #ece8e1;
+}
+ a:after, div a:before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 30px;
+    background: #0f1923;
+    left: 0;
+    right: 50%;
+    transform: translateY(-50%);
+}
+a:before {
+    right: 0;
+    left: initial;
+}
+ a p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ a p span.base {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 1px solid #ff4655;
+}
+ a p span.bg {
+    left: -5%;
+    position: absolute;
+    background: #ff4655;
+    width: 0;
+    height: 100%;
+    z-index: 3;
+    transition: 0.4s ease-out all;
+    transform: skewX(-10deg);
+}
+a p span.text {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ a p span.text:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: #0f1923;
+    position: absolute;
+    transition: 0.4s ease-out all;
+    z-index: 5;
+}
+a:hover {
+    color: #ece8e1;
+}
+ a:hover span.bg {
+    width: 110%;
+}
+ a:hover span.text:after {
+    background: #ece8e1;
+}
+*/
+.paragraph{
+    position: absolute;
+width: 556px;
+height: 300px;
+left: 04px;
+top: 740px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+
+color: #ECE8E1;
+}
+.image{
+    position: absolute;
+width: -180px;
+height: -1120px;
+left: 608px;
+top: 40px;
+
+background: url('Valorant_gun_shelf.png');
+transform: rotate(0deg);
+}
