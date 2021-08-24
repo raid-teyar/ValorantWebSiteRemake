@@ -291,13 +291,13 @@ button:focus {
 .bgpic {
     box-sizing: border-box;
     display: block;
-    position: relative;
+    position: absolute;
     width: auto;
     height: 100%;
     bottom: 0;
     border-style: none;
     right: 7.3vw;
-    margin-left: 440px;
+    margin-right: -7.4%;
     top: -150px;
 }
 
