@@ -59,7 +59,7 @@
 }
 
 .home-pattern{
-    top: 15%;
+    top: 25%;
     opacity: 25%;
     width: 90%;
     position: absolute;
@@ -81,59 +81,59 @@
 
 .main-text .large{
     font-family: Valorant;
-    font-size: 1.6rem;
+    font-size: 7rem;
 }
 .main-text .meduim{
-    margin-left: 2.5px;
+    margin-left: 10px;
     font-family: SansProSemiBold;
-    font-size: 0.167rem;
-    letter-spacing: 0.05rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
 }
 
 .sec-text{
     margin: 10% 0% 0% 1%;
-    max-width: 70px;
+    max-width: 400px;
     font-family: SansProBold;
-    font-size: 0.3rem;
-    letter-spacing: 0.09rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
 }
 
 .main-text .light{
     font-family: SansProLight;
-    font-size: 0.15rem;
-    letter-spacing: 0.04rem;
-    max-width: 45%;
-    line-height: 0.25rem;
-    margin-left: 2.5px;
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+    max-width: 50%;
+    line-height: 1rem;
+    margin-left: 10px;
 }
 
 .vertical-text .right{
     position: absolute;
     right: 0px;
     margin: 20% 5% 0% 0%;
-    font-size: 0.18rem;
+    font-size: 0.8rem;
     font-family: SansProRegular;
-    letter-spacing: 0.04rem;
-    width: 30px;
+    letter-spacing: 0.3rem;
+    width: 150px;
     transform: rotate(90deg);
 }
 
 .vertical-text .left{
     position: absolute;
     left: 0px;
-    margin: 50% 10% 0% -4%;
-    font-size: 0.18rem;
+    margin: 50% 10% 0% -5%;
+    font-size: 0.8rem;
     font-family: SansProRegular;
-    letter-spacing: 0.04rem;
-    width: 60px;
+    letter-spacing: 0.3rem;
+    width: 280px;
     transform: rotate(-90deg);
 }
 
 .triangle{
     
-    height: 20px;
-    width: 50px;
+    height: 100px;
+    width: 200px;
     transform: rotate(45deg);
-    margin: 70% 0% 0% -15PX;
+    margin: 70% 0% 0% -70PX;
     background-color: var(--Pink);
 }
