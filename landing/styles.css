@@ -1,46 +1,55 @@
-*, *::before, *::after {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+:root {
+    /* ##### COLORS #### */
+    --base-color: #0f1923;
+    --secondbase-color: #101822;
+    --white-color: #ece8e1;
+    --main-color: #ff4655;
+    --secondmain-color: #FF8189;
+    /* ##### Font family #### */
+    --font: 'Source Sans Pro', sans-serif;
+    --valorant: 'valorant', sans-serif;
+    /* ##### Font weight #### */
+    --font-regular: 500;
+    --font-semibold: 600;
+    --font-bold: 800;
+    --font-light: 50
+    /* Text Sizing 
+    ##          Main Valorant title: 7rem
+    ##          Normal text size : 1rem
+    ##          Semi Main text : 1.2rem
+    ##          Sections Titles : 
+    ##              - main : 2.5rem
+    ##              - Shadow 7.5rem
+    ##          Semi Title : 1.5rem
+    ##          Background text : 1rem
+    ##           
+    */
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    font-family: SansProSemiBold;
     margin: 0;
-  }
-
-  
-
-@font-face {
-    font-family: Valorant;
-    src: url(Fonts/Valorant.ttf);
-}
-@font-face {
-    font-family: SansProBold;
-    src: url(Fonts/SourceSansPro-Bold.ttf);
-}
-@font-face {
-    font-family: SansProRegular;
-    src: url(Fonts/SourceSansPro-Regular.ttf);
-}
-@font-face {
-    font-family: SansProLight;
-    src: url(Fonts/SourceSansPro-Light.ttf);
-}
-@font-face {
-    font-family: SansProSemiBold;
-    src: url(Fonts/SourceSansPro-SemiBold.ttf);
 }
 
-:root{
-    --Dark-Blue: #101822;
-    --Blue: #18212A;
-    --Pink: #FF4654;
-    --Light-Pink: #FF8189;
-    --Light: #ECE8E1;
+html {
+    scroll-behavior: smooth;
 }
 
-.container{
+body {
+    font-family: var(--font);
+    background-color: var(--base-color);
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.home-background{
+.home-background {
     display: block;
     object-fit: cover;
     opacity: 5%;
@@ -49,16 +58,16 @@
     right: 0;
 }
 
-.home-section::before{
+.home-section::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 200%;
     z-index: -1;
-    background-color: var(--Dark-Blue);
+    background-color: var(--base-color);
 }
 
-.home-pattern{
+.home-pattern {
     top: 25%;
     opacity: 25%;
     width: 90%;
@@ -66,83 +75,85 @@
     user-select: none;
 }
 
-.main-text{
+
+/* ##### MAIN PAGE TEXTS #### */
+
+.main-text {
     position: absolute;
     margin: 15% 10% 10% 10%;
 }
 
-.main-text p{
-    color: var(--Light);
+.main-text p {
+    color: var(--white-color);
 }
 
-.vertical-text p{
-    color: var(--Pink);
+.vertical-text p {
+    color: var(--main-color);
 }
 
-.main-text .large{
-    font-family: Valorant;
+.main-text .large {
+    font-family: var(--valorant);
     font-size: 7rem;
 }
-.main-text .meduim{
+
+.main-text .meduim {
     margin-left: 10px;
-    font-family: SansProSemiBold;
-    font-size: 0.7rem;
+    font-weight: var(--font-semibold);
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
 }
 
-.sec-text{
+.sec-text {
     margin: 10% 0% 0% 1%;
     max-width: 400px;
-    font-family: SansProBold;
+    font-weight: var(--font-bold);
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
 }
 
-.main-text .light{
-    font-family: SansProLight;
-    font-size: 0.6rem;
+.main-text .light {
+    font-weight: var(--font-light);
+    font-size: 1rem;
     letter-spacing: 0.2rem;
     max-width: 50%;
-    line-height: 1rem;
     margin-left: 10px;
 }
 
-.vertical-text .right{
+.vertical-text .right {
     position: absolute;
     right: 0px;
     margin: 20% 5% 0% 0%;
-    font-size: 0.8rem;
-    font-family: SansProRegular;
+    font-size: 1rem;
+    font-weight: var(--font-regular);
     letter-spacing: 0.3rem;
     width: 150px;
     transform: rotate(90deg);
 }
 
-.vertical-text .left{
+.vertical-text .left {
     position: absolute;
     left: 0px;
     margin: 50% 10% 0% -5%;
-    font-size: 0.8rem;
-    font-family: SansProRegular;
+    font-size: 1rem;
+    font-weight: var(--font-regular);
     letter-spacing: 0.3rem;
     width: 280px;
     transform: rotate(-90deg);
 }
 
-.triangle{
+.triangle {
     height: 100px;
     width: 200px;
     transform: rotate(45deg);
     margin: 70% 0% 0% -70PX;
-    background-color: var(--Pink);
+    background-color: var(--main-color);
 }
 
-/*Buttons css*/
 
-
+/* ##### MAIN BUTTON  #### */
 
 span.text {
-    font-family: 'VALORANT', sans-serif;
+    font-family: var(--valorant);
     font-size: 25px;
 }
 
@@ -152,7 +163,7 @@ span.text {
     padding: 8px;
     font-size: 0.8rem;
     font-weight: 900;
-    color: #ff4655;
+    color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -160,43 +171,54 @@ span.text {
     position: absolute;
     margin: 8% 0% 0% 2%;
 }
-.main-text a.white:hover > p {
-    color: #ece8e1;
+
+.main-text a.white:hover>p {
+    color: var(--white-color);
 }
-.main-text a.white > p {
-    background: #ece8e1;
-    color: #0f1923;
+
+.main-text a.white>p {
+    background: var(--white-color);
+    color: var(--base-color);
 }
-.main-text a.white > p span.base {
+
+.main-text a.white>p span.base {
     border: 1px solid transparent;
 }
-.main-text a.transparent:hover > p {
-    color: #ece8e1;
+
+.main-text a.transparent:hover>p {
+    color: var(--white-color);
 }
-.main-text a.transparent:hover > p span.text {
-    box-shadow: 0 0 0 1px #ece8e1;
+
+.main-text a.transparent:hover>p span.text {
+    box-shadow: 0 0 0 1px var(--white-color);
 }
-.main-text a.transparent > p {
-    background: #0f1923;
-    color: #ece8e1;
+
+.main-text a.transparent>p {
+    background: var(--base-color);
+    color: var(--white-color);
 }
-.main-text a.transparent > p span.base {
-    border: 1px solid #ece8e1;
+
+.main-text a.transparent>p span.base {
+    border: 1px solid var(--white-color);
 }
-.main-text a:after, .main-text a:before {
+
+.main-text a:after,
+.main-text a:before {
     content: "";
     width: 1px;
     position: absolute;
     height: 30px;
-    background: #0f1923;
+    background: var(--base-color);
     left: 0;
     right: 50%;
     transform: translateY(-50%);
 }
+
 .main-text a:before {
     right: 0;
     left: initial;
 }
+
 .main-text a p {
     margin: 0;
     height: 50px;
@@ -208,6 +230,7 @@ span.text {
     position: relative;
     overflow: hidden;
 }
+
 .main-text a p span.base {
     box-sizing: border-box;
     position: absolute;
@@ -215,18 +238,20 @@ span.text {
     width: 100%;
     height: 100%;
     left: 0;
-    border: 1px solid #ff4655;
+    border: 1px solid var(--main-color);
 }
+
 .main-text a p span.bg {
     left: -5%;
     position: absolute;
-    background: #ff4655;
+    background: var(--main-color);
     width: 0;
     height: 100%;
     z-index: 3;
     transition: 0.4s ease-out all;
     transform: skewX(-10deg);
 }
+
 .main-text a p span.text {
     z-index: 4;
     width: 100%;
@@ -235,80 +260,81 @@ span.text {
     left: 0;
     top: 0;
 }
+
 .main-text a p span.text:after {
     content: "";
     width: 4px;
     height: 4px;
     right: 0;
     bottom: 0;
-    background: #0f1923;
+    background: var(--base-color);
     position: absolute;
     transition: 0.4s ease-out all;
     z-index: 5;
 }
+
 .main-text a:hover {
-    color: #ece8e1;
+    color: var(--white-color);
 }
+
 .main-text a:hover span.bg {
     width: 110%;
 }
+
 .main-text a:hover span.text:after {
-    background: #ece8e1;
+    background: var(--white-color);
 }
 
-/*Navbar Css*/
+
+/* ##### NAVBAR  #### */
 
 header {
     position: fixed;
     top: 0;
-    left : 0;
-    width : 100%;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
     padding: 10px 300px;
     z-index: 100;
-  }
-  
-  header.sticky {
+}
+
+header.sticky {
     padding: 5px 150px;
-    background: #ece8e1;
-  
-  }
-  
-  header .logo {
+    background: var(--white-color);
+}
+
+header .logo {
     position: relative;
-    width:30%;
-    float : left;
-    transition : 0.6s;
-  }
-  
-  header ul {
+    width: 40%;
+    float: left;
+}
+
+header ul {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items : center;
+    align-items: center;
     word-spacing: 100px;
-  }
-  
-  header ul li {
-    position : relative;
-    list-style: none;
-  }
-  
-  header ul li a{
+}
+
+header ul li {
     position: relative;
-    margin: 0 30px; 
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 30px;
     text-decoration: none;
-    color: #ece8e1;
+    color: var(--white-color);
     letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-    
-  }
-  
-  .nav-text {
+    font-weight: var(--font-semibold);
+}
+
+.nav-text {
     margin: 10px;
     display: inline-block;
     vertical-align: top;
@@ -317,81 +343,62 @@ header {
     padding: 0px 0px 10px 0px;
     line-height: 25px;
     min-width: 100px;
-  
-  }
-  
-  
-  header ul li a:hover {
-      color : #ff4655;
-  }
-  
+}
 
-  header.black {
+header ul li a:hover {
+    color: var(--main-color);
+}
+
+header.black {
     transition: 0.4s;
-    background-color: #ece8e1;
-    
-  }
-  a.black {
-    color : #0f1923;
-  }
-  
-  
-  button {
+    background-color: var(--white-color);
+}
+
+a.black {
+    color: var(--base-color);
+}
+
+button {
     outline: none;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     position: relative;
-    margin: 0 30px; 
+    margin: 0 30px;
+    margin-top: -10px;
     text-decoration: none;
-    color: #ece8e1;
+    color: var(--white-color);
     letter-spacing: 5px;
-    font-weight: 500px;
     transition: 0.6s;
-    background-image: linear-gradient(to right top, #FF4654, #FF4654);
-    width: 110%;
-    height: 30px;
-    font-weight: bold;
+    background-image: linear-gradient(to right top, #FF4655, #FF4655);
+    width: 100%;
+    height: 35px;
+    font-weight: var(--font-bold);
     letter-spacing: 1px;
     transition: 300ms;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     width: 110%;
-    height: 30px;
-  
-    
-    background-image: linear-gradient(to left bottom, #ff4655, #FF8189);
-    box-shadow: 
-      0 0 10px #101822,
-      0 0 20px #ff4655,
-      0 0 40px #FF8189;
-  }
+    height: 38px;
+    background-image: linear-gradient(to left bottom, --main-color, --secondmain-color);
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 40px var(--secondmain-color);
+}
 
-  /*Line effect*/
 
-  .nav-links li a:before{
+/* ##### LINE EFFECT FOR NAVBAR  #### */
+
+.nav-links li a:before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 3px;
+    height: 2px;
     width: 0%;
-    background: #ff8189; 
-    transition:  all 0.5s ease;
-    }
-    
-    .nav-links li a:hover:before{
-        width: 100%;
-    }
+    background: var(--secondmain-color);
+    transition: 0.5s ease;
+}
 
-    
-
-    
-    
-    
-    
-    
-
-
-  
+.nav-links li a:hover:before {
+    width: 100%;
+}
