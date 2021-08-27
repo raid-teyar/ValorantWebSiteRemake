@@ -402,3 +402,98 @@ button:hover {
 .nav-links li a:hover:before {
     width: 100%;
 }
+
+
+/* ################################# ABOUT SECTION */
+
+.about-section {
+    background-image: linear-gradient(0deg, rgba(255, 70, 84, 0.89) 48%, rgba(255, 70, 84, 0.89) 93%), url(about.png);
+    background-size: cover;
+    height: 1300px;
+    z-index: -10;
+}
+
+.bg-about {
+    background: url('./scr/about.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 7%;
+    mix-blend-mode: color-dodge;
+    height: 1300px;
+}
+
+
+/* ##### Background Lines & Texts #### */
+
+.left-line {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    height: 1100px;
+}
+
+.right-line {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    right: 10%;
+    top: -1px;
+    height: 950px;
+}
+
+.right-line-text {
+    transform: rotate(-90deg);
+    top: 1000px;
+    position: absolute;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.25em;
+    line-height: 30px;
+    left: -50px;
+}
+
+
+/* ##### Main Title + horizontal line #### */
+
+.main-title {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 80px;
+    left: 15%;
+    top: 100px;
+    color: var(--base-color);
+    z-index: 3;
+}
+
+.shadow-title h1 {
+    position: absolute;
+    opacity: 7%;
+    color: var(--white-color);
+    left: 1%;
+    top: 60px;
+    font-size: 120px;
+    z-index: 2;
+}
+
+.shadow-title {
+    position: relative;
+    border-bottom: 2px solid var(--white-color);
+    padding-top: 200px;
+    left: 10%;
+    width: 30%;
+    padding-right: 10%;
+}
+
+.text {
+    position: absolute;
+    left: 12%;
+    padding-top: 50px;
+    right: 50%;
+}
