@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+:root {
+    /* ##### COLORS #### */
+    --base-color: #0f1923;
+    --secondbase-color: #101822;
+    --white-color: #ece8e1;
+    --main-color: #ff4655;
+    --secondmain-color: #FF8189;
+    /* ##### Font family #### */
+    --font: 'Source Sans Pro', sans-serif;
+    --valorant: 'valorant', sans-serif;
+    /* ##### Font weight #### */
+    --font-regular: 500;
+    --font-semibold: 600;
+    --font-bold: 800;
+    --font-light: 50
+    /* Text Sizing 
+    ##          Main Valorant title: 7rem
+    ##          Normal text size : 1rem
+    ##          Semi Main text : 1.2rem
+    ##          Sections Titles : 
+    ##              - main : 2.5rem
+    ##              - Shadow 7.5rem
+    ##          Semi Title : 1.5rem
+    ##          Background text : 1rem
+    ##           
+    */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--base-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-background {
+    display: block;
+    object-fit: cover;
+    opacity: 5%;
+    position: absolute;
+    width: 130%;
+    right: 0;
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+    background-color: var(--base-color);
+}
+
+.home-pattern {
+    top: 25%;
+    opacity: 25%;
+    width: 90%;
+    position: absolute;
+    user-select: none;
+}
+
+
+/* ##### MAIN PAGE TEXTS #### */
+
+.main-text {
+    position: absolute;
+    margin: 15% 10% 10% 10%;
+}
+
+.main-text p {
+    color: var(--white-color);
+}
+
+.vertical-text p {
+    color: var(--main-color);
+}
+
+.main-text .large {
+    font-family: var(--valorant);
+    font-size: 7rem;
+}
+
+.main-text .meduim {
+    margin-left: 10px;
+    font-weight: var(--font-semibold);
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.sec-text {
+    margin: 10% 0% 0% 1%;
+    max-width: 400px;
+    font-weight: var(--font-bold);
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.main-text .light {
+    font-weight: var(--font-light);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    max-width: 50%;
+    margin-left: 10px;
+}
+
+.vertical-text .right {
+    position: absolute;
+    right: 0px;
+    margin: 20% 5% 0% 0%;
+    font-size: 1rem;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.3rem;
+    width: 150px;
+    transform: rotate(90deg);
+}
+
+.vertical-text .left {
+    position: absolute;
+    left: 0px;
+    margin: 50% 10% 0% -5%;
+    font-size: 1rem;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.3rem;
+    width: 280px;
+    transform: rotate(-90deg);
+}
+
+.triangle {
+    height: 100px;
+    width: 200px;
+    transform: rotate(45deg);
+    margin: 70% 0% 0% -70PX;
+    background-color: var(--main-color);
+}
+
+
+/* ##### MAIN BUTTON  #### */
+
+span.text {
+    font-family: var(--valorant);
+    font-size: 25px;
+}
+
+.main-text a {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
+    position: absolute;
+    margin: 8% 0% 0% 2%;
+}
+
+.main-text a.white:hover>p {
+    color: var(--white-color);
+}
+
+.main-text a.white>p {
+    background: var(--white-color);
+    color: var(--base-color);
+}
+
+.main-text a.white>p span.base {
+    border: 1px solid transparent;
+}
+
+.main-text a.transparent:hover>p {
+    color: var(--white-color);
+}
+
+.main-text a.transparent:hover>p span.text {
+    box-shadow: 0 0 0 1px var(--white-color);
+}
+
+.main-text a.transparent>p {
+    background: var(--base-color);
+    color: var(--white-color);
+}
+
+.main-text a.transparent>p span.base {
+    border: 1px solid var(--white-color);
+}
+
+.main-text a:after,
+.main-text a:before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 30px;
+    background: var(--base-color);
+    left: 0;
+    right: 50%;
+    transform: translateY(-50%);
+}
+
+.main-text a:before {
+    right: 0;
+    left: initial;
+}
+
+.main-text a p {
+    margin: 0;
+    height: 50px;
+    line-height: 55px;
+    box-sizing: border-box;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-text a p span.base {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 1px solid var(--main-color);
+}
+
+.main-text a p span.bg {
+    left: -5%;
+    position: absolute;
+    background: var(--main-color);
+    width: 0;
+    height: 100%;
+    z-index: 3;
+    transition: 0.4s ease-out all;
+    transform: skewX(-10deg);
+}
+
+.main-text a p span.text {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-text a p span.text:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: var(--base-color);
+    position: absolute;
+    transition: 0.4s ease-out all;
+    z-index: 5;
+}
+
+.main-text a:hover {
+    color: var(--white-color);
+}
+
+.main-text a:hover span.bg {
+    width: 110%;
+}
+
+.main-text a:hover span.text:after {
+    background: var(--white-color);
+}
+
+
+/* ##### NAVBAR  #### */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 300px;
+    z-index: 100;
+}
+
+header.sticky {
+    padding: 5px 150px;
+    background: var(--white-color);
+}
+
+header .logo {
+    position: relative;
+    width: 40%;
+    float: left;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 100px;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 30px;
+    text-decoration: none;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    font-weight: var(--font-semibold);
+}
+
+.nav-text {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    line-height: 25px;
+    min-width: 100px;
+}
+
+header ul li a:hover {
+    color: var(--main-color);
+}
+
+header.black {
+    transition: 0.4s;
+    background-color: rgba(236, 232, 225, 0.85);
+}
+
+a.black {
+    color: var(--base-color);
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 30px;
+    margin-top: -10px;
+    text-decoration: none;
+    color: var(--white-color);
+    letter-spacing: 5px;
+    transition: 0.6s;
+    background-image: linear-gradient(to right top, #FF4655, #FF4655);
+    width: 100%;
+    height: 35px;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    transition: 300ms;
+}
+
+button:hover {
+    width: 110%;
+    height: 38px;
+    background-image: linear-gradient(to left bottom, --main-color, --secondmain-color);
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 40px var(--secondmain-color);
+}
+
+
+/* ##### LINE EFFECT FOR NAVBAR  #### */
+
+.nav-links li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: var(--secondmain-color);
+    transition: 0.5s ease;
+}
+
+.nav-links li a:hover:before {
+    width: 100%;
+}
