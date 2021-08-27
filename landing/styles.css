@@ -335,6 +335,7 @@ header ul li a {
 }
 
 .nav-text {
+    font-family: var(--valorant);
     margin: 10px;
     display: inline-block;
     vertical-align: top;
