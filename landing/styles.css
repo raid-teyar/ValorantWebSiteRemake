@@ -359,14 +359,14 @@ a.black {
     color: var(--base-color);
 }
 
-button {
+header button {
     outline: none;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     position: relative;
-    margin: 0 30px;
-    margin-top: -10px;
+    margin: -10px 20px 0 20px;
+    padding: 0 20px;
     text-decoration: none;
     color: var(--white-color);
     letter-spacing: 5px;
@@ -379,7 +379,7 @@ button {
     transition: 300ms;
 }
 
-button:hover {
+header button:hover {
     width: 110%;
     height: 38px;
     background-image: linear-gradient(to left bottom, --main-color, --secondmain-color);
