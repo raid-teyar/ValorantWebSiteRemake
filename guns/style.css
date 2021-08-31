@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-
- @import url('http://fonts.cdnfonts.com/css/valorant');
-body{
-     
-    background-image:linear-gradient(0deg,rgba(24, 33, 42, 1) 48%, rgba(24,33,42,0.89) 93%), url('Guns image.png');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+body {
+    background-image: linear-gradient(0deg, rgba(24, 33, 42, 1) 48%, rgba(24, 33, 42, 0.89) 93%), url('Guns image.png');
     background-size: cover;
     background-attachment: fixed;
- }
- h2 {
+}
+
+h2 {
     position: absolute;
     width: 900px;
     height: 300px;
     left: 200px;
-    top:  36px;
-    
+    top: 36px;
     font-family: valorant;
     font-style: normal;
     font-weight: bold;
@@ -21,43 +19,43 @@ body{
     line-height: 80px;
     size: 144px;
     color: rgba(236, 232, 225, 0.9);
- }
- .vertical-line1{
-     position: absolute;
+}
+
+.vertical-line1 {
+    position: absolute;
     width: 1259px;
     height: 0px;
     right: 601px;
     top: 841px;
-    
     border: 1px solid #ECE8E1;
     transform: rotate(90deg);
- }
- .vertical-line2{
-     position: absolute;
+}
+
+.vertical-line2 {
+    position: absolute;
     width: 2079px;
     height: 0px;
     left: 251px;
     top: 241px;
-    
     border: 1px solid #ECE8E1;
     transform: rotate(90deg);
- }
- .horizontal-line{
-    position: absolute;
-width: 320.01px;
-height: 0px;
-left: 118px;
-top: 209px;
+}
 
-border: 1px solid #ECE8E1;
- }
- p {
+.horizontal-line {
+    position: absolute;
+    width: 320.01px;
+    height: 0px;
+    left: 118px;
+    top: 209px;
+    border: 1px solid #ECE8E1;
+}
+
+p {
     position: absolute;
     width: 556px;
     height: 300px;
     left: 204px;
     top: 200px;
-    
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -65,50 +63,41 @@ border: 1px solid #ECE8E1;
     line-height: 25px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #ECE8E1;
- }
- h3{
-    position: absolute;
-width: 77px;
-height: 30px;
-left: 1253px;
-top: 1289px;
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 30px;
-letter-spacing: 0.25em;
-
-color: #FFFFFF;
-
-transform: rotate(-90deg);
- }
-
-
-
-:root{
-  --white-color: #ece8e1;
-  --base-color: #0f1923;
-    
 }
 
-  .container {
+h3 {
+    position: absolute;
+    width: 77px;
+    height: 30px;
+    left: 1253px;
+    top: 1289px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.25em;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
 
+:root {
+    --white-color: #ece8e1;
+    --base-color: #0f1923;
+}
 
-
+.container {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
-
 }
 
 button:focus {
     outline: none;
-      top: 400px;
-   left: 25px;
+    top: 400px;
+    left: 25px;
 }
 
 .primary-button {
@@ -127,7 +116,6 @@ button:focus {
     transition: 0.3s ease-in-out;
     transition-property: border, background-position, color;
     background-color: var(--white-color);
-   
 }
 
 
@@ -137,7 +125,6 @@ button:focus {
     border: 1px solid var(--main-color);
     background-position: 50%;
     color: var(--white-color);
-
 }
 
 
@@ -152,7 +139,6 @@ button:focus {
     left: -1px;
     top: -1px;
     transition: background-color 0.15s ease-in-out;
-
 }
 
 .primary-button:hover:before {
@@ -177,7 +163,7 @@ button:focus {
     width: fit-content;
     height: fit-content;
     top: 400px;
-   left: 390px;
+    left: 390px;
 }
 
 .button-borders:before {
@@ -220,46 +206,40 @@ button:focus {
     transition: 0.05s ease-in-out;
 }
 
-
-
-.paragraph{
+.paragraph {
     position: absolute;
-width: 556px;
-height: 300px;
-left: 04px;
-top: 740px;
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
-
-color: #ECE8E1;
-}
-.image{
-    position: absolute;
-width: -180px;
-height: -1120px;
-left: 608px;
-top: 40px;
-
-background: url('Valorant_gun_shelf.png');
-transform: rotate(0deg);
+    width: 556px;
+    height: 300px;
+    left: 04px;
+    top: 740px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ECE8E1;
 }
 
-h1{
+.image {
     position: absolute;
-width: 420px;
-height: 154px;
-left: 133px;
-top: -50px;
+    width: -180px;
+    height: -1120px;
+    left: 608px;
+    top: 40px;
+    background: url('Valorant_gun_shelf.png');
+    transform: rotate(0deg);
+}
 
-font-family: Source Sans Pro;
-font-style: italic;
-font-weight: 600;
-font-size: 130px;
-line-height: 163px;
-
-color: rgba(236, 232, 225, 0.1);
+h1 {
+    position: absolute;
+    width: 420px;
+    height: 154px;
+    left: 133px;
+    top: -50px;
+    font-family: Source Sans Pro;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 163px;
+    color: rgba(236, 232, 225, 0.1);
 }

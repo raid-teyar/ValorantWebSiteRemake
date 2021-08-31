@@ -33,10 +33,12 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -45,7 +47,7 @@ body {
 }
 
 .container {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
 }
 
@@ -53,34 +55,31 @@ body {
     display: block;
     object-fit: cover;
     opacity: 5%;
-    position: absolute;
-    width: 130%;
+    width: 100%;
     right: 0;
 }
 
 .home-section::before {
     content: "";
-    position: absolute;
     width: 100%;
-    height: 200%;
+    height: 100%;
     z-index: -1;
     background-color: var(--base-color);
 }
 
 .home-pattern {
-    top: 25%;
+    z-index: -1;
+    margin-top: -8rem;
     opacity: 25%;
-    width: 90%;
+    width: 100%;
     position: absolute;
-    user-select: none;
 }
 
 
 /* ##### MAIN PAGE TEXTS #### */
 
 .main-text {
-    position: absolute;
-    margin: 15% 10% 10% 10%;
+    margin: -41rem 0% 17rem 10rem;
 }
 
 .main-text p {
@@ -93,7 +92,7 @@ body {
 
 .main-text .large {
     font-family: var(--valorant);
-    font-size: 7rem;
+    font-size: 112px;
 }
 
 .main-text .meduim {
@@ -104,7 +103,7 @@ body {
 }
 
 .sec-text {
-    margin: 10% 0% 0% 1%;
+    margin: 4rem 0% 0% 0%;
     max-width: 400px;
     font-weight: var(--font-bold);
     font-size: 1.5rem;
@@ -119,14 +118,13 @@ body {
     margin-left: 10px;
 }
 
+
+/*  later
 .vertical-text .right {
-    position: absolute;
-    right: 0px;
-    margin: 20% 5% 0% 0%;
+    text-align: right;
     font-size: 1rem;
     font-weight: var(--font-regular);
     letter-spacing: 0.3rem;
-    width: 150px;
     transform: rotate(90deg);
 }
 
@@ -140,12 +138,13 @@ body {
     width: 280px;
     transform: rotate(-90deg);
 }
+*/
 
 .triangle {
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
     transform: rotate(45deg);
-    margin: 70% 0% 0% -70PX;
+    margin: -3rem 0% -3rem -6rem;
     background-color: var(--main-color);
 }
 
@@ -407,10 +406,12 @@ button:hover {
 /* ################################# ABOUT SECTION */
 
 .about-section {
+    position: relative;
     background-image: linear-gradient(0deg, rgba(255, 70, 84, 0.89) 48%, rgba(255, 70, 84, 0.89) 93%), url(about.png);
     background-size: cover;
     height: 1300px;
-    z-index: -10;
+    z-index: 1;
+    display: block
 }
 
 .bg-about {
@@ -422,7 +423,7 @@ button:hover {
     top: 0;
     left: 0;
     height: 100%;
-    opacity: 7%;
+    opacity: 12%;
     mix-blend-mode: color-dodge;
     height: 1300px;
 }
@@ -456,6 +457,7 @@ button:hover {
     letter-spacing: 0.25em;
     line-height: 30px;
     left: -50px;
+    color: var(--white-color);
 }
 
 
@@ -491,9 +493,529 @@ button:hover {
     padding-right: 10%;
 }
 
-.text {
+.text-about {
+    position: relative;
+    left: 12%;
+    margin-right: 12%;
+    padding-top: 50px;
+    padding-right: 50%;
+    color: var(--white-color);
+}
+
+.text-about h2 {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    padding-bottom: 30px;
+}
+
+.text-about h3 {
+    font-weight: var(--font-semibold);
+    padding-top: 1rem;
+}
+
+.numbers-about {
+    position: absolute;
+    font-weight: var(--font-bold);
+    color: var(--base-color);
+    font-size: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    left: 25%;
+    line-height: 9rem;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white-color);
+    z-index: 1;
+}
+
+.text-numbers-about li {
+    position: relative;
+    right: 22%;
+    z-index: 3;
+    font-weight: var(--font-bold);
+    color: var(--base-color);
+    list-style: none;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 9rem;
+}
+
+.text-numbers-about li:nth-child(1) {
+    padding-top: 2.2rem;
+}
+
+.video-section-about {
+    display: flex;
+}
+
+.video-container-about {
+    position: absolute;
+    left: 45%;
+    top: 35rem;
+}
+
+.character-jett {
+    position: absolute;
+    top: 10rem;
+    display: inline-block;
+    align-items: right;
+    justify-content: right;
+    margin-left: 50%;
+}
+
+.triangle-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: -5.6rem;
+    margin-top: 4rem;
+    height: 150px;
+    width: 250px;
+    transform: rotate(45deg);
+    background-color: var(--main-color);
+}
+
+
+/* ################################# AGENTS SECTION */
+
+.bg-agents {
+    background: url('./scr/Ascent.jpg');
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    margin-top: -15rem;
+    opacity: 7%;
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    height: 1360px;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ##### Background Lines & Texts #### */
+
+.left-line-agents {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    left: 10%;
+    height: 1100px;
+}
+
+.right-line-agents {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    right: 10%;
+    margin-top: -12.7rem;
+    height: 950px;
+}
+
+.right-line-text-agents {
+    transform: rotate(-90deg);
+    top: 1000px;
+    position: absolute;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.25em;
+    line-height: 30px;
+    left: -60px;
+    color: var(--white-color);
+}
+
+
+/* ##### Main Title + horizontal line #### */
+
+.main-title-agents {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 80px;
+    left: 15%;
+    margin-top: 6rem;
+    color: var(--white-color);
+    z-index: 3;
+}
+
+.shadow-title-agents h1 {
+    position: absolute;
+    opacity: 7%;
+    color: var(--white-color);
+    left: 1%;
+    top: 60px;
+    font-size: 120px;
+    z-index: 2;
+}
+
+.shadow-title-agents {
+    position: relative;
+    border-bottom: 2px solid var(--white-color);
+    padding-top: 200px;
+    left: 10%;
+    width: 30%;
+    padding-right: 10%;
+}
+
+
+/* ##### Astra Animation #### */
+
+.animation2 {
+    position: absolute;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-left: 49%;
+}
+
+
+/* ##### Section text #### */
+
+.text-agents {
     position: absolute;
     left: 12%;
     padding-top: 50px;
     right: 50%;
+    color: var(--white-color);
+}
+
+.text-agents h2 {
+    font-size: 30px;
+    font-weight: var(--font-semibold);
+    padding-bottom: 30px;
+}
+
+.text-agents h3 {
+    font-weight: var(--font-regular);
+    padding-bottom: 300px;
+}
+
+
+/* ##### Button after text for AGENTS #### 
+
+.container-agents {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15%;
+    height: 100vh;
+    /*
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 750px;
+    z-index: 6;
+    
+}
+
+button:focus {
+    outline: none;
+}
+
+.primary-button-agents {
+    cursor: pointer;
+    font-family: var(--valorant);
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid var(--white-color);
+    padding: 1.3rem 4rem;
+    background: url('https://svgshare.com/i/Kyn.svg');
+    background-size: 130%;
+    background-position: 500%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    transition-property: border, background-position, color;
+    background-color: var(--white-color);
+    color: var(--base-color);
+}
+
+.primary-button-agents:hover {
+    border: 1px solid var(--main-color);
+    background-position: 50%;
+    color: var(--white-color);
+}
+
+.primary-button-agents:before {
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    width: 0.2rem;
+    height: 0.2rem;
+    left: -1px;
+    top: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button-agents:hover:before {
+    background-color: var(--main-color);
+}
+
+.primary-button-agents:after {
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    width: 0.4rem;
+    height: 0.4rem;
+    right: -1px;
+    bottom: -1px;
+}
+
+.button-borders-agents {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-borders-agents:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + .9rem);
+    height: 35%;
+    left: -0.5rem;
+    top: -0.8rem;
+    border: 1px solid var(--white-color);
+    border-bottom: 0px;
+    opacity: 0.3;
+}
+
+.button-borders-agents:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + .9rem);
+    height: 35%;
+    left: -0.5rem;
+    bottom: -0.8rem;
+    border: 1px solid var(--white-color);
+    border-top: 0px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.button-borders-agents:active,
+.button-borders-agents:focus {
+    outline: none;
+}
+
+.button-borders-agents:active::before {
+    top: -0.4rem;
+    transition: 0.05s ease-in-out;
+}
+
+.button-borders-agents:active::after {
+    bottom: -0.4rem;
+    transition: 0.05s ease-in-out;
+}
+*/
+
+
+/* ################################# MAPS SECTION */
+
+
+/* ##### Maps background #### */
+
+.maps {
+    display: block;
+}
+
+.bg-container {
+    width: 100%;
+    vertical-align: baseline;
+    font-family: var(--title-font);
+    margin-top: -12px;
+    background-color: var(--white-color);
+    z-index: 1;
+    align-items: center;
+    height: 722px;
+}
+
+.small-rectangle {
+    height: 150px;
+    width: 250px;
+    transform: rotate(45deg);
+    margin: -3rem 0% -2.5rem -6rem;
+    background-color: var(--white-color);
+}
+
+.bgpic {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    bottom: 0;
+    border-style: none;
+    right: 7.3vw;
+    margin-right: -7.4%;
+    top: -3rem;
+    z-index: 1;
+}
+
+.container-shape {
+    position: relative;
+    margin-top: 60%;
+    /* need to make it responsive here! */
+}
+
+
+/* ##### Maps Title #### */
+
+.maps-title {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 80px;
+    left: 14%;
+    margin-top: 12.5rem;
+    color: var(--base-color);
+    z-index: 3;
+}
+
+.maps-title-shadow {
+    position: relative;
+    top: 10rem;
+    left: 10%;
+    width: 30%;
+    padding-right: 10%;
+}
+
+.maps-title-shadow h1 {
+    position: absolute;
+    opacity: 7%;
+    color: var(--base-color);
+    left: 1%;
+    font-size: 120px;
+    z-index: 2;
+}
+
+
+/* ##### Maps Text #### */
+
+.text-maps {
+    position: absolute;
+    left: 10%;
+    padding-top: 20rem;
+    right: 50%;
+    z-index: 2;
+    color: var(--base-color);
+}
+
+.text-maps h2 {
+    font-size: 30px;
+    font-weight: var(--font-semibold);
+    padding-bottom: 30px;
+}
+
+.text-maps h3 {
+    font-weight: var(--font-regular);
+    padding-bottom: 10px;
+    text-shadow: 0 0 2px var(--secondbase-color);
+}
+
+
+/* ################################# GUNS SECTION */
+
+.bg-guns {
+    background: url('./scr/guns-bg.jpg');
+    background-size: cover;
+    width: 150%;
+    position: absolute;
+    margin: 0 auto;
+    left: -15rem;
+    margin-top: -20rem;
+    opacity: 7%;
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    transform: rotate(-15deg);
+    height: 1500px;
+    display: block;
+}
+
+
+/* ##### Background Lines & Texts #### */
+
+.left-line-guns {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    left: 10%;
+    height: 1100px;
+}
+
+.right-line-guns {
+    border: 1px solid var(--white-color);
+    transform: rotate(0deg);
+    position: absolute;
+    right: 10%;
+    margin-top: -12.7rem;
+    height: 950px;
+}
+
+.right-line-text-guns {
+    transform: rotate(-90deg);
+    top: 1000px;
+    position: absolute;
+    font-weight: var(--font-regular);
+    letter-spacing: 0.25em;
+    line-height: 30px;
+    left: -40px;
+    color: var(--white-color);
+}
+
+
+/* ##### Main Title + horizontal line #### */
+
+.main-title-guns {
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 80px;
+    left: 15%;
+    margin-top: 6rem;
+    color: var(--white-color);
+    z-index: 3;
+}
+
+.shadow-title-guns h1 {
+    position: absolute;
+    opacity: 7%;
+    color: var(--white-color);
+    left: 1%;
+    top: 60px;
+    font-size: 120px;
+    z-index: 2;
+}
+
+.shadow-title-guns {
+    position: relative;
+    border-bottom: 2px solid var(--white-color);
+    padding-top: 200px;
+    left: 10%;
+    width: 30%;
+    padding-right: 10%;
+}
+
+
+/* ##### Section text #### */
+
+.text-guns {
+    position: absolute;
+    left: 12%;
+    padding-top: 50px;
+    right: 50%;
+    color: var(--white-color);
+}
+
+.text-guns h2 {
+    font-size: 30px;
+    font-weight: var(--font-semibold);
+    padding-bottom: 30px;
+}
+
+.text-guns h3 {
+    font-weight: var(--font-regular);
+    padding-bottom: 300px;
 }
