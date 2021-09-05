@@ -420,7 +420,7 @@ button:hover {
     position: relative;
     background-image: linear-gradient(0deg, rgba(255, 70, 84, 0.89) 48%, rgba(255, 70, 84, 0.89) 93%), url(scr/about.jpg);
     background-size: cover;
-    height: 1300px;
+    height: 1500px;
     z-index: 1;
     display: block
 }
@@ -576,24 +576,26 @@ button:hover {
 }
 
 .triangle-2 {
+    z-index: -1;
+    position: absolute;
     display: block;
     margin-left: auto;
-    margin-right: -5.6rem;
-    margin-top: 4rem;
-    height: 150px;
+    left: 92%;
+    margin-top: -8%;
+    height: 200px;
     width: 250px;
     transform: rotate(45deg);
     background-color: var(--main-color);
 }
 
 
-/* ################################# AGENTS SECTION */
+/* ################################# AGENTS SECTION  ################# */
 
 .bg-agents {
     background: url('./scr/Ascent.jpg');
     background-size: cover;
     width: 100%;
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     left: 0;
     margin-top: -15rem;
@@ -823,7 +825,7 @@ button:focus {
 */
 
 
-/* ################################# MAPS SECTION */
+/* ################################# MAPS SECTION  ########################## */
 
 
 /* ##### Maps background #### */
@@ -1029,4 +1031,19 @@ button:focus {
 .text-guns h3 {
     font-weight: var(--font-regular);
     padding-bottom: 300px;
+}
+
+/* #### Scroll Bar #### */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    opacity: 0;
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--secondmain-color);
 }
