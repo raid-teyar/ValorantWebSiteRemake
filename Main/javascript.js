@@ -4,6 +4,9 @@ window.addEventListener('scroll', function() {
     particles.style.top = (scrolling + 300) * 0.5 + 'px';
 });
 
+var progerssbar = document.getElementById('progressbar');
+var totalhight = document.body.scrollHeight - window.innerHeight;
+
 $(window).scroll(function() {
     if ($(window).scrollTop()) {
         $("header").addClass("black");
@@ -12,4 +15,7 @@ $(window).scroll(function() {
         $("header").removeClass("black");
         $("a").removeClass("black");
     }
+    var progresshight = (window.pageYOffset / totalhight) * 78;
+    progerssbar.style.height = progresshight + "%";
 });
+
