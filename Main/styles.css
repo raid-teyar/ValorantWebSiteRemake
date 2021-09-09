@@ -72,10 +72,8 @@ body {
     margin-top: 1%;
     opacity: 25%;
     width: 100%;
-    position: fixed;
+    position: fixed; 
 }
-
-
 /* ##### MAIN PAGE TEXTS #### */
 
 .main-text {
@@ -424,7 +422,6 @@ button:hover {
     z-index: 1;
     display: block
 }
-
 .bg-about {
     background: url('./scr/about.jpg') no-repeat center;
     background-size: cover;
@@ -483,8 +480,33 @@ button:hover {
     top: 100px;
     color: var(--base-color);
     z-index: 3;
+}                   
+            /*--------------Scroll text animation--------------*/
+.main-title h1{
+position: relative;
+transition: 0.5s;
+transform-origin: left;
+transform:scaleX(0) ;
 }
-
+.main-title h1[data-scroll="in"]{
+transform:scaleX(1) ;
+}
+.main-title h1[data-scroll="in"]:before{
+transform:scaleX(0);
+transition-delay: 0.5s;
+}
+.main-title h1:before{
+content: '';
+position: absolute;
+left: 0;
+top: 0 ;
+width: 110%;
+height: 90%;
+background:#101822;
+transform-origin: right;
+transition: 0.5s;
+}
+    /*----------------------------*/
 .shadow-title h1 {
     position: absolute;
     opacity: 7%;
@@ -512,6 +534,32 @@ button:hover {
     padding-right: 50%;
     color: var(--white-color);
 }
+        /*--------------Scroll text animation--------------*/
+.text-about h2 {
+    position: relative;
+    transition: 0.5s;
+    transform-origin: left;
+    transform:scaleX(0) ;
+    }
+    .text-about h2[data-scroll="in"]{
+    transform:scaleX(1) ;
+    }
+    .text-about h2[data-scroll="in"]:before{
+    transform:scaleX(0);
+    transition-delay: 0.5s;
+    }
+    .text-about h2:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width: 49%;
+    height: 60%;
+    background:#101822 ;
+    transform-origin: right;
+    transition: 0.5s; 
+}
+        /*----------------------------------------*/
 
 .text-about h2 {
     font-size: 2rem;
@@ -651,6 +699,32 @@ button:hover {
     color: var(--white-color);
     z-index: 3;
 }
+    /*--------------Scroll text animation--------------*/
+.main-title-agents h1 { 
+    position: relative;
+    transition: 0.5s;
+    transform-origin: left;
+    transform:scaleX(0) ;
+    }
+    .main-title-agents h1[data-scroll="in"]{
+    transform:scaleX(1) ;
+    }
+    .main-title-agents h1[data-scroll="in"]:before{
+    transform:scaleX(0);
+    transition-delay: 0.5s;
+    }
+    .main-title-agents h1:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width: 110%;
+    height: 95%;
+    background:#FF4655 ;
+    transform-origin: right;
+    transition: 0.5s; 
+}
+        /*########################################*/
 
 .shadow-title-agents h1 {
     position: absolute;
@@ -698,7 +772,32 @@ button:hover {
     font-weight: var(--font-semibold);
     padding-bottom: 30px;
 }
-
+        /*------------------Scroll animation text------------------*/
+.text-agents h2{ 
+    position: relative;
+    transition: 0.5s;
+    transform-origin: left;
+    transform:scaleX(0) ;
+    }
+    .text-agents h2[data-scroll="in"]{
+    transform:scaleX(1) ;
+    }
+    .text-agents h2[data-scroll="in"]:before{
+    transform:scaleX(0);
+    transition-delay: 0.4s;
+    }
+    .text-agents h2:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width: 80%;
+    height: 80%;
+    background:#FF4655 ;
+    transform-origin: right;
+    transition: 0.3s; 
+    }
+        /*-----------------------------------------*/
 .text-agents h3 {
     font-weight: var(--font-regular);
     padding-bottom: 300px;
@@ -886,7 +985,32 @@ button:focus {
     color: var(--base-color);
     z-index: 3;
 }
-
+        /*------------------Scroll animation text------------------*/
+.maps-title h1{ 
+    position: relative;
+    transition: 0.5s;
+    transform-origin: left;
+    transform:scaleX(0) ;
+    }
+    .maps-title h1[data-scroll="in"]{
+    transform:scaleX(1) ;
+    }
+    .maps-title h1[data-scroll="in"]:before{
+    transform:scaleX(0);
+    transition-delay: 0.4s;
+    }
+    .maps-title h1:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width: 105%;
+    height: 90%;
+    background:#FF4655 ;
+    transform-origin: right;
+    transition: 0.3s; 
+    }
+            /*------------------------------------------*/
 .maps-title-shadow {
     position: relative;
     top: 10rem;
@@ -992,6 +1116,32 @@ button:focus {
     z-index: 3;
 }
 
+        /*------------------Scroll animation text------------------*/
+.main-title-guns h1 {
+    position: relative;
+    transition: 0.5s;
+    transform-origin: left;
+    transform:scaleX(0) ;
+    }
+    .main-title-guns h1[data-scroll="in"]{
+    transform:scaleX(1) ;
+    }
+    .main-title-guns h1[data-scroll="in"]:before{
+    transform:scaleX(0);
+    transition-delay: 0.4s;
+    }
+    .main-title-guns h1:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    width: 105%;
+    height: 90%;
+    background:#FF8189 ;
+    transform-origin: right;
+    transition: 0.3s; 
+    }
+            /*----------------------------------------------------*/
 .shadow-title-guns h1 {
     position: absolute;
     opacity: 7%;
