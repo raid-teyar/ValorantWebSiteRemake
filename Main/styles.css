@@ -1054,7 +1054,9 @@ button:focus {
 
 
 /* ################################# GUNS SECTION */
-
+.guns{
+    height: 1500px; /*  repositioner guns part rapport  le :footer  */
+}
 .bg-guns {
     background: url('./scr/guns-bg.jpg');
     background-size: cover;
@@ -1239,4 +1241,31 @@ button:focus {
     height: 100%;
     background: linear-gradient(to top, var(--main-color), var(--secondmain-color));
     filter: blur(30px);
+}
+
+
+
+/* ####################### Footer###########33333333333*/
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #ff4656d5 ;
+    
+    
+}
+footer .large{
+    width: 30%;
+    
+    font-family: var(--valorant);
+    font-size:50px;
+    border-bottom:2px solid  aliceblue ;
+    padding-top: 50px;
+    padding-left: 50px; 
+}
+
+footer p{
+    color: #ece8e1;
+   
+
 }
