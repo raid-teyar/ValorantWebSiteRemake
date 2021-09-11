@@ -631,7 +631,7 @@ content: '';
 position: absolute;
 left: 0;
 top: 0 ;
-width: 110%;
+width: 112%;
 height: 90%;
 background:#101822;
 transform-origin: right;
@@ -684,11 +684,11 @@ transition: 0.5s;
     position: absolute;
     left: 0;
     top: 0 ;
-    width: 53%;
-    height: 60%;
+    width: 58.3%;
+    height: 60.5%;
     background:#101822 ;
     transform-origin: right;
-    transition: 0.5s; 
+    transition: 0.4s; 
 }
         /*----------------------------------------*/
 
