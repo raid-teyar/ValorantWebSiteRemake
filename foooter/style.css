@@ -157,8 +157,8 @@ color: #18212A;
 
 
 
-
 .text3 h3{
+    content: '';
     position: absolute;
 width: 101px;
 height: 23px;
@@ -179,6 +179,7 @@ color: #18212A;
 
 
 }
+
 .text3 h4{
     margin-top: 65px;
     position: absolute;
@@ -215,6 +216,27 @@ line-height: 23px;
 
 color: #18212A;
 }
+
+
+
+
+.text3 h3:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s ;
+}
+.text3 h4:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s;
+}
+.text3 h5:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s;
+}
+
+
 .copy{
     width: 100%;
     margin-top:1185px ;   /*vide entre photo et div de copyR ==null */
@@ -238,19 +260,15 @@ color: #18212A;
     font-size: small;
 }
 
-.text3 a h3:hover{
-    color: #ec407a;
-    border-bottom: 2px solid #ff4656d5;
-    transition: width .3s;
-}
-.text3 a h4:hover{
-    color: #ec407a;
-    border-bottom: 2px solid #ff4656d5;
-    transition: width .3s;
-}
-.text3 a h5:hover{
-    color: #ec407a;
-    border-bottom: 2px solid #ff4656d5;
-    transition: width .3s;
-}
 
+/*.text3 a h3::after{
+content: '';
+display: block;
+width: 0;
+height: 2px;
+transition: width .3s;
+}
+.text3 a h3:hover:after{
+    width: 100%;
+    transition: width .3s;
+}*/
