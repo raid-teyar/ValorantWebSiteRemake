@@ -69,7 +69,7 @@ background: url('image 7.jpg');
 .text2 h4{
     position: absolute;
 width: 100px;
-height: 900px;
+height:100px;
 left: 441px;
 top: 880px;
 
@@ -82,12 +82,90 @@ line-height: 20px;
 color: #18212A;
 }
 
+/* #######social-icon######33*/
+.social-info{
+    
+       
+        left: 350px;
+        top: 90px;
+        position: absolute;
+        padding-top: 950px;
+}
+
+.social-icons {
+    padding:0 ;
+    list-style:none;/*supp les markes des liste*/
+    margin: 0.5em;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 20px;
+  }
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+  }
+
+  .social-icons a {
+    display: inline-block;
+  }
+  .social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);/*care (border-radus)*/
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #ff4656d5, #c648c8);
+    transition: all 265ms ease-out;
+  }
+  .social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+  }
+  .social-icons a:hover i {
+     transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+   
+  }
+  .social-icons a.social-square:before {
+    background: linear-gradient(45deg, #ff4656d5, #ae31d9);
+    border-radius: 10%;
+  }
+  .social-icons a.social-square:hover:before {
+    transform: rotate(-180deg); /*rotation*/
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: scale(-180deg);
+    border-radius: 100%;
+  }
+  .social-icons a.social-square:hover i {
+    transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    color: #fff;
+    transform: scale(1.6);
+    -webkit-text-fill-color: rgb(250, 245, 245);
+  }
+
+
+
+
 .text3 h3{
     position: absolute;
 width: 101px;
 height: 23px;
 left: 150px;
 top: 1100px;
+margin-top: 62px;
+
 
 font-family: Source Sans Pro;
 font-style: normal;
@@ -98,8 +176,11 @@ line-height: 23px;
 
 
 color: #18212A;
+
+
 }
 .text3 h4{
+    margin-top: 65px;
     position: absolute;
 width: 110px;
 height: 23px;
@@ -117,6 +198,7 @@ line-height: 23px;
 color: #18212A;
 }
 .text3 h5{
+    margin-top: 70px;
     position: absolute;
 width: 124px;
 height: 23px;
@@ -132,5 +214,43 @@ line-height: 23px;
 
 
 color: #18212A;
+}
+.copy{
+    width: 100%;
+    margin-top:1185px ;   /*vide entre photo et div de copyR ==null */
+    height: 100px;
+    background-color: #18212A;
+    position: absolute;
+}
+.copy-right{
+    position: absolute;
+    margin-top: 1185px;   
+    color: #fff;
+    left: 35%;
+    
+}
+.copy-right p:first-child{
+    margin-top:30px;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
+}
+.copy-right p{
+    font-size: small;
+}
+
+.text3 a h3:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s;
+}
+.text3 a h4:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s;
+}
+.text3 a h5:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    transition: width .3s;
 }
 
