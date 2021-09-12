@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('http://fonts.cdnfonts.com/css/valorant');
 :root {
     /* ##### COLORS #### */
@@ -1376,28 +1377,313 @@ button:focus {
 
 
 
-/* ####################### Footer###########33333333333*/
+/* ####################### Footer###########33333333333
+}*/
+.footer{
+    position:relative;
+    height: 1200px;
+}
+.footer img{
+    position: static;
+width: 2125px;
+height: 1200px;
+left: 205px;
+top: 1px;
 
-footer{
+background: url('Footer 1.jpg');
+}
+
+.footer .second{
+    position:absolute;
+    width: 187px;
+height: 187px;
+left: 11.9%;
+right: 62.71%;
+margin-top: 248px;
+
+/*
+background: url('val_logo_R.jpg');
+z-index: -1;*/
+
+}
+
+
+.third img{
+    position: absolute;
+width: 197px;
+height: 40px;
+left: 214px;
+top: 400px;
+
+background: url('Val_text_R.jpg');
+}
+
+
+
+.fourth img{
+    position: absolute;
+width: 228px;
+height: 73px;
+left: 158px;
+top: 600px;
+
+background: url('image 8.jpg');
+}
+
+
+
+.text h2{
+    position: absolute;
+width: 498px;
+height: 555px;
+left:  100px;/*228*/
+top: 760px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 1500;
+font-size: 30px;
+ 
+
+color: #18212A;
+}
+.five img{
+    position: absolute;
+    width: 65px;
+    height: 97px;
+    left: 158px;
+    top: 900px;
+    
+     
+
+background: url('image 7.jpg');
+}
+.text2 h4{
+    position: absolute;
+width: 100px;
+height:100px;
+left: 225px;
+top: 900px;
+
+font-family: Merriweather;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+
+color: #18212A;
+}
+
+/* #######social-icon######33*/
+.social-info{
+    
+       
+        left: 12%;
+       bottom: 70px;
+       /*padding-bottom: 600px;*/
+         position: absolute;
+       
+    
+}
+
+.social-icons {
+    position: static;
+    margin-top:300px ;
+    list-style:none;/*supp les markes des liste*/
+    margin: 0.5em;
+    /*margin-bottom: 8000px;*/
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 20px;
+  }
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+  }
+
+  .social-icons a {
+    display: inline-block;
+  }
+  .social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);/*care (border-radus)*/
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #ff4656d5, #c648c8);
+    transition: all 265ms ease-out;
+  }
+  .social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+  }
+  .social-icons a:hover i {
+     transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+   
+  }
+  .social-icons a.social-square:before {
+    background: linear-gradient(45deg, #ff4656d5, #ae31d9);
+    border-radius: 10%;
+  }
+  .social-icons a.social-square:hover:before {
+    transform: rotate(-180deg); /*rotation*/
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: scale(-180deg);
+    border-radius: 100%;
+  }
+  .social-icons a.social-square:hover i {
+    transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    color: #fff;
+    transform: scale(1.6);
+    -webkit-text-fill-color: rgb(250, 245, 245);
+  }
+
+
+
+.text3 h3{
+    content: '';
+    position: absolute;
+width: 101px;
+height: 23px;
+left: 8%;
+top: 1091px;
+margin-top: 62px;
+
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+ 
+
+
+color: #18212A;
+padding-right: 50px;
+transition: width .3s;
+
+}
+
+.text3 h4{
+    margin-top: 65px;
+    position: absolute;
+width: 110px;
+height: 23px;
+left: 24%;
+top: 1088px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+ 
+
+
+color: #18212A;
+padding-right: 50px;
+transition: width .3s;
+}
+.text3 h5{
+    
+    margin-top: 70px;
+    position: absolute;
+width: 124px;
+height: 23px;
+left: 37%;
+top: 1082px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+ 
+
+
+color: #18212A;
+padding-right: 50px;
+transition: width .3s;
+}
+
+
+
+
+.text3 h3:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    /*transition: width .3s ;*/ 
+       
+       width: 5px;
+ 
+    
+}
+.text3 h4:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    /*transition: width .3s;*/
+    width: 5px;
+}
+.text3 h5:hover{
+    color: #ec407a;
+    border-bottom: 2px solid #ff4656d5;
+    /*transition: width .3s;*/
+    width: 5px;
+}
+
+
+.copy{
     width: 100%;
-    height: 500px;
-    background-color: #ff4656d5 ;
-    
+      /*margin-top:1185px ; vide entre photo et div de copyR ==null */
+    height: 100px;
+    background-color: #18212A;
+    position: absolute;
+}
+.copy-right{
+    position: absolute;  
+    color: #fff;
+    /*vide entre photo et div de copyR ==null */
+    left: 35%;
     
 }
-footer .large{
-    width: 30%;
-    
-    font-family: var(--valorant);
-    font-size:50px;
-    border-bottom:2px solid  aliceblue ;
-    padding-top: 50px;
-    padding-left: 50px; 
+.copy-right p:first-child{
+    margin-top:30px;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
+}
+.copy-right p{
+    font-size: small;
+    font-family: Source Sans Pro ;
+    color: antiquewhite;
+    padding-bottom:95px;
 }
 
-footer p{
-    color: #ece8e1;  
+
+/*.text3 a h3::after{
+content: '';
+display: block;
+width: 0;
+height: 2px;
+transition: width .3s;
 }
+.text3 a h3:hover:after{
+    width: 100%;
+    transition: width .3s;
+}*/
+
 /* ################--Animated background--################ */
 
     .elements div {
