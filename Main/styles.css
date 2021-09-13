@@ -254,6 +254,7 @@ body {
     width: 100%;
     top: 0;
     bottom: 0;
+    z-index: -1;
     
 }
  
@@ -262,7 +263,7 @@ body {
     text-align: right;
     width: 150px;
     bottom: 15%;
-    left: 85%;
+    right: 2%;
     font-size: 1rem;
     font-weight: var(--font-regular);
     letter-spacing: 0.3rem;
@@ -271,7 +272,7 @@ body {
 
 .vertical-text .left {
     
-    margin: 30% 0% 0% -7%;
+    margin: 30% 0% 0% 0%;
     font-size: 0.8rem;
     font-weight: var(--font-regular);
     letter-spacing: 0.3rem;
@@ -282,10 +283,12 @@ body {
 
 .triangle {
     position: absolute;
+    z-index: -2;
     height: 150px;
     width: 250px;
     transform: rotate(45deg);
-    margin: 11rem 0 -3rem -6rem;
+    left: -100px;
+    top: -100px;
     background-color: var(--main-color);
 }
 
@@ -501,7 +504,7 @@ a.black {
     color: var(--base-color);
 }
 
-button {
+/*.mainbtn {
     position: absolute;
     border: none;
     z-index: 10;
@@ -520,12 +523,12 @@ button {
     transition: 300ms;
 }
 
-button:hover {
+.mainbtn:hover {
     width: 65%;
     background-image: linear-gradient(to left bottom, --main-color, --secondmain-color);
     box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 40px var(--secondmain-color);
 }
-
+*
 
 /* ##### LINE EFFECT FOR NAVBAR  #### */
 
@@ -577,7 +580,7 @@ button:hover {
     position: absolute;
     left: 10%;
     top: 200px;
-    height: 1100px;
+    height: 1070px;
 }
 
 .right-line {
@@ -712,7 +715,7 @@ transition: 0.5s;
     padding-top: 2rem;
     text-align: center;
     left: 25%;
-    line-height: 9rem;
+    line-height: 7.5rem;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--white-color);
@@ -721,15 +724,15 @@ transition: 0.5s;
 
 .text-numbers-about li {
     position: relative;
-    right: 22%;
+    right: 22.5%;
     z-index: 3;
     font-weight: var(--font-bold);
     color: var(--base-color);
     list-style: none;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    line-height: 9rem;
+    line-height: 7.5rem;
 }
 
 .text-numbers-about li:nth-child(1) {
@@ -758,10 +761,8 @@ transition: 0.5s;
 .triangle-2 {
     z-index: -1;
     position: absolute;
-    display: block;
-    margin-left: auto;
-    left: 92%;
-    margin-top: -8%;
+    right: -100px;
+    margin-top: -100px;
     height: 200px;
     width: 250px;
     transform: rotate(45deg);
@@ -774,16 +775,15 @@ transition: 0.5s;
 .bg-agents {
     background: url('./scr/Ascent.jpg');
     background-size: cover;
-    width: 100%;
-    position: relative;
+    width: 180%;
+    position: absolute;
     margin: 0 auto;
     left: 0;
     margin-top: -15rem;
     opacity: 7%;
     z-index: -1;
     mix-blend-mode: color-dodge;
-    height: 1360px;
-    display: block;
+    height: 150%;
     object-fit: cover;
 }
 
@@ -932,26 +932,16 @@ transition: 0.5s;
         /*-----------------------------------------*/
 .text-agents h3 {
     font-weight: var(--font-regular);
-    padding-bottom: 300px;
 }
 
 
-/* ##### Button after text for AGENTS #### 
+/* ##### Button after text for AGENTS #### */
 
 .container-agents {
-    display: inline-flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 15%;
-    height: 100vh;
-    /*
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    margin-left: 15%;
-    margin-top: 750px;
     z-index: 6;
-    
+    display: inline-flex;
+    top: 0;
+    margin: 100px;
 }
 
 button:focus {
@@ -963,10 +953,12 @@ button:focus {
     font-family: var(--valorant);
     font-size: 25px;
     font-weight: bold;
+    left: 0;
+    width: 100%;
     border: 1px solid var(--white-color);
     padding: 1.3rem 4rem;
     background: url('https://svgshare.com/i/Kyn.svg');
-    background-size: 130%;
+    background-size: 240%;
     background-position: 500%;
     background-repeat: no-repeat;
     position: relative;
@@ -975,6 +967,12 @@ button:focus {
     transition-property: border, background-position, color;
     background-color: var(--white-color);
     color: var(--base-color);
+}
+
+.button-borders-agents {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
 }
 
 .primary-button-agents:hover {
@@ -1008,11 +1006,7 @@ button:focus {
     bottom: -1px;
 }
 
-.button-borders-agents {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-}
+
 
 .button-borders-agents:before {
     position: absolute;
@@ -1053,7 +1047,7 @@ button:focus {
     bottom: -0.4rem;
     transition: 0.05s ease-in-out;
 }
-*/
+
 
 
 /* ################################# MAPS SECTION  ########################## */
@@ -1073,7 +1067,8 @@ button:focus {
     background-color: var(--white-color);
     z-index: 1;
     align-items: center;
-    height: 722px;
+    height: 1000px;
+    
 }
 
 .small-rectangle {
@@ -1089,7 +1084,7 @@ button:focus {
     display: block;
     position: absolute;
     width: auto;
-    height: 100%;
+    height: auto;
     bottom: 0;
     border-style: none;
     right: 7.3vw;
@@ -1183,6 +1178,123 @@ button:focus {
     padding-bottom: 10px;
     text-shadow: 0 0 2px var(--secondbase-color);
 }
+
+/* ########## Maps Button ###### */
+
+
+.container-maps {
+    position: relative;
+    z-index: 6;
+    display: inline-flex;
+    top: 0;
+    margin: 120px;
+    margin-left: 200px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.primary-button-maps {
+    cursor: pointer;
+    font-family: var(--valorant);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white-color);
+    left: 0;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    padding: 1.3rem 4rem;
+    background: url('https://svgshare.com/i/Kyn.svg');
+    background-size: 240%;
+    background-position: 500%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    transition-property: border, background-position, color;
+    background-color: var(--base-color);
+}
+
+.button-borders-maps {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.primary-button-maps:hover {
+    border: 1px solid var(--main-color);
+    background-position: 50%;
+    color: var(--base-color);
+}
+
+.primary-button-maps:before {
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    width: 0.2rem;
+    height: 0.2rem;
+    left: -1px;
+    top: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button-maps:hover:before {
+    background-color: var(--main-color);
+}
+
+.primary-button-maps:after {
+    content: "";
+    position: absolute;
+    background-color: var(--white-color);
+    width: 0.4rem;
+    height: 0.4rem;
+    right: -1px;
+    bottom: -1px;
+}
+
+
+
+.button-borders-maps:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + .9rem);
+    height: 35%;
+    left: -0.5rem;
+    top: -0.8rem;
+    border: 1px solid var(--base-color);
+    border-bottom: 0px;
+    opacity: 0.3;
+}
+
+.button-borders-maps:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + .9rem);
+    height: 35%;
+    left: -0.5rem;
+    bottom: -0.8rem;
+    border: 1px solid var(--base-color);
+    border-top: 0px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.button-borders-maps:active,
+.button-borders-maps:focus {
+    outline: none;
+}
+
+.button-borders-maps:active::before {
+    top: -0.4rem;
+    transition: 0.05s ease-in-out;
+}
+
+.button-borders-maps:active::after {
+    bottom: -0.4rem;
+    transition: 0.05s ease-in-out;
+}
+
 
 
 /* ################################# GUNS SECTION */
@@ -1314,7 +1426,7 @@ button:focus {
 
 .text-guns h3 {
     font-weight: var(--font-regular);
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 
 /* #### Scroll Bar #### */
