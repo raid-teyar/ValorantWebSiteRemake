@@ -1299,7 +1299,7 @@ button:focus {
 
 /* ################################# GUNS SECTION */
 .guns{
-    height: 1500px; /*  repositioner guns part rapport  le :footer  */
+    height: 1388px; /*  repositioner guns part rapport  le :footer  */
 }
 .bg-guns {
     background: url('./scr/guns-bg.jpg');
@@ -1668,7 +1668,7 @@ color: #18212A;
 .text3 h3{
     content: '';
     position: absolute;
-width: 101px;
+width: auto;
 height: 23px;
 left: 8%;
 top: 1091px;
@@ -1692,7 +1692,7 @@ transition: width .3s;
 .text3 h4{
     margin-top: 65px;
     position: absolute;
-width: 110px;
+width: auto;
 height: 23px;
 left: 24%;
 top: 1088px;
@@ -1713,7 +1713,7 @@ transition: width .3s;
     
     margin-top: 70px;
     position: absolute;
-width: 124px;
+width: auto;
 height: 23px;
 left: 37%;
 top: 1082px;
@@ -1739,21 +1739,20 @@ transition: width .3s;
     border-bottom: 2px solid #ff4656d5;
     /*transition: width .3s ;*/ 
        
-       width: 5px;
- 
+    width: auto; 
     
 }
 .text3 h4:hover{
     color: #ec407a;
     border-bottom: 2px solid #ff4656d5;
     /*transition: width .3s;*/
-    width: 5px;
+    /* width: 5px;*/ 
 }
 .text3 h5:hover{
     color: #ec407a;
     border-bottom: 2px solid #ff4656d5;
     /*transition: width .3s;*/
-    width: 5px;
+    /* width: 5px;*/ 
 }
 
 
