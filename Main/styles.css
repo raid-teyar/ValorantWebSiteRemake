@@ -1502,7 +1502,7 @@ height: 1200px;
 left: 205px;
 top: 1px;
 
-background: url('Footer 1.jpg');
+/*background: url('./scr/Footer.png');*/
 }
 
 .footer .second{
@@ -1513,8 +1513,11 @@ left: 11.9%;
 right: 62.71%;
 margin-top: 248px;
 
+
+
+
+background: url('./scr/val_logo_R.jpg');
 /*
-background: url('val_logo_R.jpg');
 z-index: -1;*/
 
 }
@@ -1527,7 +1530,7 @@ height: 40px;
 left: 214px;
 top: 400px;
 
-background: url('Val_text_R.jpg');
+background: url('./scr/Val_text_R.jpg');
 }
 
 
@@ -1539,7 +1542,7 @@ height: 73px;
 left: 158px;
 top: 600px;
 
-background: url('image 8.jpg');
+background: url('./scr/image 8.jpg');
 }
 
 
@@ -1568,7 +1571,7 @@ color: #18212A;
     
      
 
-background: url('image 7.jpg');
+background: url('./scr/image 7.jpg');
 }
 .text2 h4{
     position: absolute;
