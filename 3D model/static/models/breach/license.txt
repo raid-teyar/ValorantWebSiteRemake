@@ -1,0 +1,11 @@
+Model Information:
+* title:	Breach - Valorant Agent 3D model Animation
+* source:	https://sketchfab.com/3d-models/breach-valorant-agent-3d-model-animation-11ae7fb5c92d48118cfe4502a43b5faf
+* author:	RUBYdacherry (https://sketchfab.com/baiche.medamine)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Breach - Valorant Agent 3D model Animation" (https://sketchfab.com/3d-models/breach-valorant-agent-3d-model-animation-11ae7fb5c92d48118cfe4502a43b5faf) by RUBYdacherry (https://sketchfab.com/baiche.medamine) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
