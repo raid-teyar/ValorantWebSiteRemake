@@ -1694,7 +1694,7 @@ transition: width .3s;
 .copy{
     width: 100%;
       /*margin-top:1185px ; vide entre photo et div de copyR ==null */
-    height: 250px;
+    height: 100px;
     background-color: #18212A;
     position: absolute;
 }
@@ -1714,6 +1714,7 @@ transition: width .3s;
     font-family: Source Sans Pro ;
     color: antiquewhite;
     padding-bottom:95px;
+    margin-left: 190px;
 }
 
 
