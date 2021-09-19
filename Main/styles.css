@@ -1429,7 +1429,7 @@ button:focus {
 }
 .footer img{
 
-    position: ab;
+    position: static;
 width: 2125px;
 height: 1200px;
 left: 205px;
@@ -1440,9 +1440,9 @@ top: 1px;
 .footer .second{
     position:absolute;
 
-    width: 187px;
-height: 187px;
-left: 11.9%;/*11.9%  150px  11.9%*/
+    width: 250px;
+height: 250px;
+left:150px;/*11.9%  150px  11.9%*/
 right: 62.71%;
 margin-top: 248px;
 
