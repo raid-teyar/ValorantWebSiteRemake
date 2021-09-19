@@ -1956,10 +1956,10 @@ transition: width .3s;
 }
 
 
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
 
     /* landing */
-
+/*
     body{
         font-size: 0.9rem;
     }
@@ -1993,7 +1993,7 @@ transition: width .3s;
     }
 
     /* About */
-
+/*
     .numbers-about{
         visibility: collapse;
     }
@@ -2013,7 +2013,7 @@ transition: width .3s;
     }
 
     /* agents */
-
+/*
     .agent{
         visibility: collapse;
     }
@@ -2068,7 +2068,7 @@ transition: width .3s;
     }
 
     /* maps */
-
+/*
     .text-maps{
         width: 70%;
     }
@@ -2082,6 +2082,7 @@ transition: width .3s;
     }
 
     /* guns */
+    /*
     .guns{
         height: 1100px;
     }
@@ -2091,7 +2092,7 @@ transition: width .3s;
     }
 
     /* footer */
-
+/*
     .footer img{
         right: 10%;
     }
@@ -2193,6 +2194,15 @@ transition: width .3s;
               width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
               height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+@keyframes border-transform{
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
 
 .menu-icon:checked ~ .nav {
   animation-play-state: paused;
@@ -2280,5 +2290,5 @@ transition: width .3s;
   transition-delay: 1560ms;
 }
 .menu-icon:checked ~ .nav ul li:nth-child(4){
-  transition-delay: 1640ms;
+    transition-delay: 1640ms; 
 }
