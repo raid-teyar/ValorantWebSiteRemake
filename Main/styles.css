@@ -1225,8 +1225,10 @@ button:focus {
 /* ################################# GUNS SECTION */
 .guns{
     height: 1388px; /*  repositioner guns part rapport  le :footer  */
+    z-index: 1;
 }
 .bg-guns {
+    /*background-color: #18212a;*/
     background: url('./scr/guns-bg.jpg');
     background-size: cover;
     width: 150%;
@@ -1417,32 +1419,42 @@ button:focus {
 /* ####################### Footer###########33333333333
 }*/
 .footer{
-    position:relative;
+    position: relative;
     height: 1200px;
+     /* position: -webkit-sticky;
+    position:sticky;
+    bottom: 0;
+    left: 0;
+    z-index: -999;*/
 }
 .footer img{
-    position: ab;
-    width: 2125px;
-    height: 1200px;
-    left: 205px;
-    top: 1px;
 
+    position: static;
+width: 2125px;
+height: 1200px;
+left: 205px;
+top: 1px;
 /*background: url('./scr/Footer.png');*/
 }
 
 .footer .second{
     position:absolute;
-    width: 187px;
-    height: 187px;
-    left: 11.9%;
-    right: 62.71%;
-    margin-top: 248px;
-    background: url('./scr/val_logo_R.jpg');
+
+    width: 250px;
+height: 250px;
+left:150px;/*11.9%  150px  11.9%*/
+right: 62.71%;
+margin-top: 248px;
+
+
+
+
+background: url('./scr/new-valorant-logo.png');
 /*
 z-index: -1;*/
 }
 
-
+/*   ancien text-logo
 .third img{
     position: absolute;
 width: 197px;
@@ -1453,7 +1465,7 @@ top: 400px;
 background: url('./scr/Val_text_R.jpg');
 }
 
-
+*/
 
 .fourth img{
     position: absolute;
@@ -1593,7 +1605,7 @@ color: #18212A;
     position: absolute;
 width: auto;
 height: 23px;
-left: 8%;
+left: 70px;
 top: 1091px;
 margin-top: 62px;
 
@@ -1617,7 +1629,7 @@ transition: width .3s;
     position: absolute;
 width: auto;
 height: 23px;
-left: 24%;
+left: 240px;
 top: 1088px;
 
 font-family: Source Sans Pro;
@@ -1638,7 +1650,7 @@ transition: width .3s;
     position: absolute;
 width: auto;
 height: 23px;
-left: 37%;
+left: 415px;
 top: 1082px;
 
 font-family: Source Sans Pro;
@@ -1682,7 +1694,7 @@ transition: width .3s;
 .copy{
     width: 100%;
       /*margin-top:1185px ; vide entre photo et div de copyR ==null */
-    height: 250px;
+    height: 100px;
     background-color: #18212A;
     position: absolute;
 }
@@ -1702,6 +1714,7 @@ transition: width .3s;
     font-family: Source Sans Pro ;
     color: antiquewhite;
     padding-bottom:95px;
+    margin-left: 190px;
 }
 
 
