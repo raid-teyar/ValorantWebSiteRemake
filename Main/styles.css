@@ -869,7 +869,7 @@ transition: 0.5s;
     z-index: 6;
     display: inline-flex;
     top: 0;
-    margin: 100px;
+    margin: 80px;
 }
 
 button:focus {
@@ -1893,7 +1893,9 @@ transition: width .3s;
         top: 120%;
      }
 }
+@media screen and (max-width: 1900px) {
 
+}
 @media screen and (max-width: 1800px) {
     body{
         font-size: 0.9rem;
@@ -1956,10 +1958,10 @@ transition: width .3s;
 }
 
 
-/*@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
 
     /* landing */
-/*
+
     body{
         font-size: 0.9rem;
     }
@@ -1993,7 +1995,7 @@ transition: width .3s;
     }
 
     /* About */
-/*
+
     .numbers-about{
         visibility: collapse;
     }
@@ -2003,7 +2005,7 @@ transition: width .3s;
     }
 
     .video-container-about{
-        margin-top: 16%;
+        margin-top: 10%;
         position: absolute;
         left: 20%;
     }
@@ -2012,8 +2014,12 @@ transition: width .3s;
         height: 800px;
     }
 
+    .text-about{
+        width: 100%;
+    }
+
     /* agents */
-/*
+
     .agent{
         visibility: collapse;
     }
@@ -2068,7 +2074,7 @@ transition: width .3s;
     }
 
     /* maps */
-/*
+
     .text-maps{
         width: 70%;
     }
@@ -2082,7 +2088,7 @@ transition: width .3s;
     }
 
     /* guns */
-    /*
+    
     .guns{
         height: 1100px;
     }
@@ -2092,10 +2098,12 @@ transition: width .3s;
     }
 
     /* footer */
-/*
+
     .footer img{
         right: 10%;
     }
+
+}
 /* ################ Menu ################ */
 .menu-icon:checked + label,
 .menu-icon:not(:checked) + label{
