@@ -3,16 +3,11 @@ var goToStartBtn = document.getElementById('goToStartButton');
 window.addEventListener('scroll', function() {
     var scrolling = window.scrollY;
     particles.style.top = (scrolling + 300) * 0.5 + 'px';
-    if(this.scrollY == 0 || this.scrollY < 300){
-        goToStartBtn.style.visibility = 'collapse';
-    }else{
-        goToStartBtn.style.visibility = 'visible';
-    }
 });
 
 var progerssbar = document.getElementById('progressbar');
 var totalhight = document.body.scrollHeight - window.innerHeight;
-
+progerssbar.style.height = 0;
 $(window).scroll(function() {
     if ($(window).scrollTop()) {
         $("header").addClass("black");

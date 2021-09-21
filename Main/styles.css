@@ -101,7 +101,7 @@ body {
     z-index: 999;
     position: fixed;
     top: 85%;
-    left: 49%;
+    right: 3%;
     height: 50px;
     width: 50px;
     background-color: var(--secondmain-color);
@@ -110,7 +110,6 @@ body {
     box-shadow: 0 0 20px var(--secondbase-color);
     transition: 0.3s ease-in-out;
     border: 2px solid var(--main-color);
-    visibility: collapse;
     
 }
 #goToStartButton:hover{
@@ -126,7 +125,6 @@ body {
     text-align: center;
     line-height: 50px;
     color: var(--base-color); 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .goToStartBtn:hover{
     color: var(--white-color); 
