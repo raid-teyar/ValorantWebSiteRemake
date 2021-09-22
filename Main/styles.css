@@ -934,7 +934,7 @@ button:focus {
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     transition-property: border, background-position, color;
     background-color: var(--white-color);
     color: var(--base-color);
