@@ -132,6 +132,13 @@ controls.enablePan = false; // right click control
 
 controls.minAzimuthAngle = 2; // radians
 controls.maxAzimuthAngle = 2.5;
+
+
+controls.rotateSpeed = 0.05; // rotation speed
+
+controls.zoomSpeed = 0.4;
+
+
 /*
 controls.keys = {
     LEFT: 37, //left arrow
