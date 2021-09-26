@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,300&display=swap');
 @import url('http://fonts.cdnfonts.com/css/valorant');
- 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.role{
+
+.role {
     background: #18212A;
-    height :100%;
-    position:absolute;
+    height: 100%;
+    position: absolute;
     width: 100%;
-    
 }
+
 .Omen_vd {
     position: absolute;
     left: 47.5%;
     top: 8.5%;
 }
-.text-1 h3{
-position: absolute;
-left: 10%;
-top: 20%;
-font-family: sans-serif ;
-font-style: italic;
-font-weight: 400;
-font-size: 26px;
-color: #FFFFFF;
+
+.text-1 h3 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFFFFF;
 }
 
-.text-2 h2{
+.text-2 h2 {
     position: absolute;
     left: 10%;
     top: 27%;
@@ -39,14 +40,16 @@ color: #FFFFFF;
     font-size: 64px;
     color: #FFFFFF;
 }
-.role-logo img{
+
+.role-logo img {
     position: absolute;
     width: 51px;
     height: 51px;
     left: 40%;
     top: 30%;
 }
-.text h3{
+
+.text h3 {
     position: absolute;
     left: 10%;
     top: 48%;
@@ -56,16 +59,18 @@ color: #FFFFFF;
     font-size: 26px;
     color: #FFFFFF;
 }
-.role-description h4{
-position: absolute;
-left: 10%;
-top: 59%;
-font-family: sans-serif;
-font-weight: normal;
-font-size: 24px;
-color: #FFFFFF;
+
+.role-description h4 {
+    position: absolute;
+    left: 10%;
+    top: 59%;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
 }
-.role-name h2{
+
+.role-name h2 {
     position: absolute;
     width: 530px;
     height: 140px;
@@ -78,7 +83,8 @@ color: #FFFFFF;
     opacity: 0.6;
     transform: rotate(90deg);
 }
-.role-name h3{ 
+
+.role-name h3 {
     position: absolute;
     width: 530px;
     height: 140px;
@@ -92,7 +98,7 @@ color: #FFFFFF;
     transform: rotate(90deg);
 }
 
-.text h2{
+.text h2 {
     position: absolute;
     width: 286px;
     height: 53px;
@@ -102,10 +108,11 @@ color: #FFFFFF;
     font-style: normal;
     font-size: 48px;
     line-height: 109.84%;
-    top : 115%;
+    top: 115%;
     color: #18212A;
 }
-.text2 p{
+
+.text2 p {
     position: absolute;
     width: 812px;
     height: 234px;
@@ -116,7 +123,8 @@ color: #FFFFFF;
     font-size: 24px;
     color: #18212A;
 }
-.text3 p{
+
+.text3 p {
     position: absolute;
     width: 479px;
     height: 52px;
@@ -127,9 +135,9 @@ color: #FFFFFF;
     font-weight: normal;
     font-size: 24px;
     color: #18212A;
-    }
+}
 
-.special-abilities h2{
+.special-abilities h2 {
     position: absolute;
     width: 480px;
     height: 73px;
@@ -142,16 +150,18 @@ color: #FFFFFF;
     top: 215%;
     color: #18212A;
 }
-.special-abilities .rectangle{
+
+.special-abilities .rectangle {
     position: absolute;
     width: 930px;
     height: 500px;
     left: calc(50% - 930px/2);
     top: calc(50% - 500px/2 + 471px);
-    top : 238%;
+    top: 238%;
     background: #18212A;
 }
-.rectangle h2{
+
+.rectangle h2 {
     position: absolute;
     left: calc(50% - 337px/2 + 0.5px);
     top: 250px;
@@ -161,43 +171,47 @@ color: #FFFFFF;
     font-size: 22px;
     color: #FFFFFF;
 }
-.special-abilities .rectangle-1{
+
+.special-abilities .rectangle-1 {
     position: absolute;
     width: 75px;
     height: 75px;
     left: calc(50% - 75px/2 - 218.5px);
     top: 324%;
     opacity: 0.8;
-    }
-    .special-abilities .rectangle-2{
-        position: absolute;
+}
+
+.special-abilities .rectangle-2 {
+    position: absolute;
     width: 75px;
     height: 75px;
     left: calc(50% - 75px/2 - 73.5px);
     top: calc(50% - 75px/2 + 994.5px);
-    top:324%;
+    top: 324%;
     opacity: 1.26;
-    }
-    .special-abilities .rectangle-3{
+}
+
+.special-abilities .rectangle-3 {
     position: absolute;
     width: 75px;
     height: 75px;
     left: calc(50% - 75px/2 + 71.5px);
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
-    opacity: 1.2;    
-    }
-    .special-abilities .rectangle-4{
-        position: absolute;
+    opacity: 1.2;
+}
+
+.special-abilities .rectangle-4 {
+    position: absolute;
     width: 75px;
     height: 75px;
     left: calc(50% - 75px/2 + 216.5px);
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
-    opacity: 1.2;    
-    }
-    
-.special-abilities h3{
+    opacity: 1.2;
+}
+
+.special-abilities h3 {
     position: absolute;
     width: 282px;
     height: 47px;
@@ -207,10 +221,11 @@ color: #FFFFFF;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    top : 350%;
+    top: 350%;
     color: #18212A;
 }
-.special-abilities p{
+
+.special-abilities p {
     position: absolute;
     width: 523px;
     height: 99px;
@@ -220,11 +235,11 @@ color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    top : 366%;
+    top: 366%;
     color: #101822;
 }
 
-footer{
+footer {
     position: absolute;
     top: 400%;
     left: 0;
@@ -235,40 +250,46 @@ footer{
     font-family: "Open Sans";
     color: #fff;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 8%;
     left: 47%;
 }
-.logo2{
+
+.logo2 {
     position: absolute;
     top: 35%;
     left: 44%;
 }
-.logo-T{
+
+.logo-T {
     position: absolute;
     left: 8%;
     top: 40%;
 }
-.cop h3{
+
+.cop h3 {
     position: absolute;
     width: 116px;
     height: 90px;
     left: 13%;
     top: 40%;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
     color: #ECE8E1;
- }
-.cop-2 h2{
+}
+
+.cop-2 h2 {
     position: absolute;
     left: 15.4%;
     top: 45%;
@@ -278,7 +299,7 @@ footer{
     color: #ECE8E1;
 }
 
-.cop-3 h2{
+.cop-3 h2 {
     position: absolute;
     width: 116px;
     height: 90px;
@@ -288,8 +309,9 @@ footer{
     font-style: normal;
     font-size: 17px;
     color: #ECE8E1;
-    }
-.cop-4 h2{
+}
+
+.cop-4 h2 {
     position: absolute;
     width: 116px;
     height: 90px;
@@ -300,7 +322,8 @@ footer{
     font-size: 17px;
     color: #ECE8E1;
 }
-.cop-5 h2{
+
+.cop-5 h2 {
     position: absolute;
     left: 15.5%;
     top: 61.4%;
@@ -309,50 +332,56 @@ footer{
     font-size: 17px;
     color: #ECE8E1;
 }
-.RAA{
+
+.RAA {
     margin-left: 88%;
     display: grid;
     padding: 110px 0px;
 }
 
-.socials li{
+.socials li {
     list-style: none;
     padding: 10px 0;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
-    color:#FF4654;
-    
+    color: #FF4654;
 }
-.socials a i{
+
+.socials a i {
     font-size: 1.8rem;
     transition: color .4s ease;
-
 }
-.socials a:hover i{
+
+.socials a:hover i {
     color: rgb(128, 3, 3);
 }
-.footer-bottom{
+
+.footer-bottom {
     font-size: 24px;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     position: absolute;
     top: 56%;
     left: 40%;
 }
-.footer-bottom p:hover{
+
+.footer-bottom p:hover {
     color: #ffa3ab;
 }
-.p-n h3{
-position: absolute;
-left:33%;
-top: 93%;
-font-family: sans-serif;
-font-size: 16px;
-color: #ECE8E1;
 
+.p-n h3 {
+    position: absolute;
+    left: 33%;
+    top: 93%;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ECE8E1;
 }
-.p-n2 h3{
+
+.p-n2 h3 {
     position: absolute;
     left: 47%;
     top: 93%;
@@ -360,7 +389,8 @@ color: #ECE8E1;
     font-size: 18px;
     color: #ECE8E1;
 }
-.p-n3 h3{
+
+.p-n3 h3 {
     position: absolute;
     left: 62%;
     top: 93%;
@@ -369,8 +399,6 @@ color: #ECE8E1;
     font-size: 18px;
     color: #ECE8E1;
 }
-
-
 
 
 /*
@@ -541,4 +569,50 @@ font-weight: 600;
 font-size: 12px;
 line-height: 23px;
 color: #ECE8E1;
+}
+
+
+
+
+
+
+
+/* ############ MEDIA FOR BIG SCREENS */
+
+@media only screen and (min-width: 1400px) {
+    .role-name h2 {
+        position: absolute;
+        width: 530px;
+        height: 140px;
+        left: 1200px;
+        top: 36%;
+        font-family: VALORANT;
+        font-weight: normal;
+        font-size: 170px;
+        color: #ECE8E1;
+        opacity: 0.6;
+        transform: rotate(90deg);
+    }
+    .role-name h3 {
+        position: absolute;
+        width: 530px;
+        height: 140px;
+        left: 1200px;
+        top: 34%;
+        font-family: VALORANT;
+        font-weight: normal;
+        font-size: 170px;
+        color: #ECE8E1;
+        opacity: 0.09;
+        transform: rotate(90deg);
+    }
+    .Omen_vd {
+        position: absolute;
+        left: 47.5%;
+        top: 4.9%;
+    }
+    video {
+        height: 85%;
+        width: 85%;
+    }
 }
