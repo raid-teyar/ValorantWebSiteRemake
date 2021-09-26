@@ -22,6 +22,9 @@ h1{
     line-height: 80px;
     color: #251313;
 }
+img{
+    margin-left: 50%;
+}
 .word2{
     position: absolute;
     left: 120px;

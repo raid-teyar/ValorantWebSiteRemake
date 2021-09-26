@@ -7,13 +7,13 @@
 .role{
     background: #18212A;
     height :780px;
-     position: relative;
+    position:relative;
     width: 1410px;
-    background-color: #18212A;
     left: -70px;
     top: -10px;
     
 }
+
 .key-o img{
     position: absolute;
 left: 46.46%;
@@ -321,15 +321,14 @@ opacity: 1.2;
 background: url('image 9.png');
     
 }
- 
- .special-abilities.rectangle-4 :hover{
-    color opacity: 100;
+
+ .special-abilities.rectangle-4:hover{
+    opacity: 100;
  }
 
- .footer{
+.footer{
      background-color: #18212A;
      position: relative;
-     background: #18212A;
      height :580px;
      top: 2900px;
      width: 1410px;
@@ -341,14 +340,12 @@ background: url('image 9.png');
     height: 90px;
     left: 916px;
     top: 270px;
-    
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    
     color: #ECE8E1;
  }
  .logo img{
@@ -366,7 +363,6 @@ background: url('image 9.png');
     height: 73px;
     left: 136px;
     top: 470px;
-    
     background: url('image 10.png');
  }
  .teen-logo img{
@@ -375,7 +371,6 @@ background: url('image 9.png');
     height: 97px;
     left: 486px;
     top: 310px;
-    
     background: url('image 10.png');
  }
  .cop h3{
