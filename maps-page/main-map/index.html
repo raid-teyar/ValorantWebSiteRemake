@@ -32,9 +32,47 @@
           representing a digit.
         </p>
       </div>
-      <div class="button">
-        <a href="#"><span class="triangle">▼</span> SELECT A MAP</a>
+
+      <!--**********************************************************************************************************-->
+      <div class="Button-maps">
+        <button class="click"><span class="fas fa-caret-down "> </span> SELECT A MAP</button>
+
+
+
+
+
+        <div class="list">
+
+          <button class="link-map">ASCENT</button><br>
+
+          <button class="link-map">SECOND MAP</button><br>
+
+          <button class="link-map">THIRD MAP</button><br>
+
+          <button class="link-map">FOURTH MAP</button><br>
+
+          <button class="link-map">FIFTH MAP</button><br>
+
+          <button class="link-map">SIXTH MAP</button>
+
+        </div>
+        
       </div>
+
+      <script>
+
+        let click = document.querySelector('.click');
+
+        let list = document.querySelector('.list');
+
+        click.addEventListener("click", () => {
+
+          list.classList.toggle('newlist');
+
+        });
+
+      </script>
+
       <!--▶-->
     </div>
 
@@ -48,7 +86,7 @@
   <footer>
 
     <div class="val-logo">
-      <img src="./map-img/valorant-logo.png" alt="Valorant">
+      <a href=""> <img src="./map-img/valorant-logo.png" alt="Valorant"></a>
     </div>
 
     <div class="riot-logo">
