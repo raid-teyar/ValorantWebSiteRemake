@@ -481,6 +481,7 @@ a.black {
     background-image: linear-gradient(0deg, rgba(255, 70, 84, 0.89) 48%, rgba(255, 70, 84, 0.89) 93%), url(scr/about.jpg);
     background-size: cover;
     z-index: 1;
+    padding-bottom: 300px;
 }
 
 .bg-about {
@@ -726,7 +727,7 @@ a.black {
     opacity: 7%;
     z-index: -1;
     mix-blend-mode: color-dodge;
-    height: 120%;
+    height: 150%;
     object-fit: cover;
 }
 
@@ -1026,14 +1027,13 @@ button:focus {
 
 .maps {
     display: block;
-    margin-top: -15%;
 }
 
 .bg-container {
     width: 100%;
     font-family: var(--title-font);
     z-index: 1;
-    height: 1400px;
+    height: 1000px;
 }
 
 .bg-container::before {
@@ -1045,21 +1045,21 @@ button:focus {
     background: url("scr/mapsbg.png") repeat-y;
     background-size: cover;
     position: relative;
-    top: -20%;
     left: 10%;
 }
 
 .small-rectangle {
+    position: absolute;
     height: 150px;
     width: 250px;
     transform: rotate(45deg);
-    margin: -3rem 0% -2.5rem -6rem;
+    margin: -6rem 0% -2.5rem -6rem;
     background-color: var(--white-color);
 }
 
 .container-shape {
     position: relative;
-    margin-top: 60%;
+    margin-top: 50%;
     background-color: var(--white-color);
     /* need to make it responsive here! */
 }
@@ -1162,7 +1162,7 @@ button:focus {
     display: inline-flex;
     top: 0;
     margin: 120px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 button:focus {
@@ -1178,14 +1178,14 @@ button:focus {
     left: 0;
     width: 100%;
     border: 1px solid var(--main-color);
-    padding: 1.3rem 4rem;
+    padding: 1.3rem 5rem;
     background: url('https://svgshare.com/i/Kyn.svg');
     background-size: 240%;
     background-position: 500%;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     transition-property: border, background-position, color;
     background-color: var(--base-color);
 }
@@ -1490,7 +1490,7 @@ button:focus {
 
 .footer {
     /*position: relative;*/
-    height: 1200px;
+    height: 800px;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
