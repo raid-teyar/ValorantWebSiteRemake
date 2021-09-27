@@ -47,6 +47,10 @@ body {
     background-color: var(--white-color);
 }
 
+audio {
+    display: none
+}
+
 
 /* #################################### CURSOR*/
 

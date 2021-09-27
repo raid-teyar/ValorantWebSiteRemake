@@ -67,3 +67,7 @@ window.addEventListener('resize', () => {
      */
 
 });
+
+
+var audio = document.getElementById("guns-page-theme");
+audio.volume = 0.2;
