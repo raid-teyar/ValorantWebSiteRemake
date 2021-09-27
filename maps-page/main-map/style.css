@@ -110,6 +110,9 @@ letter-spacing: 3px;
    
 
 }
+.list button{
+    width: 300px;
+}
 
 .newlist{
     transform: scaleY(1);
@@ -221,7 +224,8 @@ margin-right: 100px;
     width: 100px;
     margin-top: -240px;
  /*   margin-left: 135px;        resize it later with media*/
-  margin-left: 10.7%;
+
+  margin-left: 10.3% ;  
 }
 
 .text-teen{
@@ -230,7 +234,7 @@ margin-right: 100px;
     margin-top: -97px;
    /* margin-left:205px;  resize it later with media*/  
    margin-left: 16.2%;
-   
+   margin-left: calc(10.3% + 68px);  
 }
 .text-teen h4{
     letter-spacing: 1px;
