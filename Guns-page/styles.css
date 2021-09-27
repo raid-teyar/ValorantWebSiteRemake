@@ -1,0 +1,1276 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+:root {
+    /* ##### COLORS #### */
+    --base-color: #0f1923;
+    --secondbase-color: #101822;
+    --white-color: #ece8e1;
+    --main-color: #ff4655;
+    --secondmain-color: #FF8189;
+    /* ##### Font family #### */
+    --font: 'Source Sans Pro', sans-serif;
+    --valorant: 'valorant', sans-serif;
+    /* ##### Font weight #### */
+    --font-regular: 500;
+    --font-semibold: 600;
+    --font-bold: 800;
+    --font-light: 50
+    /* Text Sizing 
+    ##          Main Valorant title: 7rem
+    ##          Normal text size : 1rem
+    ##          Semi Main text : 1.2rem
+    ##          Sections Titles : 
+    ##              - main : 2.5rem
+    ##              - Shadow 7.5rem
+    ##          Semi Title : 1.5rem
+    ##          Background text : 1rem
+    ##           
+    */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font);
+    background-color: var(--white-color);
+}
+
+
+/* #################################### FIRST SECTION - INTRODUCUTION */
+
+.first-section {
+    margin-bottom: 25rem;
+}
+
+.guns-title {
+    color: var(--base-color);
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.guns-main-text {
+    color: var(--base-color);
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.guns-main-text h2 {
+    font-weight: var(--font-semibold);
+    font-size: 1.2rem;
+    width: 600px;
+}
+
+.guns-image img {
+    position: absolute;
+    align-items: right;
+    right: 10%;
+    margin-top: -5%;
+    height: auto;
+    width: 35%;
+}
+
+.scroll-down {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.scroll-down h2 {
+    color: var(--main-color);
+    font-weight: var(--font-bold);
+}
+
+.scroll-icon {
+    animation: MoveUpDown 3s ease infinite;
+    position: absolute;
+    padding-top: 30px;
+    margin-left: 10%;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 35px;
+    }
+}
+
+
+/* #################################### SIDEARMS SECTION */
+
+.guns-sidearms {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder {
+    position: relative;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.classic-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.classic-card img {
+    width: 60%;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shorty-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.shorty-card img {
+    width: 90%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frenzy-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.frenzy-card img {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ghost-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.ghost-card img {
+    width: 90%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sheriff-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.sheriff-card img {
+    width: 100%;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classic-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.classic-card:hover .classic-overlay {
+    width: 100%;
+}
+
+.classic-card:hover img {
+    animation: zoom 3s ease infinite;
+}
+
+@keyframes zoom {
+    0% {
+        width: 60%;
+    }
+    50% {
+        width: 65%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+.text {
+    white-space: nowrap;
+    color: var(--main-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+}
+
+.text2 {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    width: 350px;
+    font-weight: var(--font-regular);
+    position: absolute;
+    overflow: hidden;
+    top: 35%;
+    left: 30%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+}
+
+.text3 {
+    color: var(--base-color);
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: var(--font-semibold);
+    position: absolute;
+    overflow: hidden;
+    top: 80%;
+    left: 30%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.text3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.text3 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.text3:hover span {
+    padding-right: 25px;
+}
+
+.text3:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.shorty-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.shorty-card:hover .shorty-overlay {
+    width: 100%;
+}
+
+.shorty-card:hover img {
+    animation: zoom2 3s ease infinite;
+}
+
+@keyframes zoom2 {
+    0% {
+        width: 90%;
+    }
+    50% {
+        width: 95%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.frenzy-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.frenzy-card:hover .frenzy-overlay {
+    width: 100%;
+}
+
+.frenzy-card:hover img {
+    animation: zoom 3s ease infinite;
+}
+
+.ghost-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.ghost-card:hover .ghost-overlay {
+    width: 100%;
+}
+
+.ghost-card:hover img {
+    animation: zoom2 3s ease infinite;
+}
+
+.sheriff-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.sheriff-card:hover .sheriff-overlay {
+    width: 100%;
+}
+
+.sheriff-card:hover img {
+    animation: zoom2 3s ease infinite;
+}
+
+
+/* #################################### SMGS SECTION */
+
+.guns-smgs {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder2 {
+    position: relative;
+    width: 100%;
+}
+
+.sticky2 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal2 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards2 {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stinger-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.stinger-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.specture-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.specture-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stinger-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.stinger-card:hover .stinger-overlay {
+    width: 100%;
+}
+
+.stinger-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.specture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.specture-card:hover .specture-overlay {
+    width: 100%;
+}
+
+.specture-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+@keyframes zoom3 {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 95%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* #################################### SHOTGUNS SECTION */
+
+.guns-shotguns {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container3 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder3 {
+    position: relative;
+    width: 100%;
+}
+
+.sticky3 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal3 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards3 {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bucky-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.bucky-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judge-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.judge-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bucky-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.bucky-card:hover .bucky-overlay {
+    width: 100%;
+}
+
+.bucky-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.judge-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.judge-card:hover .judge-overlay {
+    width: 100%;
+}
+
+.judge-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+
+/* #################################### RIFLES SECTION */
+
+.guns-rifles {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder4 {
+    position: relative;
+    width: 100%;
+}
+
+.sticky4 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal4 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards4 {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bulldog-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.bulldog-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guardian-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.guardian-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vandal-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.vandal-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phantom-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.phantom-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bulldog-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.bulldog-card:hover .bulldog-overlay {
+    width: 100%;
+}
+
+.bulldog-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.guardian-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.guardian-card:hover .guardian-overlay {
+    width: 100%;
+}
+
+.guardian-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.vandal-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.vandal-card:hover .vandal-overlay {
+    width: 100%;
+}
+
+.vandal-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.phantom-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.phantom-card:hover .phantom-overlay {
+    width: 100%;
+}
+
+.phantom-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+
+/* #################################### SNIPER-RIFLES SECTION */
+
+.guns-snipers {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container5 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder5 {
+    position: relative;
+    width: 100%;
+}
+
+.sticky5 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal5 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards5 {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.marshal-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.marshal-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.operator-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.operator-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marshal-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.marshal-card:hover .marshal-overlay {
+    width: 100%;
+}
+
+.marshal-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.operator-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.operator-card:hover .operator-overlay {
+    width: 100%;
+}
+
+.operator-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+
+/* #################################### MACHINE-GUNS SECTION */
+
+.guns-machines {
+    color: var(--base-color);
+    margin-left: 10%;
+    font-size: 2.5rem;
+}
+
+.container6 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder6 {
+    position: relative;
+    width: 100%;
+}
+
+.sticky6 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal6 {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards6 {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ares-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.ares-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.odin-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: transparent;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.odin-card img {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ares-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.ares-card:hover .ares-overlay {
+    width: 100%;
+}
+
+.ares-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+.odin-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(24, 33, 42, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.odin-card:hover .odin-overlay {
+    width: 100%;
+}
+
+.odin-card:hover img {
+    animation: zoom3 3s ease infinite;
+}
+
+
+/* #################################### FOOTER SECTION */
+
+footer {
+    position: absolute;
+    top: 1280%;
+    left: 0;
+    right: 0;
+    background: #18212A;
+    height: 80vh;
+    width: 98.5vw;
+    font-family: "Open Sans";
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 8%;
+    left: 47%;
+}
+
+.logo2 {
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+
+.logo-T {
+    position: absolute;
+    left: 8%;
+    top: 40%;
+}
+
+.cop h3 {
+    position: absolute;
+    width: 116px;
+    height: 90px;
+    left: 13%;
+    top: 40%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    color: #ECE8E1;
+}
+
+.cop-2 h2 {
+    position: absolute;
+    left: 15.4%;
+    top: 45%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    color: #ECE8E1;
+}
+
+.cop-3 h2 {
+    position: absolute;
+    width: 116px;
+    height: 90px;
+    left: 13.7%;
+    top: 50%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    color: #ECE8E1;
+}
+
+.cop-4 h2 {
+    position: absolute;
+    width: 116px;
+    height: 90px;
+    left: 15.4%;
+    top: 55.5%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    color: #ECE8E1;
+}
+
+.cop-5 h2 {
+    position: absolute;
+    left: 15.5%;
+    top: 61.4%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    color: #ECE8E1;
+}
+
+.RAA {
+    margin-left: 88%;
+    display: grid;
+    padding: 110px 0px;
+}
+
+.socials li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #FF4654;
+}
+
+.socials a i {
+    font-size: 1.8rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: rgb(128, 3, 3);
+}
+
+.footer-bottom {
+    font-size: 24px;
+}
+
+.footer-bottom p {
+    position: absolute;
+    top: 56%;
+    left: 40%;
+}
+
+.footer-bottom p:hover {
+    color: #ffa3ab;
+}
+
+.p-n h3 {
+    position: absolute;
+    left: 33%;
+    top: 93%;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ECE8E1;
+}
+
+.p-n2 h3 {
+    position: absolute;
+    left: 47%;
+    top: 93%;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ECE8E1;
+}
+
+.p-n3 h3 {
+    position: absolute;
+    left: 62%;
+    top: 93%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: #ECE8E1;
+}
