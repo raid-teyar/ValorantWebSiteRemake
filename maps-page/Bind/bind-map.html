@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bind-Style.css">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="title">
+        <h1>MAP - BIND</h1>
+      </div>
+
+      <!--<audio controls="controls" ><!--loop="loop" autoplay-->
+      <!--<source src="dzdz.mp3" type="audio/ogg">
+
+      </audio>
+    <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+    
+    -->
+      <div class="first-text">
+
+        <div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
+          </i></div>
+
+        <!--<div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
+                    <audio controls>
+                      <source src="" type="audio/mp3">
+                    </audio></i></div>-->
+
+        “What has Kingdom done to this town?! However pretty their lies are, they're just sucking my city dry!
+        ”<br>
+        — Cypher (Match Start on Bind)
+      </div>
+      <div class="second-text">Two sites. No middle. Gotta pick left or right. <br>
+
+        What’s it going to be then? <br>
+        Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank.
+      </div>
+      <div class="map-ascent-img">
+        <img src="./bind-img/Loading_Bind.png" alt="Split">
+      </div>
+      <div class="third-text">Bind's 'unique' feature is that it doesn't contain a mid section, instead having two
+        one-way teleporters. <br>
+        One takes players from A Short to B Short and the other takes players from B Long to A Lobby. <br><br>
+
+        Players use teleporters by walking into the section of wall taken up by the teleport entrance. <br>
+        They will then instantly arrive in a small exit room which players leave by walking towards the door out of the
+        room. <br>
+        This door is closed by default and can only be opened by players inside the exit room walking up to it, at which
+        point they will open automatically. <br>
+        Players outside the exit room cannot open these doors, but they can be penetrated by gunfire. <br><br>
+
+        Other objects can also be sent through teleporters if they come into contact with the teleporter entrance. <br>
+        They will maintain any velocity they had before being teleported and can open the doors and leave the exit room
+        should they travel far enough to trigger the door sensor. <br>
+        Objects include abilities, the spike, and dropped weapons. <br><br>
+
+        Whenever a teleporter is used by an agent or an object, all players on the map will be given an audio cue.
+        <br><br>
+
+        Map coordinates at 34°2'A" N 6°51'Z" W, off the coast of Rabat, Morocco.
+      </div>
+      <div class="split-map">
+        <img src="./bind-img/TX_Map_Duality_FogOfWar 1.png" alt="ascent-map">
+      </div>
+      <div class="short-text">SPLIT IN GAME MINI-MAP</div>
+      <div class="callouts">
+        <h2>callouts</h2>
+      </div>
+      <div class="maps">
+        <ul id="first">
+          <li>A Site</li>
+          <li>B Site</li>
+          <li>Bath</li>
+          <li>Cave</li>
+          <li>Cubby</li>
+        </ul>
+
+
+
+
+        <ul id="second">
+          <li>Hall</li>
+          <li>Garden</li>
+          <li>Fountain</li>
+          <li>Exit</li>
+          <li>Elbow</li>
+        </ul>
+
+
+
+
+        <ul id="third">
+          <li>Rafters</li>
+          <li>Pizza</li>
+          <li>Market </li>
+          <li>Main</li>
+          <li>Lamps</li>
+        </ul>
+
+
+
+
+
+
+
+        <ul id="fourth">
+          <li>Site</li>
+          <li>Short</li>
+          <li>Long</li>
+          <li>Lobby</li>
+          <li>Link</li>
+        </ul>
+
+        <ul id="fifth">
+          <li>Spawn</li>
+          <li>Teleporter</li>
+          <li>Tower</li>
+          <li>Lobby</li>
+          
+
+
+      </div>
+
+
+
+
+      <div class="Button-maps">
+        <button class="click"><span class="fas fa-caret-down"></span> select a map</button>
+
+
+
+        <div class="list">
+
+          <button class="link-map">map 1</button><br>
+          <button class="link-map">map 2</button><br>
+          <button class="link-map">map 3</button><br>
+          <button class="link-map">map 4</button><br>
+          <button class="link-map">map 5</button><br>
+          <button class="link-map">map 6</button>
+
+        </div>
+      </div>
+
+
+
+      <script>
+
+        let click = document.querySelector('.click');
+
+        let list = document.querySelector('.list');
+
+        click.addEventListener("click", () => {
+
+          list.classList.toggle('newlist');
+
+        });
+
+      </script>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <footer>
+
+    <div class="val-logo">
+      <a href="#"><img src="./bind-img/valorant-logo.png" alt="Valorant"></a>
+    </div>
+
+    <div class="riot-logo">
+      <img src="./bind-img/Red-Riot-games.png" alt="Riot games">
+    </div>
+    <div class="download">
+      <p>download game client</p>
+    </div>
+    <div class="info">
+      <a href="#" class="privacy">Privacy notice</a>
+      <a href="#" class="term">Term of service</a>
+      <a href="#" class="cookie">Cookie prefrence</a>
+    </div>
+    <div class="teen">
+      <img src="./bind-img/image 7.jpg" alt="teen esrb">
+    </div>
+    <div class="text-teen">
+      <h4>BLOOD LANGUAGE VIOLENCE USERSINTERACT INGAMEPURCHASES</h4>
+    </div>
+
+
+
+
+
+    <div class="social-media">
+      <a href="#"><i class="fab fa-twitter"></i></a> <br> <br>
+      <a href="#"><i class="fab fa-youtube"></i></a> <br> <br>
+      <a href="#"><i class="fab fa-discord"></i></a> <br><br>
+      <a href="#"><i class="fab fa-facebook-f"></i></a> <br><br>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
