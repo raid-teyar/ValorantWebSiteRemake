@@ -122,19 +122,20 @@ body{
    
 } 
 
-.Thumb{
+
+.Omen{
     position:absolute;
     left: 28.2%;
     top: 16.2%;
-    background-image: url("pics/Thumb.png" );
+    background-image: url("pics/Omen.png" );
     width:95px;
     height:96px;
 }
-.key{
+.Raze{
     position: absolute;
     left:40.3%;
     top:16.2%;
-    background-image: url("pics/KEY.png");
+    background-image: url("pics/Raze.png");
     width:95px;
     height:96px;
 }
@@ -181,11 +182,11 @@ body{
     width:95px;
     height:96px;
 }
-.Raze{
+.key{
     position: absolute;
     left:64.2%;
     top:38.2%;
-    background-image: url("pics/Raze.png");
+    background-image: url("pics/KEY.png");
     width:95px;
     height:96px;
 }
@@ -237,11 +238,11 @@ body{
     width:95px;
     height:96px;
 }
-.Omen{
+.Thumb{
     position: absolute;
     left:52.2%;
     top:80.2%;
-    background-image: url("pics/Omen.png");
+    background-image: url("pics/Thumb.png");
     width:95px;
     height:96px;
 }
