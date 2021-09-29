@@ -1,38 +1,51 @@
 @import url('http://fonts.cdnfonts.com/css/valorant');
-body{
+body {
     margin: 0;
     font-family: VALORANT;
 }
 
-    .image {
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        background-size:cover;
-        background-position: 37% 37%;
-        background-image: url(valorant.jpg) ;
-        mix-blend-mode: soft-light;
-    }
-    .overlay{
-        width: 100%;
-        height: 100%;
-        background: #101822;
-        opacity: 0.96;
-        
+.image {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    background-position: 37% 37%;
+    background-image: url(valorant.jpg);
+    mix-blend-mode: soft-light;
+}
 
-    }
-    H2{
-        position: absolute;
-        text-align: center;
-        left: 35%;
-        top: 2px;
-        font-size: 45px;
-        line-height: 80%;
-        color: #FFFFFF;
-        z-index: 1;
-        }
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: #101822;
+    opacity: 0.96;
+}
 
-.flex-box div{
+H2 {
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    top: 2px;
+    font-size: 45px;
+    line-height: 80%;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    text-align: center;
+}
+
+.Sarge h3 {
+    font-size: 14px;
+}
+
+.flex-box div {
     position: absolute;
     width: 95px;
     height: 95px;
@@ -40,222 +53,479 @@ body{
     left: 28%;
     background: #FF4654;
     border: 3px solid rgba(255, 129, 137, 0.67);
-
 }
 
-.flex-box div:nth-child(1){
+.flex-box div:nth-child(1) {
     top: 16%;
     left: 40%;
-   
 }
-.flex-box div:nth-child(2){
+
+.flex-box div:nth-child(2) {
     top: 16%;
     left: 52%;
-   
 }
-.flex-box div:nth-child(3){
+
+.flex-box div:nth-child(3) {
     top: 16%;
     left: 64%;
-   
-} 
+}
 
-.flex-box div:nth-child(4){
+.flex-box div:nth-child(4) {
     top: 38%;
     left: 28%;
-   
-}
-.flex-box div:nth-child(5){
-    top: 38%;
-    left: 40%;
-   
-}
-.flex-box div:nth-child(6){
-    top: 38%;
-    left: 52%;
-   
-}
-.flex-box div:nth-child(7){
-    top: 38%;
-    left: 64%;
-   
 }
 
-.flex-box div:nth-child(8){
+.flex-box div:nth-child(5) {
+    top: 38%;
+    left: 40%;
+}
+
+.flex-box div:nth-child(6) {
+    top: 38%;
+    left: 52%;
+}
+
+.flex-box div:nth-child(7) {
+    top: 38%;
+    left: 64%;
+}
+
+.flex-box div:nth-child(8) {
     top: 60%;
     left: 28%;
-   
-}
-.flex-box div:nth-child(9){
-    top: 60%;
-    left: 40%;
-   
-}
-.flex-box div:nth-child(10){
-    top: 60%;
-    left: 52%;
-   
-}
-.flex-box div:nth-child(11){
-    top: 60%;
-    left: 64%;
-   
 }
 
-.flex-box div:nth-child(12){
+.flex-box div:nth-child(9) {
+    top: 60%;
+    left: 40%;
+}
+
+.flex-box div:nth-child(10) {
+    top: 60%;
+    left: 52%;
+}
+
+.flex-box div:nth-child(11) {
+    top: 60%;
+    left: 64%;
+}
+
+.flex-box div:nth-child(12) {
     top: 80%;
     left: 28%;
-   
 }
-.flex-box div:nth-child(13){
+
+.flex-box div:nth-child(13) {
     top: 80%;
     left: 40%;
-   
 }
-.flex-box div:nth-child(14){
+
+.flex-box div:nth-child(14) {
     top: 80%;
     left: 52%;
-   
 }
-.flex-box div:nth-child(15){
+
+.flex-box div:nth-child(15) {
     top: 80%;
     left: 64%;
-   
-} 
+}
 
-
-.Omen{
-    position:absolute;
+.Omen {
+    position: absolute;
     left: 28.2%;
     top: 16.2%;
-    background-image: url("pics/Omen.png" );
-    width:95px;
-    height:96px;
+    background-image: url("pics/Omen.png");
+    width: 95px;
+    height: 96px;
 }
-.Raze{
+
+.Omen:hover {
+    background-color: #101822;
+}
+
+.Omen h3 {
+    transition: opacity 0.2s;
+}
+
+.Omen h3 {
+    opacity: 0;
+}
+
+.Omen h3:hover {
+    opacity: 1;
+}
+
+.Raze {
     position: absolute;
-    left:40.3%;
-    top:16.2%;
+    left: 40.3%;
+    top: 16.2%;
     background-image: url("pics/Raze.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.orange{
+
+.Raze:hover {
+    background-color: #101822;
+}
+
+.Raze h3 {
+    transition: opacity 0.2s;
+}
+
+.Raze h3 {
+    opacity: 0;
+}
+
+.Raze h3:hover {
+    opacity: 1;
+}
+
+.orange {
     position: absolute;
-    left:52.2%;
-    top:16.2%;
+    left: 52.2%;
+    top: 16.2%;
     background-image: url("pics/orange.png");
-    width:95px;
-    height:96px;
-
+    width: 95px;
+    height: 96px;
 }
-.Gumshoe{
+
+.orange:hover {
+    background-color: #101822;
+}
+
+.orange h3 {
+    transition: opacity 0.2s;
+}
+
+.orange h3 {
+    opacity: 0;
+}
+
+.orange h3:hover {
+    opacity: 1;
+}
+
+.Gumshoe {
     position: absolute;
-    left:64.2%;
-    top:16.2%;
+    left: 64.2%;
+    top: 16.2%;
     background-image: url("pics/Gumshoe.png");
-    width:95px;
-    height:96px;
-
+    width: 95px;
+    height: 96px;
 }
-.Killjoy{
+
+.Gumshoe:hover {
+    background-color: #101822;
+}
+
+.Gumshoe h3 {
+    transition: opacity 0.2s;
+}
+
+.Gumshoe h3 {
+    opacity: 0;
+}
+
+.Gumshoe h3:hover {
+    opacity: 1;
+}
+
+.Killjoy {
     position: absolute;
-    left:28.2%;
-    top:38.2%;
+    left: 28.2%;
+    top: 38.2%;
     background-image: url("pics/Killjoy.png");
-    width:95px;
-    height:96px;
-
+    width: 95px;
+    height: 96px;
 }
-.Pandemic{
+
+.Killjoy:hover {
+    background-color: #101822;
+}
+
+.killjoy h3 {
+    transition: opacity 0.2s;
+}
+
+.Killjoy h3 {
+    opacity: 0;
+}
+
+.Killjoy h3:hover {
+    opacity: 1;
+}
+
+.Pandemic {
     position: absolute;
-    left:40.2%;
-    top:38.2%;
+    left: 40.2%;
+    top: 38.2%;
     background-image: url("pics/Pandemic.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Phoenix{
+
+.Pandemic:hover {
+    background-color: #101822;
+}
+
+.Pandemic h3 {
+    transition: opacity 0.2s;
+}
+
+.Pandemic h3 {
+    opacity: 0;
+}
+
+.Pandemic h3:hover {
+    opacity: 1;
+}
+
+.Phoenix {
     position: absolute;
-    left:52.2%;
-    top:38.2%;
+    left: 52.2%;
+    top: 38.2%;
     background-image: url("pics/Phoenix.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.key{
+
+.Phoenix:hover {
+    background-color: #101822;
+}
+
+.Phoenix h3 {
+    transition: opacity 0.2s;
+}
+
+.Phoenix h3 {
+    opacity: 0;
+}
+
+.Phoenix h3:hover {
+    opacity: 1;
+}
+
+.key {
     position: absolute;
-    left:64.2%;
-    top:38.2%;
+    left: 64.2%;
+    top: 38.2%;
     background-image: url("pics/KEY.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.astra{
+
+.key:hover {
+    background-color: #101822;
+}
+
+.key h3 {
+    transition: opacity 0.2s;
+}
+
+.key h3 {
+    opacity: 0;
+}
+
+.key h3:hover {
+    opacity: 1;
+}
+
+.astra {
     position: absolute;
-    left:28.2%;
-    top:60.2%;
+    left: 28.2%;
+    top: 60.2%;
     background-image: url("pics/Rift.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Sarge{
+
+.astra:hover {
+    background-color: #101822;
+}
+
+.astra h3 {
+    transition: opacity 0.2s;
+}
+
+.astra h3 {
+    opacity: 0;
+}
+
+.astra h3:hover {
+    opacity: 1;
+}
+
+.Sarge {
     position: absolute;
-    left:40.2%;
-    top:60.2%;
+    left: 40.2%;
+    top: 60.2%;
     background-image: url("pics/Sarge.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Stealth{
+
+.Sarge:hover {
+    background-color: #101822;
+}
+
+.Sarge h3 {
+    transition: opacity 0.2s;
+}
+
+.Sarge h3 {
+    opacity: 0;
+}
+
+.Sarge h3:hover {
+    opacity: 1;
+}
+
+.Stealth {
     position: absolute;
-    left:52.2%;
-    top:60.2%;
+    left: 52.2%;
+    top: 60.2%;
     background-image: url("pics/Stealth.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Thorne{
+
+.Stealth:hover {
+    background-color: #101822;
+}
+
+.Stealth h3 {
+    transition: opacity 0.2s;
+}
+
+.Stealth h3 {
+    opacity: 0;
+}
+
+.Stealth h3:hover {
+    opacity: 1;
+}
+
+.Thorne {
     position: absolute;
-    left:64.2%;
-    top:60.2%;
+    left: 64.2%;
+    top: 60.2%;
     background-image: url("pics/Thorne.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Hunter{
+
+.Thorne:hover {
+    background-color: #101822;
+}
+
+.Thorne h3 {
+    transition: opacity 0.2s;
+}
+
+.Thorne h3 {
+    opacity: 0;
+}
+
+.Thorne h3:hover {
+    opacity: 1;
+}
+
+.Hunter {
     position: absolute;
-    left:28.2%;
-    top:80.2%;
+    left: 28.2%;
+    top: 80.2%;
     background-image: url("pics/Hunter.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Vampire{
+
+.Hunter:hover {
+    background-color: #101822;
+}
+
+.Hunter h3 {
+    transition: opacity 0.2s;
+}
+
+.Hunter h3 {
+    opacity: 0;
+}
+
+.Hunter h3:hover {
+    opacity: 1;
+}
+
+.Vampire {
     position: absolute;
-    left:40.2%;
-    top:80.2%;
+    left: 40.2%;
+    top: 80.2%;
     background-image: url("pics/Vampire.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.Thumb{
+
+.Vampire:hover {
+    background-color: #101822;
+}
+
+.Vampire h3 {
+    transition: opacity 0.2s;
+}
+
+.Vampire h3 {
+    opacity: 0;
+}
+
+.Vampire h3:hover {
+    opacity: 1;
+}
+
+.Thumb {
     position: absolute;
-    left:52.2%;
-    top:80.2%;
+    left: 52.2%;
+    top: 80.2%;
     background-image: url("pics/Thumb.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
-.jett{
+
+.Thumb:hover {
+    background-color: #101822;
+}
+
+.Thumb h3 {
+    transition: opacity 0.2s;
+}
+
+.Thumb h3 {
+    opacity: 0;
+}
+
+.Thumb h3:hover {
+    opacity: 1;
+}
+
+.jett {
     position: absolute;
-    left:64.2%;
-    top:80.2%;
+    left: 64.2%;
+    top: 80.2%;
     background-image: url("pics/jett.png");
-    width:95px;
-    height:96px;
+    width: 95px;
+    height: 96px;
 }
 
+.jett:hover {
+    background-color: #101822;
+}
 
+.jett h3 {
+    transition: opacity 0.2s;
+}
 
+.jett h3 {
+    opacity: 0;
+}
 
-
+.jett h3:hover {
+    opacity: 1;
+}

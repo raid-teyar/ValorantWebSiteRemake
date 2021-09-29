@@ -399,6 +399,26 @@ footer {
     font-size: 18px;
     color: #ECE8E1;
 }
+
+
+.btn{
+    color: black;
+    font-size: 60px;
+    border: none;
+    display: block;
+    top: 50%;
+    left: 20%;
+}
+.bg-music{
+    position: absolute;
+    top: 135%;
+    left: 27%;
+    right: 0;
+    margin: 0 auto;
+}
+.fa-pause-circle{
+    display: none;
+}
 /* ############ MEDIA FOR BIG SCREENS */
 
 @media only screen and (min-width: 1400px) {

@@ -39,8 +39,8 @@
     font-weight: bold;
     font-size: 64px;
     color: #FFFFFF;
-
 }
+
 .role-logo img {
     position: absolute;
     width: 51px;
@@ -89,7 +89,7 @@
     width: 490px;
     height: 160px;
     left: 930px;
-    top:30%;
+    top: 30%;
     font-family: VALORANT;
     font-weight: normal;
     font-size: 125px;
@@ -399,6 +399,26 @@ footer {
     font-size: 18px;
     color: #ECE8E1;
 }
+.btn{
+    color: black;
+    font-size: 60px;
+    border: none;
+    display: block;
+    top: 50%;
+    left: 20%;
+}
+.bg-music{
+    position: absolute;
+    top: 135%;
+    left: 27%;
+    right: 0;
+    margin: 0 auto;
+}
+.fa-pause-circle{
+    display: none;
+}
+
+
 /* ############ MEDIA FOR BIG SCREENS */
 
 @media only screen and (min-width: 1400px) {
@@ -431,7 +451,7 @@ footer {
     .brimstone_vd {
         position: absolute;
         left: 43.5%;
-        top: 3.9%;
+        top: 9.5%;
     }
     video {
         height: 86%;
