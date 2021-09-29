@@ -45,6 +45,8 @@ body {
     overflow-x: hidden;
     font-family: var(--font);
     background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
 }
 
 audio {
@@ -1351,7 +1353,6 @@ audio {
 
 footer {
     position: absolute;
-    top: 1280%;
     left: 0;
     right: 0;
     background: #18212A;
