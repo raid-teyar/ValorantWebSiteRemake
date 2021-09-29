@@ -24,11 +24,31 @@ body{
     margin-left: 150px;
     margin-top: 70px;
 }
-.first-text .audio-icon{
+.first-text .audio-btn{
     width: 40px;
     margin-left: -71px;
-    margin-bottom: -36px;
+    margin-bottom: -56px;
 
+}
+
+.audio-btn{
+    
+    background-color: transparent;
+    color: #101822;
+    font-size: 78px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    opacity: .8;
+    transition: all linear .2s;
+    cursor: pointer;
+}
+.audio-btn:hover{
+    opacity: 1;
+}
+.audio-btn .fa-pause-circle{
+    display: none;
+    cursor: pointer;
 }
 .second-text{
 margin-top: 70px;

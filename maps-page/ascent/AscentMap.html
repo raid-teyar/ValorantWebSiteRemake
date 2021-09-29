@@ -2,23 +2,23 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="AscentMapStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="AscentMapStyle.css">
 
-    <link rel="stylesheet" type="text/css"
+  <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
-    <div class="main">
-        <div class="container">
+  <div class="main">
+    <div class="container">
       <div class="title">
         <h1>MAP - ASCENT</h1>
       </div>
-      
+
       <!--<audio controls="controls" ><!--loop="loop" autoplay-->
-       <!--<source src="dzdz.mp3" type="audio/ogg">
+      <!--<source src="dzdz.mp3" type="audio/ogg">
 
       </audio>
     <audio controls>
@@ -30,11 +30,53 @@ Your browser does not support the audio element.
     
     -->
       <div class="first-text">
-      
-                     <div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
-                    <!--<audio controls>
-                      <source src="">
-                    </audio>--></i></div>
+        
+        <audio  id="map-audio" src="valorant-ascent-map-theme-music.mp3"></audio>
+        <button class="audio-btn">
+
+          <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+          <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+        </button>
+
+        
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+		$(".audio-btn .fa-play-circle").on('click',function(){
+			$(this).hide();
+			$(".fa-pause-circle").fadeIn();
+			$("#map-audio")[0].play();
+		});
+		$(".audio-btn .fa-pause-circle").on('click',function(){
+			$(this).hide();
+			$(".fa-play-circle").fadeIn();
+			$("#map-audio")[0].pause();
+		});
+
+	})
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         "*sighs* This poor place. It clings to life. A city after
         my own heart" <br>
@@ -128,12 +170,12 @@ Your browser does not support the audio element.
 
 
       </div>
-      
+
 
 
 
       <div class="Button-maps">
-        <button class="click"><span class="fas fa-caret-down"></span>      select other map</button>
+        <button class="click"><span class="fas fa-caret-down"></span> select other map</button>
 
 
 
@@ -191,7 +233,9 @@ Your browser does not support the audio element.
       <img src="./ascent-img/Red-Riot-games.png" alt="Riot games">
     </div>
     <div class="download">
-     <a href=""> <p>download game client</p></a>
+      <a href="">
+        <p>download game client</p>
+      </a>
     </div>
     <div class="info">
       <a href="#" class="privacy">Privacy notice</a>
