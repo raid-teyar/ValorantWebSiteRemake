@@ -31,6 +31,19 @@ body{
         color: #FFFFFF;
         z-index: 1;
         }
+        a{
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 25%;
+            left: 15%;
+            text-align: center;
+        }
+
+        .Sarge h3 {
+            font-size: 14px;
+        }
+        
 
 .flex-box div{
     position: absolute;
@@ -131,6 +144,19 @@ body{
     width:95px;
     height:96px;
 }
+.Omen:hover{
+    background-color: #101822;
+}
+.Omen h3{
+    transition: opacity 0.2s;
+}
+.Omen h3 {
+    opacity: 0;
+}
+.Omen h3:hover{
+    opacity: 1;
+}
+
 .Raze{
     position: absolute;
     left:40.3%;
@@ -138,6 +164,18 @@ body{
     background-image: url("pics/Raze.png");
     width:95px;
     height:96px;
+}
+.Raze:hover{
+    background-color: #101822;
+}
+.Raze h3{
+    transition: opacity 0.2s;
+}
+.Raze h3{
+    opacity: 0;
+}
+.Raze h3:hover{
+    opacity: 1;
 }
 .orange{
     position: absolute;
@@ -148,6 +186,18 @@ body{
     height:96px;
 
 }
+.orange:hover{
+    background-color: #101822;
+}
+.orange h3{
+    transition: opacity 0.2s;
+}
+.orange h3 {
+    opacity: 0;
+}
+.orange h3:hover{
+    opacity: 1;
+}
 .Gumshoe{
     position: absolute;
     left:64.2%;
@@ -156,6 +206,18 @@ body{
     width:95px;
     height:96px;
 
+}
+.Gumshoe:hover{
+    background-color: #101822;
+}
+.Gumshoe h3{
+    transition: opacity 0.2s;
+}
+.Gumshoe h3 {
+    opacity: 0;
+}
+.Gumshoe h3:hover{
+    opacity: 1;
 }
 .Killjoy{
     position: absolute;
@@ -166,6 +228,18 @@ body{
     height:96px;
 
 }
+.Killjoy:hover{
+    background-color: #101822;
+}
+.killjoy h3{
+    transition: opacity 0.2s;
+}
+.Killjoy h3 {
+    opacity: 0;
+}
+.Killjoy h3:hover{
+    opacity: 1;
+}
 .Pandemic{
     position: absolute;
     left:40.2%;
@@ -173,6 +247,18 @@ body{
     background-image: url("pics/Pandemic.png");
     width:95px;
     height:96px;
+}
+.Pandemic:hover{
+    background-color: #101822;
+}
+.Pandemic h3{
+    transition: opacity 0.2s;
+}
+.Pandemic h3 {
+    opacity: 0;
+}
+.Pandemic h3:hover{
+    opacity: 1;
 }
 .Phoenix{
     position: absolute;
@@ -182,6 +268,18 @@ body{
     width:95px;
     height:96px;
 }
+.Phoenix:hover{
+    background-color: #101822;
+}
+.Phoenix h3{
+    transition: opacity 0.2s;
+}
+.Phoenix h3 {
+    opacity: 0;
+}
+.Phoenix h3:hover{
+    opacity: 1;
+}
 .key{
     position: absolute;
     left:64.2%;
@@ -189,6 +287,17 @@ body{
     background-image: url("pics/KEY.png");
     width:95px;
     height:96px;
+}.key:hover{
+    background-color: #101822;
+}
+.key h3{
+    transition: opacity 0.2s;
+}
+.key h3 {
+    opacity: 0;
+}
+.key h3:hover{
+    opacity: 1;
 }
 .astra{
     position: absolute;
@@ -198,6 +307,18 @@ body{
     width:95px;
     height:96px;
 }
+.astra:hover{
+    background-color: #101822;
+}
+.astra h3{
+    transition: opacity 0.2s;
+}
+.astra h3 {
+    opacity: 0;
+}
+.astra h3:hover{
+    opacity: 1;
+}
 .Sarge{
     position: absolute;
     left:40.2%;
@@ -205,6 +326,18 @@ body{
     background-image: url("pics/Sarge.png");
     width:95px;
     height:96px;
+}
+.Sarge:hover{
+    background-color: #101822;
+}
+.Sarge h3{
+    transition: opacity 0.2s;
+}
+.Sarge h3 {
+    opacity: 0;
+}
+.Sarge h3:hover{
+    opacity: 1;
 }
 .Stealth{
     position: absolute;
@@ -214,6 +347,18 @@ body{
     width:95px;
     height:96px;
 }
+.Stealth:hover{
+    background-color: #101822;
+}
+.Stealth h3{
+    transition: opacity 0.2s;
+}
+.Stealth h3 {
+    opacity: 0;
+}
+.Stealth h3:hover{
+    opacity: 1;
+}
 .Thorne{
     position: absolute;
     left:64.2%;
@@ -221,6 +366,18 @@ body{
     background-image: url("pics/Thorne.png");
     width:95px;
     height:96px;
+}
+.Thorne:hover{
+    background-color: #101822;
+}
+.Thorne h3{
+    transition: opacity 0.2s;
+}
+.Thorne h3 {
+    opacity: 0;
+}
+.Thorne h3:hover{
+    opacity: 1;
 }
 .Hunter{
     position: absolute;
@@ -230,6 +387,18 @@ body{
     width:95px;
     height:96px;
 }
+.Hunter:hover{
+    background-color: #101822;
+}
+.Hunter h3{
+    transition: opacity 0.2s;
+}
+.Hunter h3 {
+    opacity: 0;
+}
+.Hunter h3:hover{
+    opacity: 1;
+}
 .Vampire{
     position: absolute;
     left:40.2%;
@@ -237,6 +406,18 @@ body{
     background-image: url("pics/Vampire.png");
     width:95px;
     height:96px;
+}
+.Vampire:hover{
+    background-color: #101822;
+}
+.Vampire h3{
+    transition: opacity 0.2s;
+}
+.Vampire h3 {
+    opacity: 0;
+}
+.Vampire h3:hover{
+    opacity: 1;
 }
 .Thumb{
     position: absolute;
@@ -246,6 +427,18 @@ body{
     width:95px;
     height:96px;
 }
+.Thumb:hover{
+    background-color: #101822;
+}
+.Thumb h3{
+    transition: opacity 0.2s;
+}
+.Thumb h3 {
+    opacity: 0;
+}
+.Thumb h3:hover{
+    opacity: 1;
+}
 .jett{
     position: absolute;
     left:64.2%;
@@ -253,6 +446,18 @@ body{
     background-image: url("pics/jett.png");
     width:95px;
     height:96px;
+}
+.jett:hover{
+    background-color: #101822;
+}
+.jett h3{
+    transition: opacity 0.2s;
+}
+.jett h3 {
+    opacity: 0;
+}
+.jett h3:hover{
+    opacity: 1;
 }
 
 
