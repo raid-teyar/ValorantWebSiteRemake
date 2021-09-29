@@ -399,6 +399,8 @@ footer {
     font-size: 18px;
     color: #ECE8E1;
 }
+
+
 /* ############ MEDIA FOR BIG SCREENS */
 
 @media only screen and (min-width: 1400px) {
@@ -431,7 +433,7 @@ footer {
     .astra_vd {
         position: absolute;
         left: 47.5%;
-        top: 4.9%;
+        top: 20%;
     }
     video {
         height: 85%;

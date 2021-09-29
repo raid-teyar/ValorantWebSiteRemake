@@ -399,6 +399,8 @@ footer {
     font-size: 18px;
     color: #ECE8E1;
 }
+
+
 /* ############ MEDIA FOR BIG SCREENS */
 
 @media only screen and (min-width: 1400px) {
@@ -431,10 +433,10 @@ footer {
     .reyna_vd {
         position: absolute;
         left: 47.5%;
-        top: 4.9%;
+        top: 25.3%;
     }
     video {
-        height: 85%;
-        width: 85%;
+        height: 100%;
+        width: 100%;
     }
 }

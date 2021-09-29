@@ -39,8 +39,8 @@
     font-weight: bold;
     font-size: 64px;
     color: #FFFFFF;
-
 }
+
 .role-logo img {
     position: absolute;
     width: 51px;
@@ -89,7 +89,7 @@
     width: 490px;
     height: 160px;
     left: 930px;
-    top:43%;
+    top: 43%;
     font-family: VALORANT;
     font-weight: normal;
     font-size: 145px;
@@ -399,6 +399,8 @@ footer {
     font-size: 18px;
     color: #ECE8E1;
 }
+
+
 /* ############ MEDIA FOR BIG SCREENS */
 
 @media only screen and (min-width: 1400px) {
@@ -431,10 +433,10 @@ footer {
     .raze_vd {
         position: absolute;
         left: 43.5%;
-        top: 3.9%;
+        top: 6.4%;
     }
     video {
-        height: 86%;
-        width: 86%;
+        height: 70%;
+        width: 70%;
     }
 }
