@@ -196,6 +196,7 @@ line-height: 16px;
     cursor: pointer;
     text-align: center;
     padding: 12px;
+    text-transform: uppercase;
 }
 .link-map:hover{
     background: linear-gradient(45deg,#ff003c,#c648c8);
@@ -340,7 +341,7 @@ footer {
    .download{
        padding-top: 30px;
        text-align: center;
-       color: blanchedalmond;
+       color: #ffffff;
        text-transform: uppercase;
        font-size: large;
    }
@@ -349,6 +350,13 @@ footer {
    font-family: arial,sans-serif;
    
    }
+   
+.download p:hover{
+    color: #ff8189;
+}
+.download a{
+    text-decoration: none;
+}
    .info{
        color:#ffffff;
    /*text-transform: capitalize;*/
@@ -367,21 +375,93 @@ footer {
      /*text-transform: capitalize ;*/
        font-weight:100;
    }
-   .privacy{
-       width: 100px;
-   /*margin-left: 20px;*/
-   margin-bottom: -50px;
-   
-   }
-   .term{
-       width: 100px;
-       margin-left: 100px;
-   margin-right: 100px;
-   }
-   .cookie{
-       width: 120px;
-   /*margin-left: 400px;*/
-   }
+  
+  
+  
+   .privacy{  
+    
+    width: 100px;
+    margin-bottom: -50px;
+/*margin-left: 20px;*/
+
+
+position: relative;
+opacity: 0.7;
+}
+.privacy:after{
+    content: '';
+    position: absolute;
+    background-color:#ff4655 ;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+
+    transition: 0.3s;
+    
+}
+.privacy:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.privacy:hover:after{
+    width: 100%;
+   /* color:#ff8189;
+    opacity: 0.7;*/
+    
+}
+
+
+
+.term{
+    position: relative;
+    width: 100px;
+    margin-left: 100px;
+margin-right: 100px;
+opacity: 0.7;
+}
+.term::after{
+    content: '';
+    position:absolute;
+    background-color:#ff4655 ;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.term:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+.term:hover:after{
+    width: 100%;
+}
+.cookie{
+    position: relative;
+    width: 120px;
+/*margin-left: 400px;*/
+    opacity: 0.7;
+}
+
+.cookie::after{
+    content: '';
+    position:absolute;
+    background-color:#ff4655 ;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+.cookie:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+.cookie:hover:after{
+    width: 100%;
+}
    
    
    .teen{
