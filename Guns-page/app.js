@@ -70,4 +70,27 @@ window.addEventListener('resize', () => {
 
 
 var audio = document.getElementById("guns-page-theme");
-audio.volume = 0.2;
+audio.volume = 0.5;
+
+
+
+
+/* #################################### TRANSITION SECTION */
+var $loader = document.querySelector('.loader')
+
+window.onload = function() {
+    $loader.classList.add('loader--active')
+};
+window.setTimeout(function() {
+    $loader.classList.remove('loader--active')
+}, 2000);
+
+
+/*
+document.querySelector('.btn').addEventListener('click', function() {
+    $loader.classList.add('loader--active')
+
+    window.setTimeout(function() {
+        $loader.classList.remove('loader--active')
+    }, 5000)
+}) */
