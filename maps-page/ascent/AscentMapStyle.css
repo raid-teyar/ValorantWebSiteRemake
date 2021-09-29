@@ -24,6 +24,12 @@ body{
     margin-left: 150px;
     margin-top: 70px;
 }
+.first-text .audio-icon{
+    width: 40px;
+    margin-left: -71px;
+    margin-bottom: -36px;
+
+}
 .second-text{
 margin-top: 70px;
 margin-bottom: 50px;
@@ -49,6 +55,18 @@ margin-bottom: 50px;
     
     margin-left: 70px;
     margin-top: 10px;
+}
+
+
+.short-text{
+
+    padding-left: 200px ;
+    margin-top: -10px;
+    font-family: Roboto;
+font-style: italic;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
 }
 .callouts{
     text-transform: uppercase;
@@ -165,6 +183,9 @@ margin-bottom: 50px;
    transition: 0.3s;
    
 
+}
+.list button{
+    width: 300px;
 }
 
 .newlist{
@@ -366,14 +387,16 @@ footer {
    .teen{
        width: 100px;
        margin-top: -240px;
-       margin-left: 135px;
+       /*margin-left: 135px;*/
+       margin-left: 10.3%;
    }
    
    .text-teen{
        width: 90px;
        color:#ffffff;
        margin-top: -97px;
-       margin-left:205px;   
+       /*margin-left:205px; */
+       margin-left: calc(10.3% + 68px);  
    }
    .text-teen h4{
        letter-spacing: 1px;
