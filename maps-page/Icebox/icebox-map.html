@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
-<body> 
+<body>
     <div class="main">
         <div class="container">
             <div class="title">
@@ -17,36 +17,34 @@
             </div>
 
             <div class="first-text">
-        
-                <audio  id="map-audio" src="YoruMatchStartIcebox.mp3"></audio>
+
+                <audio id="map-audio" src="YoruMatchStartIcebox.mp3"></audio>
                 <button class="audio-btn">
         
                   <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
                   <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
                 </button>
-        
-                
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        
-        
-        <script type="text/javascript">
-        
-        
-            $(document).ready(function(){
-        
-                $(".audio-btn .fa-play-circle").on('click',function(){
-                    $(this).hide();
-                    $(".fa-pause-circle").fadeIn();
-                    $("#map-audio")[0].play();
-                });
-                $(".audio-btn .fa-pause-circle").on('click',function(){
-                    $(this).hide();
-                    $(".fa-play-circle").fadeIn();
-                    $("#map-audio")[0].pause();
-                });
-        
-            })
-        </script>
+
+
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+
+                        $(".audio-btn .fa-play-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-pause-circle").fadeIn();
+                            $("#map-audio")[0].play();
+                        });
+                        $(".audio-btn .fa-pause-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-play-circle").fadeIn();
+                            $("#map-audio")[0].pause();
+                        });
+
+                    })
+                </script>
 
                 “There are more answers here. I just have to find them.” <br> — Yoru (Match Start on Icebox)
             </div>
@@ -146,13 +144,13 @@
 
                 <div class="list">
 
-                    <button class="link-map" onclick="document.location='/maps-page/main-map/main-maps.html'">maps page</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/ascent/AscentMap.html'">ASCENT</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/bind/bind-map.html'">BIND</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Breeze/breeze-map.html'">BREEZE</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Fracture/fracture-map.html'">FRACTURE</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Split/split.html'">split</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Haven/haven-map.html'">haven</button>
+                    <button class="link-map" onclick="document.location='/main-map/main-maps.html'">maps page</button><br>
+                    <button class="link-map" onclick="document.location='/ascent/AscentMap.html'">ASCENT</button><br>
+                    <button class="link-map" onclick="document.location='/bind/bind-map.html'">BIND</button><br>
+                    <button class="link-map" onclick="document.location='/Breeze/breeze-map.html'">BREEZE</button><br>
+                    <button class="link-map" onclick="document.location='/Fracture/fracture-map.html'">FRACTURE</button><br>
+                    <button class="link-map" onclick="document.location='/Split/split.html'">split</button><br>
+                    <button class="link-map" onclick="document.location='/Haven/haven-map.html'">haven</button>
 
                 </div>
             </div>
