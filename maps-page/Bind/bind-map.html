@@ -16,27 +16,37 @@
                 <h1>MAP - BIND</h1>
             </div>
 
-            <!--<audio controls="controls" ><!--loop="loop" autoplay-->
-            <!--<source src="dzdz.mp3" type="audio/ogg">
-
-      </audio>
-    <audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-    
-    
-    -->
             <div class="first-text">
-
-                <div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
-          </i></div>
-
-                <!--<div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
-                    <audio controls>
-                      <source src="" type="audio/mp3">
-                    </audio></i></div>-->
+        
+                <audio  id="map-audio" src="CypherMatchStartBind.mp3"></audio>
+                <button class="audio-btn">
+        
+                  <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i> 
+                  <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i> 
+                </button>
+        
+                
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        
+        
+        <script type="text/javascript">
+        
+        
+            $(document).ready(function(){
+        
+                $(".audio-btn .fa-play-circle").on('click',function(){
+                    $(this).hide();
+                    $(".fa-pause-circle").fadeIn();
+                    $("#map-audio")[0].play();
+                });
+                $(".audio-btn .fa-pause-circle").on('click',function(){
+                    $(this).hide();
+                    $(".fa-play-circle").fadeIn();
+                    $("#map-audio")[0].pause();
+                });
+        
+            })
+        </script>
 
                 “What has Kingdom done to this town?! However pretty their lies are, they're just sucking my city dry! ”
                 <br> — Cypher (Match Start on Bind)
@@ -130,7 +140,7 @@ Your browser does not support the audio element.
                     <button class="link-map" onclick="document.location='/Breeze/breeze-map.html'">BREEZE</button><br>
                     <button class="link-map" onclick="document.location='/Fracture/fracture-map.html'">FRACTURE</button><br>
                     <button class="link-map" onclick="document.location='/Haven/haven-map.html'">HAVEN</button><br>
-                    <button class="link-map" onclick="document.location='/Icebox/icebox-map.html'">ICEBOX</button>
+                    <button class="link-map" onclick="document.location='/Icebox/icebox-map.html'">ICEBOX</button> <br>
                     <button class="link-map" onclick="document.location='/Split/split.html'">SPLIT</button>
 
 

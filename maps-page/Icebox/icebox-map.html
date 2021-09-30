@@ -9,34 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
-<body>
+<body> 
     <div class="main">
         <div class="container">
             <div class="title">
                 <h1>MAP - ICEBOX</h1>
             </div>
 
-            <!--<audio controls="controls" ><!--loop="loop" autoplay-->
-            <!--<source src="dzdz.mp3" type="audio/ogg">
-
-      </audio>
-    <audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-    
-    
-    -->
             <div class="first-text">
-
-                <div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
-                    </i></div>
-
-                <!--<div class="audio-icon"><i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'>
-                    <audio controls>
-                      <source src="" type="audio/mp3">
-                    </audio></i></div>-->
+        
+                <audio  id="map-audio" src="YoruMatchStartIcebox.mp3"></audio>
+                <button class="audio-btn">
+        
+                  <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+                  <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+                </button>
+        
+                
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        
+        
+        <script type="text/javascript">
+        
+        
+            $(document).ready(function(){
+        
+                $(".audio-btn .fa-play-circle").on('click',function(){
+                    $(this).hide();
+                    $(".fa-pause-circle").fadeIn();
+                    $("#map-audio")[0].play();
+                });
+                $(".audio-btn .fa-pause-circle").on('click',function(){
+                    $(this).hide();
+                    $(".fa-play-circle").fadeIn();
+                    $("#map-audio")[0].pause();
+                });
+        
+            })
+        </script>
 
                 “There are more answers here. I just have to find them.” <br> — Yoru (Match Start on Icebox)
             </div>
