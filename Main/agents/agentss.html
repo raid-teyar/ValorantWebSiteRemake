@@ -5,12 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="agentsstyle.css">
-    <link rel="stylesheet" href="agentss.js">
     <title>AGENTS</title>
 </head>
 
+
+
 <body>
+
+
+    <!-- ################# Audio ################# -->
+    <audio autoplay loop id="audio">
+        <source src="Agents-page-theme.mp3" type="audio/mpeg">
+        <source src="Agents-page-theme.ogg" type="audio/mpeg">
+        <source src="Agents-page-theme.wav" type="audio/mpeg">
+      </audio>
+
+
+     <!-- Settings !-->
+     <ul class="main-setings-menu">
+        <li>
+            <ul class="setings-menu" id="setings">
+                <li>
+                    <a href="#" class="fa fa-arrow-up"></a>
+                </li>
+                <li>
+                    <a id="themeBtn" class="fa fa-sun-o"></a>
+                </li>
+                <li>
+                    <a id="musicBtn" class="fa fa-music"></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
+        </li>
+    </ul>
 
     <!--################ loader ############""-->
     <div class="loader loader--active">
@@ -145,18 +177,18 @@
     <div class='cursor' id="cursor"></div>
     <div class='cursor2' id="cursor2"></div>
     <div class='cursor3' id="cursor3"></div>
-    <script src="cursor.js"></script>
+    
     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
     <label for="menu-icon"></label>
     <nav class="nav">
         <ul class="pt-5">
             <li><a href="../index/index.html">ABOUT</a></li>
             <li>
-                <a href="../agents/agentss.html" ">AGENTS</a></li>
+                <a href="../agents/agentss.html">AGENTS</a></li>
             <li><a href="../guns/index.html ">GUNS</a></li>
             <li><a href="../maps/main-map/main-maps.html ">MAPS</a></li>
     </ul>
-</navv>
+</nav>
 
 
 
@@ -179,5 +211,5 @@ window.setTimeout(function() {
 
 
 </body>
-
+<script src="cursor.js"></script>
 </html>

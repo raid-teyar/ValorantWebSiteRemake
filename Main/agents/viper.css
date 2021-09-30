@@ -6,6 +6,109 @@
     padding: 0;
 }
 
+:root {
+    /* ##### COLORS #### */
+    --base-color: #0f1923;
+    --secondbase-color: #101822;
+    --white-color: #ece8e1;
+    --main-color: #ff4655;
+    --secondmain-color: #FF8189;
+    /* ##### Font family #### */
+    --font: 'Source Sans Pro', sans-serif;
+    --valorant: 'valorant', sans-serif;
+    /* ##### Font weight #### */
+    --font-regular: 500;
+    --font-semibold: 600;
+    --font-bold: 800;
+    --font-light: 50
+    /* Text Sizing 
+    ##          Main Valorant title: 7rem
+    ##          Normal text size : 1rem
+    ##          Semi Main text : 1.2rem
+    ##          Sections Titles : 
+    ##              - main : 2.5rem
+    ##              - Shadow 7.5rem
+    ##          Semi Title : 1.5rem
+    ##          Background text : 1rem
+    ##           
+    */
+}
+
+/* ####### settings menu ####### */
+
+#goToStartButton {
+    transition: 0.5s ease-out;
+    position: fixed;
+    bottom: 8%;
+    z-index: 999;
+    background-color: var(--secondmain-color);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #101822;
+    transition: 0.3s ease-in-out;
+    border: 2px solid var(--main-color);
+}
+
+#goToStartButton:hover {
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
+    transform: scale(1.1);
+    border: 2px solid var(--white-color);
+    background-color: var(--main-color);
+}
+
+.goToStartBtn {
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: var(--base-color);
+}
+
+.goToStartBtn:hover {
+    color: var(--white-color);
+}
+
+
+.main-setings-menu{
+    z-index: 999;
+    position: fixed;
+    right: 3%;
+    bottom: 8%;
+    list-style: none;
+}
+
+.setings-menu{
+    height: 0;
+    opacity: 0;
+    transition:  .3s ease-out;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
+}
+
+.setings-menu li{
+    transition:  .3s ease-out;
+    text-align: center;
+    color: var(--base-color);
+    list-style: none;
+    margin: 10px;
+    padding: 5px 3px;
+}
+
+.setings-menu li a{
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.setings-menu li a:hover{
+    color: var(--white-color);
+}
+
+.setings-menu li:hover{
+    transform: scale(1.2);
+}
+
 .role {
     background: #18212A;
     height: 100%;
