@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <!--###### Music ####-->
+    <audio id="audio"  autoplay loop>
+        <source src="../Sound-track/Pages-Themes/Main-page-theme.mp3" type="audio/mp3"/>
+    </audio>
+
     <!-- ################# cursor ################# -->
     <div class='cursor' id="cursor"></div>
     <div class='cursor2' id="cursor2"></div>
@@ -88,12 +93,12 @@
     <div id="progressbar"></div>
     <!-- ############################################# HOME SECTION ############################################# -->
 
-
+    <!-- Settings !-->
     <ul class="main-setings-menu">
         <li><ul class="setings-menu" id="setings">
             <li><a href="#" class="fa fa-arrow-up"></a></li>
-            <li><a href="#" class="fa fa-sun-o"></a></li>
-            <li><a href="#" class="fa fa-music"></a></li>
+            <li><a  id="themeBtn" class="fa fa-sun-o"></a></li>
+            <li><a id="musicBtn" class="fa fa-music"></a></li>
             <li>O</li>
         </ul></li>
         <li><div id="goToStartButton"><a class="goToStartBtn" ><i class="fa fa-gear"></i></a></div></li>
@@ -142,7 +147,6 @@
                         <p class="right">TEST YOUR SKILLS</p>
                     </div>
                 </div>
-
         </div>
     </div>
 

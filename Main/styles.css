@@ -27,6 +27,7 @@
     ##          Background text : 1rem
     ##           
     */
+    
 }
 
 *,
@@ -42,6 +43,7 @@ html {
 }
 
 body {
+    transition: .3s ease-in-out;
     overflow-x: hidden;
     font-family: var(--font);
     background-color: var(--base-color);
@@ -53,8 +55,9 @@ body {
 }
 
 .Houme-container {
+    transition: .3s ease-in-out;
     position: absolute;
-    background-color: #18212A;
+    background-color: var(--base-color);
     width: 100%;
     height: 1150px;
     /*opacity: 0.7;*/
@@ -272,7 +275,7 @@ body {
     background-color: var(--secondmain-color);
     text-align: center;
     border-radius: 25px;
-   /* box-shadow: 0 0 20px var(--secondbase-color); */
+    box-shadow: 0 0 20px #101822;
     transition: 0.3s ease-in-out;
     border: 2px solid var(--main-color);
 }
@@ -928,6 +931,7 @@ a.black {
 
 .bg-agents {
     background: url('./scr/Ascent.jpg');
+    
     background-size: cover;
     width: 180%;
     position: absolute;
@@ -942,9 +946,10 @@ a.black {
 }
 
 .agents-container {
+    transition: .3s ease-in-out;
     position: absolute;
     margin-top: -202px;
-    background-color: #18212A;
+    background-color: var(--base-color);
     width: 100%;
     height: 1150px;
     /*1700px*/
@@ -1264,13 +1269,13 @@ button:focus {
     width: 250px;
     transform: rotate(45deg);
     margin: -6rem 0% -2.5rem -6rem;
-    background-color: var(--white-color);
+    background-color: #ece8e1;
 }
 
 .container-shape {
     position: relative;
     margin-top: 50%;
-    background-color: var(--white-color);
+    background-color: #ece8e1;
     /* need to make it responsive here! */
 }
 
@@ -1284,7 +1289,7 @@ button:focus {
     line-height: 80px;
     left: 14%;
     margin-top: 12.5rem;
-    color: var(--base-color);
+    color: #0f1923;
     z-index: 3;
 }
 
@@ -1333,7 +1338,7 @@ button:focus {
 .maps-title-shadow h1 {
     position: absolute;
     opacity: 7%;
-    color: var(--base-color);
+    color: #0f1923;
     left: 1%;
     font-size: 120px;
     z-index: 2;
@@ -1348,7 +1353,7 @@ button:focus {
     padding-top: 20rem;
     right: 50%;
     z-index: 2;
-    color: var(--base-color);
+    color: #0f1923;
 }
 
 .text-maps h2 {
@@ -1487,7 +1492,7 @@ button:focus {
 }
 
 .bg-guns {
-    /*background-color: #18212a;*/
+    /*background-color: var(--base-color);*/
     background: url('./scr/guns-bg.jpg');
     background-size: cover;
     width: 150%;
@@ -1496,22 +1501,23 @@ button:focus {
     left: -15rem;
     margin-top: -20rem;
     opacity: 7%;
-    z-index: -1;
+    z-index: 1;
     mix-blend-mode: color-dodge;
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
     height: 1500px;
     display: block;
 }
 
+
 .guns-container {
+    transition: .3s ease-in-out;
     position: absolute;
     margin-top: -202px;
     margin-bottom: -218px;
-    background-color: #18212A;
+    background-color: var(--base-color);
     width: 100%;
     height: 1450px;
     /*1700px*/
-    /*opacity: 0.7;*/
     z-index: -20;
 }
 
@@ -1765,7 +1771,7 @@ background: url('./scr/Val_text_R.jpg');
     font-style: normal;
     font-weight: 1500;
     font-size: 30px;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .five img {
@@ -1788,7 +1794,7 @@ background: url('./scr/Val_text_R.jpg');
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 
@@ -1889,7 +1895,7 @@ background: url('./scr/Val_text_R.jpg');
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
-    color: #18212A;
+    color: var(--base-color);
     padding-right: 50px;
     transition: width .3s;
 }
@@ -1906,7 +1912,7 @@ background: url('./scr/Val_text_R.jpg');
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
-    color: #18212A;
+    color: var(--base-color);
     padding-right: 50px;
     transition: width .3s;
 }
@@ -1923,7 +1929,7 @@ background: url('./scr/Val_text_R.jpg');
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
-    color: #18212A;
+    color: var(--base-color);
     padding-right: 50px;
     transition: width .3s;
 }
@@ -1953,7 +1959,7 @@ background: url('./scr/Val_text_R.jpg');
     width: 100%;
     /*margin-top:1185px ; vide entre photo et div de copyR ==null */
     height: 100px;
-    background-color: #18212A;
+    background-color: var(--base-color);
     position: absolute;
 }
 
@@ -2129,7 +2135,7 @@ transition: width .3s;
 }
 
 .cursor {
-    background-color: #fff;
+    background-color: var(--white-color);
     height: 0;
     width: 0;
     z-index: 99999;
