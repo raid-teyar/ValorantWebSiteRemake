@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="haven-Style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>HAVEN</title>
+</head>
+
+<body>
+     <!-- ################--Animated TRANSITION--################-->
+
+     <div class="loader loader--active">
+        <div class="loader__icon">
+            <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+            <path opacity="0.8" fill="#ece8e1" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+            <path fill="#ff4655" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z"></path>
+            <animate Transform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+          </svg>
+        </div>
+        <!-- Blue -->
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+        <div class="loader__tile"></div>
+
+        <!-- Pink -->
+        <div class="loader__tile"></div>
+        <div class="loader__tileP"></div>
+        <div class="loader__tileP"></div>
+        <div class="loader__tileP"></div>
+        <div class="loader__tileP"></div>
+        <div class="loader__tileP"></div>
+
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>MAP - HAVEN</h1>
+            </div>
+
+            <div class="first-text">
+
+                <audio id="map-audio" src="SkyeMatchStartHaven.mp3"></audio>
+                <button class="audio-btn">
+        
+                  <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+                  <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
+                </button>
+
+
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+
+                        $(".audio-btn .fa-play-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-pause-circle").fadeIn();
+                            $("#map-audio")[0].play();
+                        });
+                        $(".audio-btn .fa-pause-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-play-circle").fadeIn();
+                            $("#map-audio")[0].pause();
+                        });
+
+                    })
+                </script>
+
+
+                “I can feel what this place used to be. It's dying! <br> What a damn shame...” <br> — Skye (Match Start on Haven)
+
+            </div>
+            <div class="second-text">Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. <br> There’s more territory to control, but defenders can use the extra real estate for aggressive pushes.
+            </div>
+            <div class="map-haven-img">
+                <img src="./haven-img/Loading_Haven.png" alt="haven">
+            </div>
+            <div class="third-text">Haven's 'unique' feature is that it has an additional third spike site. This does not affect the number of ultimate <br> orbs on the map; Haven's two ultimate orbs are present in A Long and C Long (Dragon). <br><br> Map coordinates at 27°28'A"
+                N 89°38'WZ" E, in Thimphu, Bhutan. <br><br> In A site tower, there is an empty sniper rifle case along with ammo and a jar of what is assumed to be piss, <br> this might be a reference to Sniper from TF2, who is well known for jars of
+                piss, even being a secondary weapon option for him.
+            </div>
+            <div class="haven-map">
+                <img src="./haven-img/TX_Map_Triad_FogOfWar 1.png" alt="haven-map">
+            </div>
+            <div class="short-text">HAVEN IN GAME MINI-MAP</div>
+            <div class="callouts">
+                <h2>callouts</h2>
+            </div>
+            <div class="maps">
+                <ul id="first">
+                    <li>A Site</li>
+                    <li>B Site</li>
+                    <li>Back</li>
+                    <li>c Site</li>
+                    <li>coutryard</li>
+                </ul>
+
+
+
+
+                <ul id="second">
+                    <li>cubby</li>
+                    <li>hay Bales</li>
+                    <li>garage</li>
+                    <li>garden</li>
+                    <li>link</li>
+                </ul>
+
+
+
+
+                <ul id="third">
+                    <li>lobby</li>
+                    <li>long</li>
+                    <li>Sewer</li>
+                    <li>short</li>
+                    <li>Site</li>
+                </ul>
+
+
+
+
+
+
+
+                <ul id="fourth">
+                    <li>Spawn</li>
+                    <li>Tower</li>
+                    <li>window (on C Site)</li>
+                    <li>window (on Mid)</li>
+
+                </ul>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="Button-maps">
+                <button class="click"><span class="fas fa-caret-down"></span> select other map</button>
+
+
+
+                <div class="list">
+
+                    <button class="link-map" onclick="document.location='../main-map/main-maps.html'">maps page</button><br>
+                    <button class="link-map" onclick="document.location='../ascent/AscentMap.html'">ASCENT</button><br>
+                    <button class="link-map" onclick="document.location='../bind/bind-map.html'">BIND</button><br>
+                    <button class="link-map" onclick="document.location='../Breeze/breeze-map.html'">BREEZE</button><br>
+                    <button class="link-map" onclick="document.location='../Fracture/fracture-map.html'">FRACTURE</button><br>
+                    <button class="link-map" onclick="document.location='../Split/split.html'">split</button><br>
+                    <button class="link-map" onclick="document.location='../Icebox/icebox-map.html'">ICEBOX</button>
+
+                </div>
+            </div>
+
+
+
+            <script>
+                let click = document.querySelector('.click');
+
+                let list = document.querySelector('.list');
+
+                click.addEventListener("click", () => {
+
+                    list.classList.toggle('newlist');
+
+                });
+            </script>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="./haven-img/val_logo_R.png">
+            </div>
+            <div class="logo2">
+                <img src="./haven-img/Red-Riot-games.png" width="160" height="50">
+            </div>
+            <div class="logo-T">
+                <img src="./haven-img/image 7.jpg" width="80" height="126">
+            </div>
+            <div class="cop">
+                <h3>Blood </h3>
+            </div>
+            <div class="cop-2">
+                <h2>Language</h2>
+            </div>
+            <div class="cop-3">
+                <h2>Violence</h2>
+            </div>
+            <div class="cop-4">
+                <h2>Users Interact</h2>
+            </div>
+            <div class="cop-5">
+                <h2>InGame Purchase</h2>
+            </div>
+
+            <div class="footer-bottom">
+                <p>DOWNLOAD GAME CLIENT</p>
+            </div>
+
+            <div class="RAA">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="ZA">
+                <a href="#">
+                    <div class="p-n">
+                        <h3>Privacy notice</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-n2">
+                        <h3>Term of service</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-n3">
+                        <h3>Cookie prefrence</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /* #################################    TRANSITION & ProgressBar */
+        var $loader = document.querySelector('.loader')
+        var progerssbar = document.getElementById('progressbar');
+        var totalhight = document.body.scrollHeight - window.innerHeight;
+        window.onload = function() {
+            $loader.classList.remove('loader--active')
+            progerssbar.style.height = 0;
+            $(window).scroll(function() {
+            var progresshight = (window.pageYOffset / totalhight) * 100;
+            progerssbar.style.height = progresshight + "%";
+        });
+        };
+    </script>
+
+
+
+
+</body>
+
+</html>
