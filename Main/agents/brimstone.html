@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="brimstone.css">
-    <link rel="stylesheet" href="./all.css">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>BRIMSTONE</title>
 </head>
 
@@ -27,12 +27,7 @@
         </div>
         <div class="role-description">
             <h4>
-                Joining from the USA,<br>
-                 Brimstone's orbital arsenal ensures <br>
-                 his squad always has the advantage.<br>
-                  His ability to deliver utility precisely <br>
-                  and from a distance make him an unmatched <br>
-                  boots-on-the-ground commander.
+                Joining from the USA,<br> Brimstone's orbital arsenal ensures <br> his squad always has the advantage.<br> His ability to deliver utility precisely <br> and from a distance make him an unmatched <br> boots-on-the-ground commander.
             </h4>
         </div>
         <div class="role-name">
@@ -45,7 +40,7 @@
     </div>
 
 
-    
+
     <div class="bg-music">
         <audio id="myMusic" src="./agents sound/Brimstone.mpeg" loop=""></audio>
         <button class="btn">
@@ -160,21 +155,22 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
-        $ (document).ready(function(){
-      
-         $(".btn .fa-play-circle").on('click',function(){
-          $(this).hide();
-          $(".fa-pause-circle").fadeIn();
-            $("#myMusic")[0].play();
-         });
-      
-         $(".btn .fa-pause-circle").on('click',function(){
-          $(this).hide();
-          $(".fa-play-circle").fadeIn();
-            $("#myMusic")[0].pause();
-         });
-      
-       });
-       </script>
+        $(document).ready(function() {
+
+            $(".btn .fa-play-circle").on('click', function() {
+                $(this).hide();
+                $(".fa-pause-circle").fadeIn();
+                $("#myMusic")[0].play();
+            });
+
+            $(".btn .fa-pause-circle").on('click', function() {
+                $(this).hide();
+                $(".fa-play-circle").fadeIn();
+                $("#myMusic")[0].pause();
+            });
+
+        });
+    </script>
 </body>
+
 </html>
