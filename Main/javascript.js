@@ -11,32 +11,35 @@ window.onload = function() {
 });
 };
 
-document.querySelector('.btn').addEventListener('click', function() {
-    $loader.classList.add('loader--active')
-    window.setTimeout(function() {
-        $loader.classList.remove('loader--active')
-    }, 5000)
+
+
+/* ##### settings ##### */
+
+var settingsBtn = document.getElementById('goToStartButton');
+var settingsMenu = document.getElementById('setings');
+var visible = false;
+settingsBtn.addEventListener("click", function () {
+    if (visible) {
+        settingsMenu.style.opacity = 0;
+        settingsMenu.style.height = 0;
+        settingsBtn.style.transform  = 'rotate(80deg)';
+        visible = false;
+    }else{
+        settingsMenu.style.opacity = 1;
+        settingsMenu.style.height = '200px';
+        settingsBtn.style.transform  = 'rotate(-80deg)';
+        visible = true;
+    }
+    
 });
-
-
 
 
 /* #################################    PARTICLES */
 
 var particles = document.getElementById('particles');
-var goToStartBtn = document.getElementById('goToStartButton');
 window.addEventListener('scroll', function() {
     var scrolling = window.scrollY;
     particles.style.top = (scrolling + 300) * 0.5 + 'px';
-});
-
-
-
-
-
-$(window).scroll(function() {
-    var progresshight = (window.pageYOffset / totalhight) * 100;
-    progerssbar.style.height = progresshight + "%";
 });
 
 /* #################################    NAV BAR */

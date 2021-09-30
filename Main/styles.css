@@ -262,22 +262,19 @@ body {
 }
 
 
-/* Small buttons (go to start and opan navbar buttons) */
+/* ####### settings menu ####### */
 
 #goToStartButton {
-    z-index: 999;
+    transition: 0.5s ease-out;
     position: fixed;
-    top: 85%;
-    left: 49%;
-    height: 50px;
-    width: 50px;
+    bottom: 8%;
+    z-index: 999;
     background-color: var(--secondmain-color);
     text-align: center;
     border-radius: 25px;
-    box-shadow: 0 0 20px var(--secondbase-color);
+   /* box-shadow: 0 0 20px var(--secondbase-color); */
     transition: 0.3s ease-in-out;
     border: 2px solid var(--main-color);
-    visibility: collapse;
 }
 
 #goToStartButton:hover {
@@ -291,13 +288,53 @@ body {
     padding: 15px;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     color: var(--base-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .goToStartBtn:hover {
     color: var(--white-color);
+}
+
+
+.main-setings-menu{
+    z-index: 999;
+    position: fixed;
+    right: 3%;
+    bottom: 8%;
+    list-style: none;
+}
+
+.setings-menu{
+    height: 0;
+    opacity: 0;
+    transition:  .3s ease-out;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
+}
+
+.setings-menu li{
+    transition:  .3s ease-out;
+    text-align: center;
+    color: var(--base-color);
+    list-style: none;
+    margin: 10px;
+    padding: 5px 3px;
+}
+
+.setings-menu li a{
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.setings-menu li a:hover{
+    color: var(--white-color);
+}
+
+.setings-menu li:hover{
+    transform: scale(1.2);
 }
 
 
