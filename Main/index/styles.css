@@ -1768,7 +1768,6 @@ background: url('./scr/Val_text_R.jpg');
 .text h2 {
     position: absolute;
     width: 498px;
-    height: 555px;
     left: 100px;
     /*228*/
     top: 760px;
@@ -2603,10 +2602,24 @@ transition: width .3s;
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1366px) {
     .home-agent-videos {
         position: absolute;
-        top: 30%;
+        width: 720px;
+        height: 720px;
+        top: 10%;
         left: 50%;
+    }
+
+    .main-text{
+        top: 22%;
+        left: 8%;
+    }
+    .character-jett{
+        position: absolute;
+        margin-left: 56%;
+    }
+    .text-agents{
+        font-size: 18px;
     }
 }
