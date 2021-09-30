@@ -7,6 +7,8 @@
 
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Ascent map</title>
 </head>
@@ -283,19 +285,18 @@
         </div>
     </footer>
     <script>
-        
-/* #################################    TRANSITION & ProgressBar */
-var $loader = document.querySelector('.loader')
-var progerssbar = document.getElementById('progressbar');
-var totalhight = document.body.scrollHeight - window.innerHeight;
-window.onload = function() {
-    $loader.classList.remove('loader--active')
-    progerssbar.style.height = 0;
-    $(window).scroll(function() {
-    var progresshight = (window.pageYOffset / totalhight) * 100;
-    progerssbar.style.height = progresshight + "%";
-});
-};
+        /* #################################    TRANSITION & ProgressBar */
+        var $loader = document.querySelector('.loader')
+        var progerssbar = document.getElementById('progressbar');
+        var totalhight = document.body.scrollHeight - window.innerHeight;
+        window.onload = function() {
+            $loader.classList.remove('loader--active')
+            progerssbar.style.height = 0;
+            $(window).scroll(function() {
+                var progresshight = (window.pageYOffset / totalhight) * 100;
+                progerssbar.style.height = progresshight + "%";
+            });
+        };
     </script>
 
 
