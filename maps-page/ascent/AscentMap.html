@@ -2,56 +2,53 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="AscentMapStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="AscentMapStyle.css">
 
 
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
-  <div class="main">
-    <div class="container">
-      <div class="title">
-        <h1>MAP - ASCENT</h1>
-      </div>
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>MAP - ASCENT</h1>
+            </div>
 
-      <!--<audio controls="controls" >loop="loop" autoplay-->
-      
+            <!--<audio controls="controls" >loop="loop" autoplay-->
 
-      <div class="first-text">
-        
-        <audio  id="map-audio" src="ReynaMatchStartAscent.mp3"></audio>
-        <button class="audio-btn">
+
+            <div class="first-text">
+
+                <audio id="map-audio" src="ReynaMatchStartAscent.mp3"></audio>
+                <button class="audio-btn">
 
           <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
           <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
         </button>
 
-        
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 
-<script type="text/javascript">
+                <script type="text/javascript">
+                    $(document).ready(function() {
 
+                        $(".audio-btn .fa-play-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-pause-circle").fadeIn();
+                            $("#map-audio")[0].play();
+                        });
+                        $(".audio-btn .fa-pause-circle").on('click', function() {
+                            $(this).hide();
+                            $(".fa-play-circle").fadeIn();
+                            $("#map-audio")[0].pause();
+                        });
 
-	$(document).ready(function(){
-
-		$(".audio-btn .fa-play-circle").on('click',function(){
-			$(this).hide();
-			$(".fa-pause-circle").fadeIn();
-			$("#map-audio")[0].play();
-		});
-		$(".audio-btn .fa-pause-circle").on('click',function(){
-			$(this).hide();
-			$(".fa-play-circle").fadeIn();
-			$("#map-audio")[0].pause();
-		});
-
-	})
-</script>
+                    })
+                </script>
 
 
 
@@ -144,47 +141,47 @@
 
 
 
-      </div>
-
-
-
-
-           
-
-      <div class="Button-maps"> 
-        <button class="click"><span class="fas fa-caret-down"></span> select other map</button>
-
-
-
-                <div class="list">
-
-                    <button class="link-map" onclick="document.location='/maps-page/main-map/main-maps.html'">maps page</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/bind/bind-map.html'">BIND</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Breeze/breeze-map.html'">BREEZE</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Fracture/fracture-map.html'">FRACTURE</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Haven/haven-map.html'">HAVEN</button><br>
-                    <button class="link-map" onclick="document.location='/maps-page/Icebox/icebox-map.html'">ICEBOX</button> <br>
-                    <button class="link-map" onclick="document.location='/maps-page/Split/split.html'">SPLIT</button>
-
-
-                </div>
-            </div>
-
-
-
-            <script>
-                let click = document.querySelector('.click');
-
-                let list = document.querySelector('.list');
-
-                click.addEventListener("click", () => {
-
-                    list.classList.toggle('newlist');
-
-                });
-            </script>
-
         </div>
+
+
+
+
+
+
+        <div class="Button-maps">
+            <button class="click"><span class="fas fa-caret-down"></span> select other map</button>
+
+
+
+            <div class="list">
+
+                <button class="link-map" onclick="document.location='/main-map/main-maps.html'">maps page</button><br>
+                <button class="link-map" onclick="document.location='/bind/bind-map.html'">BIND</button><br>
+                <button class="link-map" onclick="document.location='/Breeze/breeze-map.html'">BREEZE</button><br>
+                <button class="link-map" onclick="document.location='/Fracture/fracture-map.html'">FRACTURE</button><br>
+                <button class="link-map" onclick="document.location='/Haven/haven-map.html'">HAVEN</button><br>
+                <button class="link-map" onclick="document.location='/Icebox/icebox-map.html'">ICEBOX</button> <br>
+                <button class="link-map" onclick="document.location='/Split/split.html'">SPLIT</button>
+
+
+            </div>
+        </div>
+
+
+
+        <script>
+            let click = document.querySelector('.click');
+
+            let list = document.querySelector('.list');
+
+            click.addEventListener("click", () => {
+
+                list.classList.toggle('newlist');
+
+            });
+        </script>
+
+    </div>
 
 
 
@@ -206,9 +203,9 @@
             <a href="#"><img src="./ascent-img/valorant-logo.png" alt="Valorant"></a>
         </div>
 
- </div>
-    
-   
+        </div>
+
+
         <div class="riot-logo">
             <img src="./ascent-img/Red-Riot-games.png" alt="Riot games">
         </div>
