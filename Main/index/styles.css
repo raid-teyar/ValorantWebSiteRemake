@@ -2590,7 +2590,6 @@ transition: width .3s;
         position: absolute;
         top: 5%;
         left: 50%;
-        display: none;
     }
     .home-agent-videos video {
         width: 100%;
