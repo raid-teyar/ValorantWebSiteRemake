@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main-maps-style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="title">
+                <h1>MAPS</h1>
+            </div>
+            <div class="text">
+                <p>Each match of VALORANT takes place on a map, Maps feature a spawn area for each team, barriers that limit accessible areas during the Buy Phase, and objective sites where the spike is to be planted. </p>
+
+                <p>Four maps were available at launch, and a six-month cycle is expected for the release of new maps.</p>
+
+                <p>There are currently seven playable maps in VALORANT, with an additional one for practice and training new players.</p>
+                <p>
+                    Each map in VALORANT has a real-life location, with its coordinates shown on the loading screen when entering a game on that map The coordinates are listed as latitude and longitude using degrees, minutes, and seconds. The seconds values are shown as
+                    letters instead, with each letter representing a digit.
+                </p>
+            </div>
+
+            <!--**********************************************************************************************************-->
+            <div class="Button-maps">
+                <button class="click"><span class="fas fa-caret-down "> </span> SELECT A MAP</button>
+
+
+
+
+
+                <div class="list">
+
+                    <button class="link-map" onclick="document.location='/ascent/AscentMap.html'">ASCENT</button><br>
+
+                    <button class="link-map" onclick="document.location='/bind/bind-map.html'">BIND</button><br>
+
+                    <button class="link-map" onclick="document.location='/Breeze/breeze-map.html'">BREEZE</button><br>
+
+                    <button class="link-map" onclick="document.location='/Fracture/fracture-map.html'">FRACTURE</button><br>
+
+
+                    <button class="link-map" onclick="document.location='/Haven/haven-map.html'">HAVEN</button><br>
+
+
+                    <button class="link-map" onclick="document.location='/Icebox/icebox-map.html'">ICEBOX</button> <br>
+
+                    <button class="link-map" onclick="document.location='/Split/split.html'">SPLIT</button>
+
+                </div>
+
+            </div>
+
+            <script>
+                let click = document.querySelector('.click');
+
+                let list = document.querySelector('.list');
+
+                click.addEventListener("click", () => {
+
+                    list.classList.toggle('newlist');
+
+                });
+            </script>
+
+
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="./map-img/val_logo_R.png">
+            </div>
+            <div class="logo2">
+                <img src="./map-img/Red-Riot-games.png" width="160" height="50">
+            </div>
+            <div class="logo-T">
+                <img src="./map-img/image 7.jpg" width="80" height="126">
+            </div>
+            <div class="cop">
+                <h3>Blood </h3>
+            </div>
+            <div class="cop-2">
+                <h2>Language</h2>
+            </div>
+            <div class="cop-3">
+                <h2>Violence</h2>
+            </div>
+            <div class="cop-4">
+                <h2>Users Interact</h2>
+            </div>
+            <div class="cop-5">
+                <h2>InGame Purchase</h2>
+            </div>
+
+            <div class="footer-bottom">
+                <p>DOWNLOAD GAME CLIENT</p>
+            </div>
+
+            <div class="RAA">
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="ZA">
+                <a href="#">
+                    <div class="p-n">
+                        <h3>Privacy notice</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-n2">
+                        <h3>Term of service</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-n3">
+                        <h3>Cookie prefrence</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
