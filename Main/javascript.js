@@ -1,17 +1,22 @@
-/* #################################    TRANSITION */
+/* #################################    TRANSITION & ProgressBar */
 var $loader = document.querySelector('.loader')
-
+var progerssbar = document.getElementById('progressbar');
+var totalhight = document.body.scrollHeight - window.innerHeight;
 window.onload = function() {
     $loader.classList.remove('loader--active')
+    progerssbar.style.height = 0;
+    $(window).scroll(function() {
+    var progresshight = (window.pageYOffset / totalhight) * 100;
+    progerssbar.style.height = progresshight + "%";
+});
 };
 
 document.querySelector('.btn').addEventListener('click', function() {
     $loader.classList.add('loader--active')
-
     window.setTimeout(function() {
         $loader.classList.remove('loader--active')
     }, 5000)
-})
+});
 
 
 
@@ -25,19 +30,11 @@ window.addEventListener('scroll', function() {
     particles.style.top = (scrolling + 300) * 0.5 + 'px';
 });
 
-/* #################################    PROGRESS BAR */
 
-var progerssbar = document.getElementById('progressbar');
-var totalhight = document.body.scrollHeight - window.innerHeight;
-progerssbar.style.height = 0;
+
+
+
 $(window).scroll(function() {
-    if ($(window).scrollTop()) {
-        $("header").addClass("black");
-        $("a").addClass("black");
-    } else {
-        $("header").removeClass("black");
-        $("a").removeClass("black");
-    }
     var progresshight = (window.pageYOffset / totalhight) * 100;
     progerssbar.style.height = progresshight + "%";
 });
