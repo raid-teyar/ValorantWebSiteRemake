@@ -32,7 +32,9 @@
     */
 }
 /* ####### settings menu ####### */
-
+body{
+    background-color: var(--white-color);
+}
 #goToStartButton {
     transition: 0.5s ease-out;
     position: fixed;
@@ -107,7 +109,7 @@
 }
 
 .role {
-    background: #18212A;
+    background: var(--base-color);
     height: 100%;
     position: absolute;
     width: 100%;
@@ -115,8 +117,8 @@
 
 .breach_vd {
     position: absolute;
-    left: 40.5%;
-    top: 4%;
+    left: 46.5%;
+    top: 10.7%;
 }
 
 .text-1 h3 {
@@ -127,7 +129,7 @@
     font-style: italic;
     font-weight: 400;
     font-size: 26px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .text-2 h2 {
@@ -138,14 +140,14 @@
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .role-logo img {
     position: absolute;
     width: 51px;
     height: 51px;
-    left: 34%;
+    left: 40%;
     top: 30%;
 }
 
@@ -157,7 +159,7 @@
     font-weight: normal;
     font-style: italic;
     font-size: 26px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .role-description h4 {
@@ -167,33 +169,33 @@
     font-family: sans-serif;
     font-weight: normal;
     font-size: 24px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .role-name h2 {
     position: absolute;
     width: 530px;
-    height: 100px;
+    height: 140px;
     left: 950px;
-    top: 47%;
+    top: 36%;
     font-family: VALORANT;
     font-weight: normal;
-    font-size: 120px;
-    color: #ECE8E1;
+    font-size: 170px;
+    color: var(--white-color);
     opacity: 0.6;
     transform: rotate(90deg);
 }
 
 .role-name h3 {
     position: absolute;
-    width: 490px;
-    height: 160px;
-    left: 930px;
-    top: 39%;
+    width: 530px;
+    height: 140px;
+    left: 940px;
+    top: 34%;
     font-family: VALORANT;
     font-weight: normal;
-    font-size: 125px;
-    color: #ECE8E1;
+    font-size: 170px;
+    color: var(--white-color);
     opacity: 0.09;
     transform: rotate(90deg);
 }
@@ -209,7 +211,7 @@
     font-size: 48px;
     line-height: 109.84%;
     top: 115%;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .text2 p {
@@ -221,7 +223,7 @@
     font-family: sans-serif;
     font-style: normal;
     font-size: 24px;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .text3 p {
@@ -234,7 +236,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .special-abilities h2 {
@@ -248,7 +250,7 @@
     font-weight: 700;
     font-size: 48px;
     top: 215%;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .special-abilities .rectangle {
@@ -258,7 +260,7 @@
     left: calc(50% - 930px/2);
     top: calc(50% - 500px/2 + 471px);
     top: 238%;
-    background: #18212A;
+    background: var(--base-color);
 }
 
 .rectangle h2 {
@@ -269,7 +271,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .special-abilities .rectangle-1 {
@@ -322,7 +324,7 @@
     font-weight: 600;
     font-size: 36px;
     top: 350%;
-    color: #18212A;
+    color: var(--base-color);
 }
 
 .special-abilities p {
@@ -336,7 +338,7 @@
     font-weight: normal;
     font-size: 30px;
     top: 366%;
-    color: #101822;
+    color: var(--base-color);
 }
 
 footer {
@@ -344,11 +346,11 @@ footer {
     top: 400%;
     left: 0;
     right: 0;
-    background: #18212A;
+    background: var(--base-color);
     height: 80vh;
     width: 98.5vw;
     font-family: "Open Sans";
-    color: #fff;
+    color: var(--white-color);
 }
 
 .footer-content {
@@ -386,7 +388,7 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .cop-2 h2 {
@@ -396,7 +398,7 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .cop-3 h2 {
@@ -408,7 +410,7 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .cop-4 h2 {
@@ -420,7 +422,7 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .cop-5 h2 {
@@ -430,7 +432,7 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 17px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .RAA {
@@ -478,7 +480,7 @@ footer {
     top: 93%;
     font-family: sans-serif;
     font-size: 16px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .p-n2 h3 {
@@ -487,7 +489,7 @@ footer {
     top: 93%;
     font-family: sans-serif;
     font-size: 18px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
 .p-n3 h3 {
@@ -497,25 +499,32 @@ footer {
     font-family: sans-serif;
     font-style: normal;
     font-size: 18px;
-    color: #ECE8E1;
+    color: var(--white-color);
 }
 
-.btn{
-    color: black;
+.btn {
+    color:var(--base-color);
+    border: none;
+    display: block;
+    opacity: .8;
+    transition: all linear .2s;
+    cursor: pointer;
     font-size: 60px;
     border: none;
     display: block;
     top: 50%;
     left: 20%;
 }
-.bg-music{
+
+.bg-music {
     position: absolute;
     top: 135%;
     left: 27%;
     right: 0;
     margin: 0 auto;
 }
-.fa-pause-circle{
+
+.fa-pause-circle {
     display: none;
 }
 
@@ -532,7 +541,7 @@ footer {
         font-family: VALORANT;
         font-weight: normal;
         font-size: 170px;
-        color: #ECE8E1;
+        color: var(--white-color);
         opacity: 0.6;
         transform: rotate(90deg);
     }
@@ -545,18 +554,18 @@ footer {
         font-family: VALORANT;
         font-weight: normal;
         font-size: 170px;
-        color: #ECE8E1;
+        color: var(--white-color);
         opacity: 0.09;
         transform: rotate(90deg);
     }
     .breach_vd {
         position: absolute;
-        left: 43.5%;
-        top: 27%;
+        left: 47.5%;
+        top: 20%;
     }
     video {
-        height: 100%;
-        width: 100%;
+        height: 85%;
+        width: 85%;
     }
 }
 /* ##### TRANSITION  #### */
