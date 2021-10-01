@@ -503,7 +503,7 @@ footer {
 }
 
 .btn {
-    color:var(--base-color);
+    color:#0f1923;
     border: none;
     display: block;
     opacity: .8;
