@@ -14,9 +14,26 @@
 </head>
 
 <body>
-    <!-- ################################################ !-->
-    <div id="scrollpath"></div>
-    <div id="progressbar"></div>
+     <!-- Settings !-->
+     <ul class="main-setings-menu">
+        <li>
+            <ul class="setings-menu" id="setings">
+                <li>
+                    <a href="#" class="fa fa-arrow-up"></a>
+                </li>
+                <li>
+                    <a id="themeBtn" class="fa fa-sun-o"></a>
+                </li>
+                <li>
+                    <a id="musicBtn" class="fa fa-music"></a>
+                </li>
+                <li>O</li>
+            </ul>
+        </li>
+        <li>
+            <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
+        </li>
+    </ul>
 
     <audio autoplay id="audio">
         <source src="valorant-ascent-map-theme-music.mp3" type="audio/mpeg">
@@ -53,23 +70,13 @@
             <div class="title">
                 <h1>MAP - ASCENT</h1>
             </div>
-
-            <!--<audio controls="controls" >loop="loop" autoplay-->
-
-
             <div class="first-text">
-
                 <audio id="map-audio" src="ReynaMatchStartAscent.mp3"></audio>
                 <button class="audio-btn">
-
           <i class='fas fa-play-circle' style='font-size:36px;margin-bottom:-70px;'></i>
           <i class='fas fa-pause-circle' style='font-size:36px;margin-bottom:-70px;'></i>
         </button>
-
-
                 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-
                 <script type="text/javascript">
                     $(document).ready(function() {
 
@@ -86,21 +93,6 @@
 
                     })
                 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 "*sighs* This poor place. It clings to life. A city after my own heart" <br> --Reyna (Match Start on Ascent)
             </div>
             <div class="second-text">Ascent is a launch map that was also the fourth map to be released in VALORANT. An open <br> playground for small wars of position and attrition divide two sites on Ascent. Each site can be <br> fortified by irreversible bomb doors; once they're
@@ -134,10 +126,6 @@
                     <li>Bottom</li>
                     <li>Wine</li>
                 </ul>
-
-
-
-
                 <ul id="second">
                     <li>Catwalk</li>
                     <li>Courtyard</li>
@@ -145,10 +133,6 @@
                     <li>Gardent</li>
                     <li>Link</li>
                 </ul>
-
-
-
-
                 <ul id="third">
                     <li>Lobby</li>
                     <li>Main</li>
@@ -156,13 +140,6 @@
                     <li>Pizza</li>
                     <li>Rafters</li>
                 </ul>
-
-
-
-
-
-
-
                 <ul id="fourth">
                     <li>Site</li>
                     <li>Spawn</li>
@@ -170,26 +147,10 @@
                     <li>Tree</li>
                     <li>Window</li>
                 </ul>
-
-
-
-
             </div>
-
-
-
         </div>
-
-
-
-
-
-
         <div class="Button-maps">
             <button class="click"><span class="fas fa-caret-down"></span> select other map</button>
-
-
-
             <div class="list">
 
                 <button class="link-map" onclick="document.location='../main-map/main-maps.html'">maps page</button><br>
@@ -199,13 +160,8 @@
                 <button class="link-map" onclick="document.location='../Haven/haven-map.html'">HAVEN</button><br>
                 <button class="link-map" onclick="document.location='../Icebox/icebox-map.html'">ICEBOX</button> <br>
                 <button class="link-map" onclick="document.location='../Split/split.html'">SPLIT</button>
-
-
             </div>
         </div>
-
-
-
         <script>
             let click = document.querySelector('.click');
 
@@ -311,5 +267,5 @@
 
 
 </body>
-
+<script src="../app.js"></script>
 </html>
