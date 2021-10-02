@@ -2610,16 +2610,15 @@ transition: width .3s;
         top: 10%;
         left: 50%;
     }
-
-    .main-text{
+    .main-text {
         top: 22%;
         left: 8%;
     }
-    .character-jett{
+    .character-jett {
         position: absolute;
         margin-left: 56%;
     }
-    .text-agents{
+    .text-agents {
         font-size: 18px;
     }
 }

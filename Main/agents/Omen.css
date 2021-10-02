@@ -4,7 +4,9 @@
 * {
     margin: 0;
     padding: 0;
-}:root {
+}
+
+:root {
     /* ##### COLORS #### */
     --base-color: #0f1923;
     --secondbase-color: #101822;
@@ -31,10 +33,27 @@
     ##           
     */
 }
-/* ####### settings menu ####### */
-body{
-    background-color: var(--white-color);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font);
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+
 #goToStartButton {
     transition: 0.5s ease-out;
     position: fixed;
@@ -67,8 +86,7 @@ body{
     color: var(--white-color);
 }
 
-
-.main-setings-menu{
+.main-setings-menu {
     z-index: 999;
     position: fixed;
     right: 3%;
@@ -76,18 +94,18 @@ body{
     list-style: none;
 }
 
-.setings-menu{
+.setings-menu {
     height: 0;
     opacity: 0;
-    transition:  .3s ease-out;
+    transition: .3s ease-out;
     background-color: var(--main-color);
     border-radius: 25px;
     border: 2px solid var(--white-color);
     box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
 }
 
-.setings-menu li{
-    transition:  .3s ease-out;
+.setings-menu li {
+    transition: .3s ease-out;
     text-align: center;
     color: var(--base-color);
     list-style: none;
@@ -95,16 +113,16 @@ body{
     padding: 5px 3px;
 }
 
-.setings-menu li a{
+.setings-menu li a {
     color: var(--base-color);
     text-decoration: none;
 }
 
-.setings-menu li a:hover{
+.setings-menu li a:hover {
     color: var(--white-color);
 }
 
-.setings-menu li:hover{
+.setings-menu li:hover {
     transform: scale(1.2);
 }
 
@@ -503,7 +521,7 @@ footer {
 }
 
 .btn {
-    color:#0f1923;
+    color: #0f1923;
     border: none;
     display: block;
     opacity: .8;
@@ -524,7 +542,7 @@ footer {
     margin: 0 auto;
 }
 
-.fa-pause-circle {
+.btn .fa-pause-circle {
     display: none;
 }
 
@@ -558,16 +576,32 @@ footer {
         opacity: 0.09;
         transform: rotate(90deg);
     }
+    .text3 p {
+        left: 600px;
+    }
     .Omen_vd {
         position: absolute;
         left: 47.5%;
-        top: 20%;
+        top: 4.6%;
     }
     video {
         height: 85%;
         width: 85%;
     }
 }
+
+
+/* ##### HIDING AND SHOWING TEXT  #### */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
 /* ##### TRANSITION  #### */
 
 .loader {

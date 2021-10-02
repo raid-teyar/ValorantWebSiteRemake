@@ -7,31 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Omen.css">
     <link rel="stylesheet" href="./all.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Omen</title>
 </head>
 
-<body><!-- Settings !-->
+<body>
+    <!-- Settings !-->
     <ul class="main-setings-menu">
-       <li>
-           <ul class="setings-menu" id="setings">
-               <li>
-                   <a href="#" class="fa fa-arrow-up"></a>
-               </li>
-               <li>
-                   <a id="themeBtn" class="fa fa-sun-o"></a>
-               </li>
-               <li>
-                   <a id="musicBtn" class="fa fa-music"></a>
-               </li>
-               <li>O</li>
-           </ul>
-       </li>
-       <li>
-           <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
-       </li>
-   </ul>
+        <li>
+            <ul class="setings-menu" id="setings">
+                <li>
+                    <a href="#" class="fa fa-arrow-up"></a>
+                </li>
+                <li>
+                    <a id="themeBtn" class="fa fa-sun-o"></a>
+                </li>
+                <li>
+                    <a id="musicBtn" class="fa fa-music"></a>
+                </li>
+                <li>O</li>
+            </ul>
+        </li>
+        <li>
+            <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
+        </li>
+    </ul>
 
     <!-- ################# Audio ################# -->
     <audio autoplay loop id="audio">
@@ -39,9 +42,9 @@
         <source src="Agents-page-theme.ogg" type="audio/mpeg">
         <source src="Agents-page-theme.wav" type="audio/mpeg">
      </audio>
-     <!-- ################--Animated TRANSITION--################-->
+    <!-- ################--Animated TRANSITION--################-->
 
-     <div class="loader loader--active">
+    <div class="loader loader--active">
         <div class="loader__icon">
             <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
             <path opacity="0.8" fill="#ece8e1" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
@@ -92,7 +95,7 @@
     </div>
 
     <div class="bg-music">
-        <audio id="myMusic" src="./agents sound/Omen.mpeg" loop=""></audio>
+        <audio id="myMusic" src="./agents sound/Omen.mpeg"></audio>
         <button class="btn">
             <i class="fas fa-play-circle"></i>
             <i class="fas fa-pause-circle"></i>
@@ -121,35 +124,67 @@
         <div class="rectangle">
             <h2>PLEASE, SELECT ABILITY ABOVE !</h2>
         </div>
-        <a href="#">
-            <div class="rectangle-1"> <img src="/Omen.png/O1.png" alt=""></div>
+        <a id="ability1">
+            <div class="rectangle-1"> <img src="./Omen.png/O1.png" alt=""></div>
         </a>
-        <a href="#">
-            <div class="rectangle-2"> <img src="/Omen.png/O2.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-3"> <img src="/Omen.png/O3.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-4"> <img src="/Omen.png/O4.png" alt=""></div>
-        </a>
-
-        <h3>Q - FLASH/DRIVE </h3>
-        <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
-
+        <button id="ability2">
+            <div class="rectangle-2"> <img src="./Omen.png/O2.png" alt=""></div>
+        </button>
+        <button id="ability3">
+            <div class="rectangle-3"> <img src="./Omen.png/O3.png" alt=""></div>
+        </button>
+        <button id="ability4">
+            <div class="rectangle-4"> <img src="./Omen.png/O4.png" alt=""></div>
+        </button>
+        <div class="hide" id="invisible">
+            <h3>Q - FLASH/DRIVE </h3>
+            <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
+        </div>
+        <div class="hide" id="invisible2">
+            <h3>sss </h3>
+            <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
+        </div>
+        <div class="hide" id="invisible3">
+            <h3>rrrr </h3>
+            <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
+        </div>
+        <div class="hide" id="invisible4">
+            <h3>xxx </h3>
+            <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
+        </div>
     </div>
 
+    <script>
+        $(function() {
+            $("#ability1").click(function q() {
+                $('#invisible').toggleClass("show");
+
+            });
+
+            $("#ability2").click(function e() {
+                $('#invisible2').toggleClass("show");
+            });
+            $("#ability3").click(function c() {
+                $('#invisible3').toggleClass("show");
+            });
+            $("#ability4").click(function x() {
+                $('#invisible4').toggleClass("show");
+            });
+
+
+        });
+    </script>
     <!-- ############################################# FOOTER SECTION ############################################# -->
     <footer>
         <div class="footer-content">
             <div class="logo">
-                <img src="/imgs/val_logo_R.png">
+                <img src="./imgs/val_logo_R.png">
             </div>
             <div class="logo2">
                 <img src="./imgs/image 10.png" width="160" height="50">
             </div>
             <div class="logo-T">
-                <img src="/imgs/image 11.png" width="80" height="126">
+                <img src="./imgs/image 11.png" width="80" height="126">
             </div>
             <div class="cop">
                 <h3>Blood </h3>
@@ -217,18 +252,19 @@
 
         });
         /* #################################    TRANSITION & ProgressBar */
-var $loader = document.querySelector('.loader')
-var progerssbar = document.getElementById('progressbar');
-var totalhight = document.body.scrollHeight - window.innerHeight;
-window.onload = function() {
-    $loader.classList.remove('loader--active')
-    progerssbar.style.height = 0;
-    $(window).scroll(function() {
-    var progresshight = (window.pageYOffset / totalhight) * 100;
-    progerssbar.style.height = progresshight + "%";
-});
-};
+        var $loader = document.querySelector('.loader')
+        var progerssbar = document.getElementById('progressbar');
+        var totalhight = document.body.scrollHeight - window.innerHeight;
+        window.onload = function() {
+            $loader.classList.remove('loader--active')
+            progerssbar.style.height = 0;
+            $(window).scroll(function() {
+                var progresshight = (window.pageYOffset / totalhight) * 100;
+                progerssbar.style.height = progresshight + "%";
+            });
+        };
     </script>
 </body>
 <script src="cursor.js"></script>
+
 </html>
