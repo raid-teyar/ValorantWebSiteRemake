@@ -131,12 +131,38 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
+    z-index: 0;
 }
 
 .Omen_vd {
     position: absolute;
     left: 46.5%;
     top: 10.7%;
+    z-index: 2;
+}
+
+.bg_vid {
+    position: absolute;
+    width: 130%;
+    height: auto;
+    top: 10%;
+    z-index: 1;
+}
+
+@media (max-width: 1350px) {
+    .bg_vid {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -25%;
+        z-index: 1;
+    }
+    .Omen_vd {
+        position: absolute;
+        left: 50%;
+        margin-top: 4.1%;
+        z-index: 2;
+    }
 }
 
 .text-1 h3 {
@@ -148,6 +174,7 @@ body {
     font-weight: 400;
     font-size: 26px;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .text-2 h2 {
@@ -159,6 +186,7 @@ body {
     font-weight: bold;
     font-size: 64px;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .role-logo img {
@@ -167,6 +195,7 @@ body {
     height: 51px;
     left: 40%;
     top: 30%;
+    z-index: 2;
 }
 
 .text h3 {
@@ -178,6 +207,7 @@ body {
     font-style: italic;
     font-size: 26px;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .role-description h4 {
@@ -188,6 +218,7 @@ body {
     font-weight: normal;
     font-size: 24px;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .role-name h2 {
@@ -202,6 +233,7 @@ body {
     color: var(--white-color);
     opacity: 0.6;
     transform: rotate(90deg);
+    z-index: 2;
 }
 
 .role-name h3 {
@@ -216,6 +248,7 @@ body {
     color: var(--white-color);
     opacity: 0.09;
     transform: rotate(90deg);
+    z-index: 2;
 }
 
 .text h2 {
@@ -595,7 +628,7 @@ footer {
     .Omen_vd {
         position: absolute;
         left: 47.5%;
-        top: 4.6%;
+        margin-top: -2.2%;
     }
     video {
         height: 85%;
