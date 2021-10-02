@@ -52,22 +52,3 @@ musicBtn.addEventListener('click', function() {
     }
 });
 
-
-
-/* #################################### TRANSITION SECTION */
-var $loader = document.querySelector('.loader')
-
-window.onload = function() {
-    $loader.classList.add('loader--active')
-};
-window.setTimeout(function() {
-    $loader.classList.remove('loader--active')
-}, 2000);
-
-
-/* #################################    TRANSITION & ProgressBar */
-var $loader = document.querySelector('.loader')
-var totalhight = document.body.scrollHeight - window.innerHeight;
-window.onload = function() {
-    $loader.classList.remove('loader--active')
-};
