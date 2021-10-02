@@ -123,6 +123,19 @@
     <div class="special-abilities">
         <h2>SPECIAL ABILITIES</h2>
         <div class="rectangle">
+            <!---->
+            <video class="hide" id="invisible-v1" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63486e54ea52945a/5ecad815bab1845d392dfd07/Omen_C_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v2" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70e2c9db1c0793df/5ecad815c846021917ecbb85/Omen_E_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v3" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5babc7e7c6c24fa0/5ecad8154a28e119db56229e/Omen_Q_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v4" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt65aa85bf6ba5c0e8/5ecad814a4fe135d37f021a3/Omen_X_v001_web.mp4" type="video/mp4">
+            </video>
             <h2>PLEASE, SELECT ABILITY ABOVE !</h2>
         </div>
         <a id="ability1">
@@ -161,6 +174,7 @@
     <script>
         $(function() {
             $("#ability1").click(function q() {
+                /*texts*/
                 $('#invisible1').addClass("show");
                 $('#invisible2').addClass("hide");
                 $('#invisible3').addClass("hide");
@@ -169,9 +183,20 @@
                 $('#invisible2').removeClass("show");
                 $('#invisible3').removeClass("show");
                 $('#invisible4').removeClass("show");
+                /* videos*/
+                $('#invisible-v1').addClass("show");
+                $('#invisible-v2').addClass("hide");
+                $('#invisible-v3').addClass("hide");
+                $('#invisible-v4').addClass("hide");
+
+                $('#invisible-v1').removeClass("hide");
+                $('#invisible-v4').removeClass("show");
+                $('#invisible-v2').removeClass("show");
+                $('#invisible-v3').removeClass("show");
             });
 
             $("#ability2").click(function e() {
+                /*texts*/
                 $('#invisible2').addClass("show");
                 $('#invisible3').addClass("hide");
                 $('#invisible4').addClass("hide");
@@ -180,8 +205,18 @@
                 $('#invisible3').removeClass("show");
                 $('#invisible4').removeClass("show");
                 $('#invisible1').removeClass("show");
+                /* videos*/
+                $('#invisible-v2').addClass("show");
+                $('#invisible-v1').addClass("hide");
+                $('#invisible-v3').addClass("hide");
+                $('#invisible-v4').addClass("hide");
+                $('#invisible-v2').removeClass("hide");
+                $('#invisible-v4').removeClass("show");
+                $('#invisible-v1').removeClass("show");
+                $('#invisible-v3').removeClass("show");
             });
             $("#ability3").click(function c() {
+                /*texts*/
                 $('#invisible3').addClass("show");
                 $('#invisible1').addClass("hide");
                 $('#invisible2').addClass("hide");
@@ -190,8 +225,18 @@
                 $('#invisible1').removeClass("show");
                 $('#invisible2').removeClass("show");
                 $('#invisible4').removeClass("show");
+                /* videos*/
+                $('#invisible-v3').addClass("show");
+                $('#invisible-v2').addClass("hide");
+                $('#invisible-v1').addClass("hide");
+                $('#invisible-v4').addClass("hide");
+                $('#invisible-v3').removeClass("hide");
+                $('#invisible-v4').removeClass("show");
+                $('#invisible-v2').removeClass("show");
+                $('#invisible-v1').removeClass("show");
             });
             $("#ability4").click(function x() {
+                /*texts*/
                 $('#invisible4').addClass("show");
                 $('#invisible1').addClass("hide");
                 $('#invisible2').addClass("hide");
@@ -200,6 +245,15 @@
                 $('#invisible1').removeClass("show");
                 $('#invisible2').removeClass("show");
                 $('#invisible3').removeClass("show");
+                /* videos*/
+                $('#invisible-v4').addClass("show");
+                $('#invisible-v2').addClass("hide");
+                $('#invisible-v3').addClass("hide");
+                $('#invisible-v1').addClass("hide");
+                $('#invisible-v4').removeClass("hide");
+                $('#invisible-v1').removeClass("show");
+                $('#invisible-v2').removeClass("show");
+                $('#invisible-v3').removeClass("show");
             });
 
 
