@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="split-Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,28 @@
     <!-- ################################################ !-->
     <div id="scrollpath"></div>
     <div id="progressbar"></div>
+<!-- Settings !-->
+<ul class="main-setings-menu">
+    <li>
+        <ul class="setings-menu" id="setings">
+            <li>
+                <a href="#" class="fa fa-arrow-up"></a>
+            </li>
+            <li>
+                <a id="themeBtn" class="fa fa-sun-o"></a>
+            </li>
+            <li>
+                <a id="musicBtn" class="fa fa-music"></a>
+            </li>
+            <li>O</li>
+        </ul>
+    </li>
+    <li>
+        <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
+    </li>
+</ul>
 
-
-    <audio autoplay id="audio">
+    <audio autoplay id="audio" loop>
         <source src="valorant-split-map-theme-music.mp3" type="audio/mpeg">
         <source src="valorant-split-map-theme-music.ogg" type="audio/mpeg">
         <source src="valorant-split-map-theme-music.wav" type="audio/mpeg">
@@ -288,5 +308,6 @@
 
 
 </body>
+<script src="../app.js"></script>
 
 </html>
