@@ -36,12 +36,15 @@
     margin: 0;
     padding: 0;
 }
+
 /* ####### settings menu ####### */
 
 #goToStartButton {
     transition: 0.5s ease-out;
     position: fixed;
     bottom: 8%;
+    height: 50px;
+    width: 50px;
     z-index: 999;
     background-color: var(--secondmain-color);
     text-align: center;
@@ -59,7 +62,7 @@
 }
 
 .goToStartBtn {
-    padding: 15px;
+    padding: 13px;
     text-decoration: none;
     text-align: center;
     line-height: 45px;
@@ -109,7 +112,6 @@
 .setings-menu li:hover {
     transform: scale(1.2);
 }
-
 html {
     scroll-behavior: smooth;
 }
