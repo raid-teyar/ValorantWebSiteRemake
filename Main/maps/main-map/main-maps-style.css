@@ -48,6 +48,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 /* ####### settings menu ####### */
 
 #goToStartButton {
@@ -106,7 +108,7 @@ body {
     color: var(--base-color);
     list-style: none;
     margin: 10px;
-    padding: 5px 3px;
+    padding: 3px 3px;
 }
 
 .setings-menu li a {
