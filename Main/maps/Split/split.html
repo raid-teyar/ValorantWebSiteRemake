@@ -11,6 +11,13 @@
 </head>
 
 <body>
+
+    <audio autoplay id="audio">
+        <source src="valorant-split-map-theme-music.mp3" type="audio/mpeg">
+        <source src="valorant-split-map-theme-music.ogg" type="audio/mpeg">
+        <source src="valorant-split-map-theme-music.wav" type="audio/mpeg">
+    </audio>
+
     <!-- ################--Animated TRANSITION--################-->
 
     <div class="loader loader--active">
@@ -260,17 +267,17 @@
     </footer>
     <script>
         /* #################################    TRANSITION & ProgressBar */
-var $loader = document.querySelector('.loader')
-var progerssbar = document.getElementById('progressbar');
-var totalhight = document.body.scrollHeight - window.innerHeight;
-window.onload = function() {
-    $loader.classList.remove('loader--active')
-    progerssbar.style.height = 0;
-    $(window).scroll(function() {
-    var progresshight = (window.pageYOffset / totalhight) * 100;
-    progerssbar.style.height = progresshight + "%";
-});
-};
+        var $loader = document.querySelector('.loader')
+        var progerssbar = document.getElementById('progressbar');
+        var totalhight = document.body.scrollHeight - window.innerHeight;
+        window.onload = function() {
+            $loader.classList.remove('loader--active')
+            progerssbar.style.height = 0;
+            $(window).scroll(function() {
+                var progresshight = (window.pageYOffset / totalhight) * 100;
+                progerssbar.style.height = progresshight + "%";
+            });
+        };
     </script>
 
 
