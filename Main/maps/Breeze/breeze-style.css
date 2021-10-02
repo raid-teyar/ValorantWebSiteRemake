@@ -36,6 +36,79 @@
     margin: 0;
     padding: 0;
 }
+/* ####### settings menu ####### */
+
+#goToStartButton {
+    transition: 0.5s ease-out;
+    position: fixed;
+    bottom: 8%;
+    z-index: 999;
+    background-color: var(--secondmain-color);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #101822;
+    transition: 0.3s ease-in-out;
+    border: 2px solid var(--main-color);
+}
+
+#goToStartButton:hover {
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
+    transform: scale(1.1);
+    border: 2px solid var(--white-color);
+    background-color: var(--main-color);
+}
+
+.goToStartBtn {
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: var(--base-color);
+}
+
+.goToStartBtn:hover {
+    color: var(--white-color);
+}
+
+.main-setings-menu {
+    z-index: 999;
+    position: fixed;
+    right: 3%;
+    bottom: 8%;
+    list-style: none;
+}
+
+.setings-menu {
+    height: 0;
+    opacity: 0;
+    transition: .3s ease-out;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border: 2px solid var(--white-color);
+    box-shadow: 0 0 10px var(--secondbase-color), 0 0 20px var(--main-color), 0 0 20px var(--secondmain-color);
+}
+
+.setings-menu li {
+    transition: .3s ease-out;
+    text-align: center;
+    color: var(--base-color);
+    list-style: none;
+    margin: 10px;
+    padding: 5px 3px;
+}
+
+.setings-menu li a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.setings-menu li a:hover {
+    color: var(--white-color);
+}
+
+.setings-menu li:hover {
+    transform: scale(1.2);
+}
 
 html {
     scroll-behavior: smooth;
@@ -114,7 +187,7 @@ body {
     height: 2200px;
     padding-right: 15px;
     margin-left: -8px;
-    background-color: #ece8e1;
+    background-color: var(--white-color);
 }
 
 .title {
