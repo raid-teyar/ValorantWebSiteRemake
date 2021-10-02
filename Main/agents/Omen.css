@@ -355,10 +355,9 @@ body {
     height: 99px;
     left: calc(50% - 523px/2 - 44.5px);
     top: calc(50% - 99px/2 + 1310.5px);
-    font-family: sans-serif;
+    font-family: Source Sans Pro;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     top: 360%;
     color: var(--base-color);
 }
