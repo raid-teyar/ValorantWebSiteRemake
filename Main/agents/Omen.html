@@ -136,7 +136,7 @@
         <button id="ability4">
             <div class="rectangle-4"> <img src="./Omen.png/O4.png" alt=""></div>
         </button>
-        <div class="hide" id="invisible">
+        <div class="hide" id="invisible1">
             <h3>Q - FLASH/DRIVE </h3>
             <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
         </div>
@@ -157,18 +157,45 @@
     <script>
         $(function() {
             $("#ability1").click(function q() {
-                $('#invisible').toggleClass("show");
-
+                $('#invisible1').addClass("show");
+                $('#invisible2').addClass("hide");
+                $('#invisible3').addClass("hide");
+                $('#invisible4').addClass("hide");
+                $('#invisible1').removeClass("hide");
+                $('#invisible2').removeClass("show");
+                $('#invisible3').removeClass("show");
+                $('#invisible4').removeClass("show");
             });
 
             $("#ability2").click(function e() {
-                $('#invisible2').toggleClass("show");
+                $('#invisible2').addClass("show");
+                $('#invisible3').addClass("hide");
+                $('#invisible4').addClass("hide");
+                $('#invisible1').addClass("hide");
+                $('#invisible2').removeClass("hide");
+                $('#invisible3').removeClass("show");
+                $('#invisible4').removeClass("show");
+                $('#invisible1').removeClass("show");
             });
             $("#ability3").click(function c() {
-                $('#invisible3').toggleClass("show");
+                $('#invisible3').addClass("show");
+                $('#invisible1').addClass("hide");
+                $('#invisible2').addClass("hide");
+                $('#invisible4').addClass("hide");
+                $('#invisible3').removeClass("hide");
+                $('#invisible1').removeClass("show");
+                $('#invisible2').removeClass("show");
+                $('#invisible4').removeClass("show");
             });
             $("#ability4").click(function x() {
-                $('#invisible4').toggleClass("show");
+                $('#invisible4').addClass("show");
+                $('#invisible1').addClass("hide");
+                $('#invisible2').addClass("hide");
+                $('#invisible3').addClass("hide");
+                $('#invisible4').removeClass("hide");
+                $('#invisible1').removeClass("show");
+                $('#invisible2').removeClass("show");
+                $('#invisible3').removeClass("show");
             });
 
 

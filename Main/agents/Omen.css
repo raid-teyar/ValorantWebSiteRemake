@@ -594,11 +594,11 @@ footer {
 /* ##### HIDING AND SHOWING TEXT  #### */
 
 .hide {
-    display: none;
+    visibility: collapse;
 }
 
 .show {
-    display: block;
+    visibility: visible;
 }
 
 
