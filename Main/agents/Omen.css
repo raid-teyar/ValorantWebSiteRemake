@@ -298,7 +298,8 @@ body {
     height: 75px;
     left: calc(50% - 75px/2 - 218.5px);
     top: 324%;
-    opacity: 0.8;
+    opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-2 {
@@ -308,7 +309,8 @@ body {
     left: calc(50% - 75px/2 - 73.5px);
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
-    opacity: 1.26;
+    opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-3 {
@@ -319,6 +321,7 @@ body {
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
     opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-4 {
@@ -329,11 +332,12 @@ body {
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
     opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities h3 {
     position: absolute;
-    width: 282px;
+    width: 500px;
     height: 47px;
     left: calc(50% - 282px/2 - 215px);
     top: calc(50% - 47px/2 + 1192.5px);
@@ -354,8 +358,8 @@ body {
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    top: 366%;
+    font-size: 24px;
+    top: 360%;
     color: var(--base-color);
 }
 
@@ -521,7 +525,8 @@ footer {
 }
 
 .btn {
-    color: #0f1923;
+    color: var(--base-color);
+    background-color: transparent;
     border: none;
     display: block;
     opacity: .8;
@@ -599,6 +604,16 @@ footer {
 
 .show {
     visibility: visible;
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
