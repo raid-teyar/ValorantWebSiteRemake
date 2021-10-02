@@ -127,7 +127,7 @@ body {
 }
 
 .role {
-    background: var(--base-color);
+    background: #0f1923;
     height: 100%;
     position: absolute;
     width: 100%;
@@ -173,7 +173,7 @@ body {
     font-style: italic;
     font-weight: 400;
     font-size: 26px;
-    color: var(--white-color);
+    color: #ece8e1;
     z-index: 2;
 }
 
@@ -185,7 +185,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
-    color: var(--white-color);
+    color: #ece8e1;
     z-index: 2;
 }
 
@@ -206,7 +206,7 @@ body {
     font-weight: normal;
     font-style: italic;
     font-size: 26px;
-    color: var(--white-color);
+    color: #ece8e1;
     z-index: 2;
 }
 
@@ -217,7 +217,7 @@ body {
     font-family: sans-serif;
     font-weight: normal;
     font-size: 24px;
-    color: var(--white-color);
+    color: #ece8e1;
     z-index: 2;
 }
 
@@ -230,7 +230,7 @@ body {
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
-    color: var(--white-color);
+    color: #ece8e1;
     opacity: 0.6;
     transform: rotate(90deg);
     z-index: 2;
@@ -245,7 +245,7 @@ body {
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
-    color: var(--white-color);
+    color: #ece8e1;
     opacity: 0.09;
     transform: rotate(90deg);
     z-index: 2;
