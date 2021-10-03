@@ -181,11 +181,11 @@ body {
     position: absolute;
     width: 530px;
     height: 140px;
-    left: 950px;
+    left: 930px;
     top: 36%;
     font-family: VALORANT;
     font-weight: normal;
-    font-size: 170px;
+    font-size: 130px;
     color: var(--white-color);
     opacity: 0.6;
     transform: rotate(90deg);
@@ -195,11 +195,11 @@ body {
     position: absolute;
     width: 530px;
     height: 140px;
-    left: 940px;
+    left: 920px;
     top: 34%;
     font-family: VALORANT;
     font-weight: normal;
-    font-size: 170px;
+    font-size: 130px;
     color: var(--white-color);
     opacity: 0.09;
     transform: rotate(90deg);

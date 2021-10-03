@@ -122,8 +122,8 @@ body {
 
 .sova_vd {
     position: absolute;
-    left: 46.5%;
-    top: 10.7%;
+    left: 35%;
+    top: -10%;
 }
 
 .text-1 h3 {
@@ -182,7 +182,7 @@ body {
     width: 530px;
     height: 140px;
     left: 950px;
-    top: 36%;
+    top: 43%;
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
@@ -196,7 +196,7 @@ body {
     width: 530px;
     height: 140px;
     left: 940px;
-    top: 34%;
+    top: 41%;
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
