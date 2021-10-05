@@ -8,31 +8,41 @@
     <link rel="stylesheet" href="killjoy.css">
     <link rel="stylesheet" href="./all.css">
     <link rel="shortcut icon" type="image" href="../index/scr/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>KILLJOY</title>
 </head>
 
-<body><!-- Settings !-->
+<body>
+    <!-- Settings !-->
     <ul class="main-setings-menu">
-       <li>
-           <ul class="setings-menu" id="setings">
-               <li>
-                   <a href="#" class="fa fa-arrow-up"></a>
-               </li>
-               <li>
-                   <a id="themeBtn" class="fa fa-sun-o"></a>
-               </li>
-               <li>
-                   <a id="musicBtn" class="fa fa-music"></a>
-               </li>
-               <li>O</li>
-           </ul>
-       </li>
-       <li>
-           <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
-       </li>
-   </ul>
+
+
+        <li>
+            <ul class="setings-menu" id="setings">
+                <li>
+                    <a id="back" class="fas fa-chevron-circle-left" href="./agentss.html"></a>
+                </li>
+
+                <li>
+                    <a href="#" class="fa fa-arrow-up"></a>
+                </li>
+
+                <li>
+                    <a id="themeBtn" class="fa fa-sun-o"></a>
+                </li>
+
+                <li>
+                    <a id="musicBtn" class="fa fa-music"></a>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <div id="goToStartButton"><a class="goToStartBtn"><i class="fa fa-gear"></i></a></div>
+        </li>
+    </ul>
 
     <!-- ################# Audio ################# -->
     <audio autoplay loop id="audio">
@@ -40,9 +50,9 @@
         <source src="Agents-page-theme.ogg" type="audio/mpeg">
         <source src="Agents-page-theme.wav" type="audio/mpeg">
      </audio>
-     <!-- ################--Animated TRANSITION--################-->
+    <!-- ################--Animated TRANSITION--################-->
 
-     <div class="loader loader--active">
+    <div class="loader loader--active">
         <div class="loader__icon">
             <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
             <path opacity="0.8" fill="#ece8e1" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
@@ -218,18 +228,19 @@
 
         });
         /* #################################    TRANSITION & ProgressBar */
-var $loader = document.querySelector('.loader')
-var progerssbar = document.getElementById('progressbar');
-var totalhight = document.body.scrollHeight - window.innerHeight;
-window.onload = function() {
-    $loader.classList.remove('loader--active')
-    progerssbar.style.height = 0;
-    $(window).scroll(function() {
-    var progresshight = (window.pageYOffset / totalhight) * 100;
-    progerssbar.style.height = progresshight + "%";
-});
-};
+        var $loader = document.querySelector('.loader')
+        var progerssbar = document.getElementById('progressbar');
+        var totalhight = document.body.scrollHeight - window.innerHeight;
+        window.onload = function() {
+            $loader.classList.remove('loader--active')
+            progerssbar.style.height = 0;
+            $(window).scroll(function() {
+                var progresshight = (window.pageYOffset / totalhight) * 100;
+                progerssbar.style.height = progresshight + "%";
+            });
+        };
     </script>
 </body>
 <script src="cursor.js"></script>
+
 </html>
