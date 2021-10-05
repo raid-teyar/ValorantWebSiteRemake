@@ -118,12 +118,38 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
+    z-index: 0;
 }
 
 .sova_vd {
     position: absolute;
     left: 35%;
     top: -10%;
+    z-index: 2;
+}
+
+.bg_vid {
+    position: absolute;
+    width: 130%;
+    height: auto;
+    top: 10%;
+    z-index: 1;
+}
+
+@media (max-width: 1350px) {
+    .bg_vid {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -25%;
+        z-index: 1;
+    }
+    .Omen_vd {
+        position: absolute;
+        left: 50%;
+        margin-top: 4.1%;
+        z-index: 2;
+    }
 }
 
 .text-1 h3 {
@@ -131,21 +157,23 @@ body {
     left: 10%;
     top: 20%;
     font-family: sans-serif;
+    z-index: 2;
     font-style: italic;
     font-weight: 400;
     font-size: 26px;
-    color: var(--white-color);
+    color: #ece8e1;
 }
 
 .text-2 h2 {
     position: absolute;
     left: 10%;
     top: 27%;
+    z-index: 2;
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
-    color: var(--white-color);
+    color: #ece8e1;
 }
 
 .role-logo img {
@@ -153,6 +181,7 @@ body {
     width: 51px;
     height: 51px;
     left: 40%;
+    z-index: 2;
     top: 30%;
 }
 
@@ -161,24 +190,27 @@ body {
     left: 10%;
     top: 48%;
     font-family: sans-serif;
+    z-index: 2;
     font-weight: normal;
     font-style: italic;
     font-size: 26px;
-    color: var(--white-color);
+    color: #ece8e1;
 }
 
 .role-description h4 {
     position: absolute;
     left: 10%;
+    z-index: 2;
     top: 59%;
     font-family: sans-serif;
     font-weight: normal;
     font-size: 24px;
-    color: var(--white-color);
+    color: #ece8e1;
 }
 
 .role-name h2 {
     position: absolute;
+    z-index: 2;
     width: 530px;
     height: 140px;
     left: 950px;
@@ -186,13 +218,14 @@ body {
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
-    color: var(--white-color);
+    color: #ece8e1;
     opacity: 0.6;
     transform: rotate(90deg);
 }
 
 .role-name h3 {
     position: absolute;
+    z-index: 2;
     width: 530px;
     height: 140px;
     left: 940px;
@@ -200,7 +233,7 @@ body {
     font-family: VALORANT;
     font-weight: normal;
     font-size: 170px;
-    color: var(--white-color);
+    color: #ece8e1;
     opacity: 0.09;
     transform: rotate(90deg);
 }

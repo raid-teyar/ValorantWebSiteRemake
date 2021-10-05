@@ -111,6 +111,7 @@
     width: 1410px;
     left: -70px;
     top: -10px;
+    z-index: 0;
 }
 
 .key-o img {
@@ -120,12 +121,14 @@
     top: 1.12%;
     bottom: 78.43%;
     background: url('o.png');
+    z-index: 2;
 }
 
 .text-1 h3 {
     position: absolute;
     width: 100px;
     height: 22px;
+    z-index: 2;
     left: 191px;
     top: 224px;
     font-family: sans-serif;
@@ -133,13 +136,14 @@
     font-size: 20px;
     line-height: 109.84%;
     /* identical to box height, or 22px */
-    color: #FFFFFF;
+    color: #ece8e1;
 }
 
 .text-2 h2 {
     position: absolute;
     width: 286px;
     height: 56px;
+    z-index: 2;
     left: 184px;
     top: 262px;
     font-family: Source Sans Pro;
@@ -148,7 +152,7 @@
     font-size: 64px;
     line-height: 109.84%;
     /* or 70px */
-    color: #FFFFFF;
+    color: #ece8e1;
 }
 
 .role-logo img {
@@ -156,6 +160,7 @@
     width: 51px;
     height: 51px;
     left: 488px;
+    z-index: 2;
     top: 325px;
     background: url('image5.png');
 }
@@ -169,14 +174,16 @@
     font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
+    z-index: 2;
     font-size: 20px;
     line-height: 109.84%;
     /* identical to box height, or 22px */
-    color: #FFFFFF;
+    color: #ece8e1;
 }
 
 .role-description h4 {
     position: absolute;
+    z-index: 2;
     width: 494px;
     height: 130px;
     left: 184px;
@@ -187,12 +194,37 @@
     font-size: 24px;
     line-height: 109.84%;
     /* or 26px */
-    color: #FFFFFF;
+    color: #ece8e1;
+}
+
+.bg_vid {
+    position: absolute;
+    width: 130%;
+    height: auto;
+    top: 10%;
+    z-index: 1;
+}
+
+@media (max-width: 1350px) {
+    .bg_vid {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -25%;
+        z-index: 1;
+    }
+    .Omen_vd {
+        position: absolute;
+        left: 50%;
+        margin-top: 4.1%;
+        z-index: 2;
+    }
 }
 
 .role-name h2 {
     position: absolute;
     width: 600px;
+    z-index: 2;
     height: 200px;
     left: 970px;
     top: 90px;
@@ -202,7 +234,7 @@
     font-size: 170px;
     line-height: 109.84%;
     /* identical to box height, or 220px */
-    color: #ECE8E1;
+    color: #ece8e1;
     opacity: 0.6;
     transform: rotate(90deg);
 }
@@ -214,19 +246,21 @@
     left: 960px;
     top: 80px;
     font-family: VALORANT;
+    z-index: 2;
     font-style: normal;
     font-weight: normal;
     font-size: 170px;
     line-height: 109.84%;
     /* identical to box height, or 220px */
-    color: #ECE8E1;
+    color: #ece8e1;
     opacity: 0.09;
     transform: rotate(90deg);
 }
 
 .personality {
-    background: #E5E5E5;
+    background: #ece8e1;
     position: relative;
+    z-index: 2;
 }
 
 .text h2 {
