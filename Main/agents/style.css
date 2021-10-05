@@ -29,6 +29,26 @@
     */
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font);
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+
 
 /* ####### settings menu ####### */
 
