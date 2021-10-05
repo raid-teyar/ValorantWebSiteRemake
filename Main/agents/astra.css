@@ -140,7 +140,7 @@ body {
 .astra_vd {
     position: absolute;
     left: 46.5%;
-    top: 10.7%;
+    top: 21.5%;
     z-index: 2;
 }
 
@@ -382,7 +382,7 @@ body {
 
 .special-abilities h3 {
     position: absolute;
-    width: 282px;
+    width: 500px;
     height: 47px;
     left: calc(50% - 282px/2 - 215px);
     top: calc(50% - 47px/2 + 1192.5px);
@@ -570,7 +570,8 @@ footer {
 }
 
 .btn {
-    color: #0f1923;
+    color: var(--base-color);
+    background-color: transparent;
     border: none;
     display: block;
     opacity: .8;
@@ -628,11 +629,13 @@ footer {
     .astra_vd {
         position: absolute;
         left: 47.5%;
-        top: 20%;
     }
     video {
         height: 85%;
         width: 85%;
+    }
+    .text3 p {
+        left: 600px;
     }
 }
 
