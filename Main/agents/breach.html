@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <title>BREACH</title>
 </head>
 
@@ -121,12 +123,12 @@
             <h2>PERSONALITY</h2>>
         </div>
         <div class="text3">
-            <p>"We have one job; save this Earth. No excuses" — BREACH (Match Start)</p>
+            <p>"Been pulling jobs like this for years. Risky? Sure. But never boring" — Breach (Match Start)</p>
         </div>
         <div class="text2">
             <p>
-                His face is a screen that displays different images based on what is happening. When he speaks, a peak meter is animated. His body, arms, and head are made of metal. His legs are made out of what appears to be a combination of metal and leather. Parts
-                of his body have electricity and energy visible, these parts include his forearms, the middle of his chest, and the sides of his legs. KAY/O has been seen to use weapons such as the Judge, Bucky, Odin, and Vandal.
+                Breach's main gimmick is the ability to use all of his abilities through the geometry of the map,whether it is through walls, roofs, or terrain. This ability set rewards experienced players for knowing the maps well. His abilities also seem to reward
+                an aggressive playstyle despite most of his abilities being crowd-control based.
             </p>
         </div>
 
@@ -134,25 +136,56 @@
     <div class="special-abilities">
         <h2>SPECIAL ABILITIES</h2>
         <div class="rectangle">
+
+            <video class="hide" id="invisible-v1" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltfff097ebc7da90e9/5ec840e1e2a559592eb0c0e2/Breach_C_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v2" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd09eb47222cc1152/5ec840e287617619e2be955e/Breach_E_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v3" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc2d5631f1babcaf0/5ec840e1bab1845d392dfc39/Breach_Q_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v4" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0a47675f8b973fda/5ec840e252c5395e0f2dd038/Breach_X_v001_web.mp4" type="video/mp4">
+            </video>
             <h2>PLEASE, SELECT ABILITY ABOVE !</h2>
         </div>
-        <a href="#">
-            <div class="rectangle-1"> <img src="./abilities png/breach/breac3.png" alt=""></div>
+        <a id="ability1">
+            <div class="rectangle-1"> <img src="./abilities png/breach/breach.png" alt=""></div>
         </a>
-        <a href="#">
-            <div class="rectangle-2"> <img src="./abilities png/breach/breach.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-3"> <img src="./abilities png/breach/breach1.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-4"> <img src="./abilities png/breach/breach2.png" alt=""></div>
-        </a>
-
-        <h3>Q - FLASH/DRIVE </h3>
-        <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
-
+        <button id="ability2">
+            <div class="rectangle-2"> <img src="./abilities png/breach/breach1.png" alt=""></div>
+        </button>
+        <button id="ability3">
+            <div class="rectangle-3"> <img src="./abilities png/breach/breach2.png" alt=""></div>
+        </button>
+        <button id="ability4">
+            <div class="rectangle-4"> <img src="./abilities png/breach/breac3.png" alt=""></div>
+        </button>
+        <div class="text-abilities">
+            <div class="hide" id="invisible1">
+                <h3>C - AFTERSHOCK</h3>
+                <p>EEQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.</p>
+            </div>
+            <div class="hide" id="invisible2">
+                <h3>E - FAULT LINE</h3>
+                <p>EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.</p>
+            </div>
+            <div class="hide" id="invisible3">
+                <h3>Q - FLASHPOINT</h3>
+                <p>EQUIP a blinding charge. FIRE the charge to set fast-acting burst through the wall. The charge detonates to blind all players looking at it.</p>
+            </div>
+            <div class="hide" id="invisible4">
+                <h3>X - ROLLING THUNDER</h3>
+                <p>EQUIP a seismic charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.</p>
+            </div>
+        </div>
     </div>
+
+    <script src="./script.js"></script>
+
+
 
     <!-- ############################################# FOOTER SECTION ############################################# -->
     <footer>
