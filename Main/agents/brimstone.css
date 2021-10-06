@@ -152,10 +152,10 @@ body {
     z-index: 1;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1366px) {
     .bg_vid {
         position: absolute;
-        width: 100%;
+        width: 79%;
         height: auto;
         top: -25%;
         z-index: 1;

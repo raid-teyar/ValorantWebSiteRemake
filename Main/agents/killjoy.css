@@ -152,10 +152,10 @@ body {
     z-index: 1;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1366px) {
     .bg_vid {
         position: absolute;
-        width: 100%;
+        width: 70%;
         height: auto;
         top: -25%;
         z-index: 1;
@@ -163,7 +163,7 @@ body {
     .Omen_vd {
         position: absolute;
         left: 50%;
-        margin-top: 4.1%;
+        margin-top: 5%;
         z-index: 2;
     }
 }
