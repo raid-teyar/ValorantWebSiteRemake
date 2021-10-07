@@ -9,8 +9,11 @@
     <link rel="shortcut icon" type="image" href="../index/scr/logo.png">
     <link rel="stylesheet" href="./all.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <title>PHOENIX</title>
 </head>
 
@@ -133,25 +136,56 @@
     <div class="special-abilities">
         <h2>SPECIAL ABILITIES</h2>
         <div class="rectangle">
+
+            <video class="hide" id="invisible-v1" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63486e54ea52945a/5ecad815bab1845d392dfd07/Omen_C_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v2" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70e2c9db1c0793df/5ecad815c846021917ecbb85/Omen_E_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v3" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5babc7e7c6c24fa0/5ecad8154a28e119db56229e/Omen_Q_v001_web.mp4" type="video/mp4">
+            </video>
+            <video class="hide" id="invisible-v4" autoplay preload="true" loop playsinline>
+                <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt65aa85bf6ba5c0e8/5ecad814a4fe135d37f021a3/Omen_X_v001_web.mp4" type="video/mp4">
+            </video>
             <h2>PLEASE, SELECT ABILITY ABOVE !</h2>
         </div>
-        <a href="#">
-            <div class="rectangle-1"> <img src="./abilities png/phoenix/phoenix.png" alt=""></div>
+        <a id="ability1">
+            <div class="rectangle-1"> <img src="./abilities png/brimstone/brimstone.png" alt=""></div>
         </a>
-        <a href="#">
-            <div class="rectangle-2"> <img src="./abilities png/phoenix/phoenix1.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-3"> <img src="./abilities png/phoenix/phoenix2.png" alt=""></div>
-        </a>
-        <a href="#">
-            <div class="rectangle-4"> <img src="./abilities png/phoenix/phoenix3.png" alt=""></div>
-        </a>
-
-        <h3>Q - FLASH/DRIVE </h3>
-        <p>EQUIP a flash grenade. FIRE to throw. The flash grenade explodes after a short fuse, blinding anyone in line of sight</p>
-
+        <button id="ability2">
+            <div class="rectangle-2"> <img src="./abilities png/brimstone/brimstone1.png" alt=""></div>
+        </button>
+        <button id="ability3">
+            <div class="rectangle-3"> <img src="./abilities png/brimstone/brimstone2.png" alt=""></div>
+        </button>
+        <button id="ability4">
+            <div class="rectangle-4"> <img src="./abilities png/brimstone/brimstone3.png" alt=""></div>
+        </button>
+        <div class="text-abilities">
+            <div class="hide" id="invisible1">
+                <h3>C - GRAVITY WELL</h3>
+                <p>EQUIP a shrouded step ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.</p>
+            </div>
+            <div class="hide" id="invisible2">
+                <h3>E - NEBULA / DISSIPATE </h3>
+                <p>EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move
+                    the marker further away. HOLD SECONDARY FIRE while targeting to move the marker closer. PRESS RELOAD to toggle normal targeting view.</p>
+            </div>
+            <div class="hide" id="invisible3">
+                <h3>Q - NOVA PULSE</h3>
+                <p>EQUIP a blinding orb. FIRE to throw it forward, briefly reducing the vision range and deafening all players it touches. This projectile can pass through walls.</p>
+            </div>
+            <div class="hide" id="invisible4">
+                <h3>X - ASTRAL FORM / COSMIC DIVIDE</h3>
+                <p>EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport, or press EQUIP for Omen to cancel his teleport.</p>
+            </div>
+        </div>
     </div>
+
+    <script src="./script.js"></script>
+
 
     <!-- ############################################# FOOTER SECTION ############################################# -->
     <footer>

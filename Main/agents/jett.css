@@ -310,11 +310,20 @@ body {
 .special-abilities .rectangle {
     position: absolute;
     width: 930px;
+    width: 889px;
     height: 500px;
     left: calc(50% - 930px/2);
     top: calc(50% - 500px/2 + 471px);
     top: 238%;
     background: var(--base-color);
+    z-index: -2;
+}
+
+.special-abilities video {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    padding-right: 10px;
 }
 
 .rectangle h2 {
@@ -326,6 +335,28 @@ body {
     font-weight: 600;
     font-size: 22px;
     color: var(--white-color);
+    z-index: -1;
+}
+
+
+/* ##### HIDING AND SHOWING TEXT  #### */
+
+.hide {
+    visibility: collapse;
+}
+
+.show {
+    visibility: visible;
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .special-abilities .rectangle-1 {
@@ -334,7 +365,8 @@ body {
     height: 75px;
     left: calc(50% - 75px/2 - 218.5px);
     top: 324%;
-    opacity: 0.8;
+    opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-2 {
@@ -344,7 +376,8 @@ body {
     left: calc(50% - 75px/2 - 73.5px);
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
-    opacity: 1.26;
+    opacity: 1.22;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-3 {
@@ -355,6 +388,7 @@ body {
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
     opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities .rectangle-4 {
@@ -365,11 +399,12 @@ body {
     top: calc(50% - 75px/2 + 994.5px);
     top: 324%;
     opacity: 1.2;
+    cursor: pointer;
 }
 
 .special-abilities h3 {
     position: absolute;
-    width: 282px;
+    width: 500px;
     height: 47px;
     left: calc(50% - 282px/2 - 215px);
     top: calc(50% - 47px/2 + 1192.5px);
@@ -620,6 +655,9 @@ footer {
     video {
         height: 85%;
         width: 85%;
+    }
+    .text3 p {
+        left: 600px;
     }
 }
 
